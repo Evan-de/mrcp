@@ -1,0 +1,6 @@
+npschk_AM_SI_Co60.out - TOT TIME: 7.25 DAYs
+npschk_AM_SI_Ir192.out - TOT TIME: 25.07 DAYs
+npschk_AM_SQ_Co60.out - TOT TIME: 5.20 DAYs
+npschk_AM_SQ_Ir192.out - TOT TIME: 18.89 DAYs
+npschk_AM_ST_Co60.out - TOT TIME: 7.75 DAYs
+npschk_AM_ST_Ir192.out - TOT TIME: 25.28 DAYs

@@ -1,0 +1,4342 @@
+/run/verbose 2
+/run/numberOfThreads 10
+/run/initialize
+
+/gun/angleBiasing PhantomBox
+/gun/nuclide Ir192_p
+
+/gun/posFromFloor -300.000000 -300.000000 0.000000 cm
+/run/beamOn 9599299
+
+/gun/posFromFloor -300.000000 -200.000000 0.000000 cm
+/run/beamOn 24114699
+
+/gun/posFromFloor -300.000000 -100.000000 0.000000 cm
+/run/beamOn 10663469
+
+/gun/posFromFloor -300.000000 -50.000000 0.000000 cm
+/run/beamOn 11246603
+
+/gun/posFromFloor -300.000000 -40.000000 0.000000 cm
+/run/beamOn 8841200
+
+/gun/posFromFloor -300.000000 -30.000000 0.000000 cm
+/run/beamOn 28154187
+
+/gun/posFromFloor -300.000000 -20.000000 0.000000 cm
+/run/beamOn 53003991
+
+/gun/posFromFloor -300.000000 -10.000000 0.000000 cm
+/run/beamOn 15376276
+
+/gun/posFromFloor -300.000000 0.000000 0.000000 cm
+/run/beamOn 23851072
+
+/gun/posFromFloor -300.000000 10.000000 0.000000 cm
+/run/beamOn 11644746
+
+/gun/posFromFloor -300.000000 20.000000 0.000000 cm
+/run/beamOn 17893475
+
+/gun/posFromFloor -300.000000 30.000000 0.000000 cm
+/run/beamOn 16868796
+
+/gun/posFromFloor -300.000000 40.000000 0.000000 cm
+/run/beamOn 18952230
+
+/gun/posFromFloor -300.000000 50.000000 0.000000 cm
+/run/beamOn 36457347
+
+/gun/posFromFloor -300.000000 100.000000 0.000000 cm
+/run/beamOn 15974205
+
+/gun/posFromFloor -300.000000 200.000000 0.000000 cm
+/run/beamOn 19588307
+
+/gun/posFromFloor -300.000000 300.000000 0.000000 cm
+/run/beamOn 4100130
+
+/gun/posFromFloor -200.000000 -300.000000 0.000000 cm
+/run/beamOn 10614110
+
+/gun/posFromFloor -200.000000 -200.000000 0.000000 cm
+/run/beamOn 18057774
+
+/gun/posFromFloor -200.000000 -100.000000 0.000000 cm
+/run/beamOn 17443118
+
+/gun/posFromFloor -200.000000 -50.000000 0.000000 cm
+/run/beamOn 12666865
+
+/gun/posFromFloor -200.000000 -40.000000 0.000000 cm
+/run/beamOn 17770237
+
+/gun/posFromFloor -200.000000 -30.000000 0.000000 cm
+/run/beamOn 9993213
+
+/gun/posFromFloor -200.000000 -20.000000 0.000000 cm
+/run/beamOn 12953039
+
+/gun/posFromFloor -200.000000 -10.000000 0.000000 cm
+/run/beamOn 14795457
+
+/gun/posFromFloor -200.000000 0.000000 0.000000 cm
+/run/beamOn 40476316
+
+/gun/posFromFloor -200.000000 10.000000 0.000000 cm
+/run/beamOn 12654098
+
+/gun/posFromFloor -200.000000 20.000000 0.000000 cm
+/run/beamOn 18623436
+
+/gun/posFromFloor -200.000000 30.000000 0.000000 cm
+/run/beamOn 23165662
+
+/gun/posFromFloor -200.000000 40.000000 0.000000 cm
+/run/beamOn 7387747
+
+/gun/posFromFloor -200.000000 50.000000 0.000000 cm
+/run/beamOn 44673449
+
+/gun/posFromFloor -200.000000 100.000000 0.000000 cm
+/run/beamOn 11141875
+
+/gun/posFromFloor -200.000000 200.000000 0.000000 cm
+/run/beamOn 9256638
+
+/gun/posFromFloor -200.000000 300.000000 0.000000 cm
+/run/beamOn 10584273
+
+/gun/posFromFloor -100.000000 -300.000000 0.000000 cm
+/run/beamOn 16017028
+
+/gun/posFromFloor -100.000000 -200.000000 0.000000 cm
+/run/beamOn 13409593
+
+/gun/posFromFloor -100.000000 -100.000000 0.000000 cm
+/run/beamOn 9483953
+
+/gun/posFromFloor -100.000000 -50.000000 0.000000 cm
+/run/beamOn 10981609
+
+/gun/posFromFloor -100.000000 -40.000000 0.000000 cm
+/run/beamOn 10459785
+
+/gun/posFromFloor -100.000000 -30.000000 0.000000 cm
+/run/beamOn 34261495
+
+/gun/posFromFloor -100.000000 -20.000000 0.000000 cm
+/run/beamOn 13294473
+
+/gun/posFromFloor -100.000000 -10.000000 0.000000 cm
+/run/beamOn 22040621
+
+/gun/posFromFloor -100.000000 0.000000 0.000000 cm
+/run/beamOn 16805309
+
+/gun/posFromFloor -100.000000 10.000000 0.000000 cm
+/run/beamOn 30164260
+
+/gun/posFromFloor -100.000000 20.000000 0.000000 cm
+/run/beamOn 15584417
+
+/gun/posFromFloor -100.000000 30.000000 0.000000 cm
+/run/beamOn 7614966
+
+/gun/posFromFloor -100.000000 40.000000 0.000000 cm
+/run/beamOn 7107961
+
+/gun/posFromFloor -100.000000 50.000000 0.000000 cm
+/run/beamOn 21373719
+
+/gun/posFromFloor -100.000000 100.000000 0.000000 cm
+/run/beamOn 13604070
+
+/gun/posFromFloor -100.000000 200.000000 0.000000 cm
+/run/beamOn 7151392
+
+/gun/posFromFloor -100.000000 300.000000 0.000000 cm
+/run/beamOn 10813245
+
+/gun/posFromFloor -50.000000 -300.000000 0.000000 cm
+/run/beamOn 10085609
+
+/gun/posFromFloor -50.000000 -200.000000 0.000000 cm
+/run/beamOn 17818428
+
+/gun/posFromFloor -50.000000 -100.000000 0.000000 cm
+/run/beamOn 23721263
+
+/gun/posFromFloor -50.000000 -50.000000 0.000000 cm
+/run/beamOn 46546069
+
+/gun/posFromFloor -50.000000 -40.000000 0.000000 cm
+/run/beamOn 111743503
+
+/gun/posFromFloor -50.000000 -30.000000 0.000000 cm
+/run/beamOn 77132306
+
+/gun/posFromFloor -50.000000 -20.000000 0.000000 cm
+/run/beamOn 67259747
+
+/gun/posFromFloor -50.000000 -10.000000 0.000000 cm
+/run/beamOn 16208386
+
+/gun/posFromFloor -50.000000 0.000000 0.000000 cm
+/run/beamOn 13137768
+
+/gun/posFromFloor -50.000000 10.000000 0.000000 cm
+/run/beamOn 45435526
+
+/gun/posFromFloor -50.000000 20.000000 0.000000 cm
+/run/beamOn 17962271
+
+/gun/posFromFloor -50.000000 30.000000 0.000000 cm
+/run/beamOn 24876472
+
+/gun/posFromFloor -50.000000 40.000000 0.000000 cm
+/run/beamOn 60651199
+
+/gun/posFromFloor -50.000000 50.000000 0.000000 cm
+/run/beamOn 38732997
+
+/gun/posFromFloor -50.000000 100.000000 0.000000 cm
+/run/beamOn 26516196
+
+/gun/posFromFloor -50.000000 200.000000 0.000000 cm
+/run/beamOn 24174843
+
+/gun/posFromFloor -50.000000 300.000000 0.000000 cm
+/run/beamOn 13243989
+
+/gun/posFromFloor -40.000000 -300.000000 0.000000 cm
+/run/beamOn 16649174
+
+/gun/posFromFloor -40.000000 -200.000000 0.000000 cm
+/run/beamOn 21117296
+
+/gun/posFromFloor -40.000000 -100.000000 0.000000 cm
+/run/beamOn 8829541
+
+/gun/posFromFloor -40.000000 -50.000000 0.000000 cm
+/run/beamOn 68480391
+
+/gun/posFromFloor -40.000000 -40.000000 0.000000 cm
+/run/beamOn 26618624
+
+/gun/posFromFloor -40.000000 -30.000000 0.000000 cm
+/run/beamOn 20364894
+
+/gun/posFromFloor -40.000000 -20.000000 0.000000 cm
+/run/beamOn 56861010
+
+/gun/posFromFloor -40.000000 -10.000000 0.000000 cm
+/run/beamOn 76088705
+
+/gun/posFromFloor -40.000000 0.000000 0.000000 cm
+/run/beamOn 38320606
+
+/gun/posFromFloor -40.000000 10.000000 0.000000 cm
+/run/beamOn 26847320
+
+/gun/posFromFloor -40.000000 20.000000 0.000000 cm
+/run/beamOn 14515752
+
+/gun/posFromFloor -40.000000 30.000000 0.000000 cm
+/run/beamOn 54039612
+
+/gun/posFromFloor -40.000000 40.000000 0.000000 cm
+/run/beamOn 24604933
+
+/gun/posFromFloor -40.000000 50.000000 0.000000 cm
+/run/beamOn 20631798
+
+/gun/posFromFloor -40.000000 100.000000 0.000000 cm
+/run/beamOn 6348503
+
+/gun/posFromFloor -40.000000 200.000000 0.000000 cm
+/run/beamOn 15312188
+
+/gun/posFromFloor -40.000000 300.000000 0.000000 cm
+/run/beamOn 8487396
+
+/gun/posFromFloor -30.000000 -300.000000 0.000000 cm
+/run/beamOn 28905849
+
+/gun/posFromFloor -30.000000 -200.000000 0.000000 cm
+/run/beamOn 8499568
+
+/gun/posFromFloor -30.000000 -100.000000 0.000000 cm
+/run/beamOn 24923139
+
+/gun/posFromFloor -30.000000 -50.000000 0.000000 cm
+/run/beamOn 41433372
+
+/gun/posFromFloor -30.000000 -40.000000 0.000000 cm
+/run/beamOn 80157426
+
+/gun/posFromFloor -30.000000 -30.000000 0.000000 cm
+/run/beamOn 31815917
+
+/gun/posFromFloor -30.000000 -20.000000 0.000000 cm
+/run/beamOn 22593062
+
+/gun/posFromFloor -30.000000 -10.000000 0.000000 cm
+/run/beamOn 30576254
+
+/gun/posFromFloor -30.000000 0.000000 0.000000 cm
+/run/beamOn 32125407
+
+/gun/posFromFloor -30.000000 10.000000 0.000000 cm
+/run/beamOn 29576803
+
+/gun/posFromFloor -30.000000 20.000000 0.000000 cm
+/run/beamOn 14563330
+
+/gun/posFromFloor -30.000000 30.000000 0.000000 cm
+/run/beamOn 16078656
+
+/gun/posFromFloor -30.000000 40.000000 0.000000 cm
+/run/beamOn 12138141
+
+/gun/posFromFloor -30.000000 50.000000 0.000000 cm
+/run/beamOn 33651090
+
+/gun/posFromFloor -30.000000 100.000000 0.000000 cm
+/run/beamOn 7633691
+
+/gun/posFromFloor -30.000000 200.000000 0.000000 cm
+/run/beamOn 5224748
+
+/gun/posFromFloor -30.000000 300.000000 0.000000 cm
+/run/beamOn 10523722
+
+/gun/posFromFloor -20.000000 -300.000000 0.000000 cm
+/run/beamOn 6554529
+
+/gun/posFromFloor -20.000000 -200.000000 0.000000 cm
+/run/beamOn 22561702
+
+/gun/posFromFloor -20.000000 -100.000000 0.000000 cm
+/run/beamOn 26151564
+
+/gun/posFromFloor -20.000000 -50.000000 0.000000 cm
+/run/beamOn 29442691
+
+/gun/posFromFloor -20.000000 -40.000000 0.000000 cm
+/run/beamOn 63161993
+
+/gun/posFromFloor -20.000000 -30.000000 0.000000 cm
+/run/beamOn 35635264
+
+/gun/posFromFloor -20.000000 -20.000000 0.000000 cm
+/run/beamOn 24708852
+
+/gun/posFromFloor -20.000000 -10.000000 0.000000 cm
+/run/beamOn 31243717
+
+/gun/posFromFloor -20.000000 0.000000 0.000000 cm
+/run/beamOn 20095459
+
+/gun/posFromFloor -20.000000 10.000000 0.000000 cm
+/run/beamOn 24788329
+
+/gun/posFromFloor -20.000000 20.000000 0.000000 cm
+/run/beamOn 6790193
+
+/gun/posFromFloor -20.000000 30.000000 0.000000 cm
+/run/beamOn 11550462
+
+/gun/posFromFloor -20.000000 40.000000 0.000000 cm
+/run/beamOn 9689807
+
+/gun/posFromFloor -20.000000 50.000000 0.000000 cm
+/run/beamOn 17186364
+
+/gun/posFromFloor -20.000000 100.000000 0.000000 cm
+/run/beamOn 15112009
+
+/gun/posFromFloor -20.000000 200.000000 0.000000 cm
+/run/beamOn 16181922
+
+/gun/posFromFloor -20.000000 300.000000 0.000000 cm
+/run/beamOn 28149051
+
+/gun/posFromFloor -10.000000 -300.000000 0.000000 cm
+/run/beamOn 17066020
+
+/gun/posFromFloor -10.000000 -200.000000 0.000000 cm
+/run/beamOn 17499195
+
+/gun/posFromFloor -10.000000 -100.000000 0.000000 cm
+/run/beamOn 14168087
+
+/gun/posFromFloor -10.000000 -50.000000 0.000000 cm
+/run/beamOn 131960634
+
+/gun/posFromFloor -10.000000 -40.000000 0.000000 cm
+/run/beamOn 31469990
+
+/gun/posFromFloor -10.000000 -30.000000 0.000000 cm
+/run/beamOn 35969286
+
+/gun/posFromFloor -10.000000 -20.000000 0.000000 cm
+/run/beamOn 6965199
+
+/gun/posFromFloor -10.000000 -10.000000 0.000000 cm
+/run/beamOn 14943484
+
+/gun/posFromFloor -10.000000 0.000000 0.000000 cm
+/run/beamOn 15891308
+
+/gun/posFromFloor -10.000000 10.000000 0.000000 cm
+/run/beamOn 18403928
+
+/gun/posFromFloor -10.000000 20.000000 0.000000 cm
+/run/beamOn 11499580
+
+/gun/posFromFloor -10.000000 30.000000 0.000000 cm
+/run/beamOn 17053067
+
+/gun/posFromFloor -10.000000 40.000000 0.000000 cm
+/run/beamOn 36972723
+
+/gun/posFromFloor -10.000000 50.000000 0.000000 cm
+/run/beamOn 8008854
+
+/gun/posFromFloor -10.000000 100.000000 0.000000 cm
+/run/beamOn 24796655
+
+/gun/posFromFloor -10.000000 200.000000 0.000000 cm
+/run/beamOn 12708780
+
+/gun/posFromFloor -10.000000 300.000000 0.000000 cm
+/run/beamOn 24666122
+
+/gun/posFromFloor 0.000000 -300.000000 0.000000 cm
+/run/beamOn 15060639
+
+/gun/posFromFloor 0.000000 -200.000000 0.000000 cm
+/run/beamOn 7344826
+
+/gun/posFromFloor 0.000000 -100.000000 0.000000 cm
+/run/beamOn 27426336
+
+/gun/posFromFloor 0.000000 -50.000000 0.000000 cm
+/run/beamOn 46621092
+
+/gun/posFromFloor 0.000000 -40.000000 0.000000 cm
+/run/beamOn 19179144
+
+/gun/posFromFloor 0.000000 -30.000000 0.000000 cm
+/run/beamOn 48153384
+
+/gun/posFromFloor 0.000000 -20.000000 0.000000 cm
+/run/beamOn 30922808
+
+/gun/posFromFloor 0.000000 -10.000000 0.000000 cm
+/run/beamOn 29250141
+
+/gun/posFromFloor 0.000000 0.000000 0.000000 cm
+/run/beamOn 15588807
+
+/gun/posFromFloor 0.000000 10.000000 0.000000 cm
+/run/beamOn 16273704
+
+/gun/posFromFloor 0.000000 20.000000 0.000000 cm
+/run/beamOn 18196776
+
+/gun/posFromFloor 0.000000 30.000000 0.000000 cm
+/run/beamOn 8453218
+
+/gun/posFromFloor 0.000000 40.000000 0.000000 cm
+/run/beamOn 5632471
+
+/gun/posFromFloor 0.000000 50.000000 0.000000 cm
+/run/beamOn 9367857
+
+/gun/posFromFloor 0.000000 100.000000 0.000000 cm
+/run/beamOn 20772556
+
+/gun/posFromFloor 0.000000 200.000000 0.000000 cm
+/run/beamOn 36762345
+
+/gun/posFromFloor 0.000000 300.000000 0.000000 cm
+/run/beamOn 12499010
+
+/gun/posFromFloor 10.000000 -300.000000 0.000000 cm
+/run/beamOn 18749627
+
+/gun/posFromFloor 10.000000 -200.000000 0.000000 cm
+/run/beamOn 13116957
+
+/gun/posFromFloor 10.000000 -100.000000 0.000000 cm
+/run/beamOn 17057461
+
+/gun/posFromFloor 10.000000 -50.000000 0.000000 cm
+/run/beamOn 18731376
+
+/gun/posFromFloor 10.000000 -40.000000 0.000000 cm
+/run/beamOn 40975719
+
+/gun/posFromFloor 10.000000 -30.000000 0.000000 cm
+/run/beamOn 40448785
+
+/gun/posFromFloor 10.000000 -20.000000 0.000000 cm
+/run/beamOn 41475145
+
+/gun/posFromFloor 10.000000 -10.000000 0.000000 cm
+/run/beamOn 30723163
+
+/gun/posFromFloor 10.000000 0.000000 0.000000 cm
+/run/beamOn 20989702
+
+/gun/posFromFloor 10.000000 10.000000 0.000000 cm
+/run/beamOn 21140941
+
+/gun/posFromFloor 10.000000 20.000000 0.000000 cm
+/run/beamOn 6754902
+
+/gun/posFromFloor 10.000000 30.000000 0.000000 cm
+/run/beamOn 15600544
+
+/gun/posFromFloor 10.000000 40.000000 0.000000 cm
+/run/beamOn 25056511
+
+/gun/posFromFloor 10.000000 50.000000 0.000000 cm
+/run/beamOn 25441774
+
+/gun/posFromFloor 10.000000 100.000000 0.000000 cm
+/run/beamOn 25495390
+
+/gun/posFromFloor 10.000000 200.000000 0.000000 cm
+/run/beamOn 6185793
+
+/gun/posFromFloor 10.000000 300.000000 0.000000 cm
+/run/beamOn 13156713
+
+/gun/posFromFloor 20.000000 -300.000000 0.000000 cm
+/run/beamOn 11726211
+
+/gun/posFromFloor 20.000000 -200.000000 0.000000 cm
+/run/beamOn 16560114
+
+/gun/posFromFloor 20.000000 -100.000000 0.000000 cm
+/run/beamOn 25489250
+
+/gun/posFromFloor 20.000000 -50.000000 0.000000 cm
+/run/beamOn 42539353
+
+/gun/posFromFloor 20.000000 -40.000000 0.000000 cm
+/run/beamOn 55195271
+
+/gun/posFromFloor 20.000000 -30.000000 0.000000 cm
+/run/beamOn 61631103
+
+/gun/posFromFloor 20.000000 -20.000000 0.000000 cm
+/run/beamOn 32159197
+
+/gun/posFromFloor 20.000000 -10.000000 0.000000 cm
+/run/beamOn 15857505
+
+/gun/posFromFloor 20.000000 0.000000 0.000000 cm
+/run/beamOn 43421141
+
+/gun/posFromFloor 20.000000 10.000000 0.000000 cm
+/run/beamOn 9324050
+
+/gun/posFromFloor 20.000000 20.000000 0.000000 cm
+/run/beamOn 16828668
+
+/gun/posFromFloor 20.000000 30.000000 0.000000 cm
+/run/beamOn 8009764
+
+/gun/posFromFloor 20.000000 40.000000 0.000000 cm
+/run/beamOn 14382446
+
+/gun/posFromFloor 20.000000 50.000000 0.000000 cm
+/run/beamOn 10379103
+
+/gun/posFromFloor 20.000000 100.000000 0.000000 cm
+/run/beamOn 7834515
+
+/gun/posFromFloor 20.000000 200.000000 0.000000 cm
+/run/beamOn 18791600
+
+/gun/posFromFloor 20.000000 300.000000 0.000000 cm
+/run/beamOn 11129581
+
+/gun/posFromFloor 30.000000 -300.000000 0.000000 cm
+/run/beamOn 15165510
+
+/gun/posFromFloor 30.000000 -200.000000 0.000000 cm
+/run/beamOn 14077606
+
+/gun/posFromFloor 30.000000 -100.000000 0.000000 cm
+/run/beamOn 12567405
+
+/gun/posFromFloor 30.000000 -50.000000 0.000000 cm
+/run/beamOn 39205981
+
+/gun/posFromFloor 30.000000 -40.000000 0.000000 cm
+/run/beamOn 12887427
+
+/gun/posFromFloor 30.000000 -30.000000 0.000000 cm
+/run/beamOn 30157363
+
+/gun/posFromFloor 30.000000 -20.000000 0.000000 cm
+/run/beamOn 23568267
+
+/gun/posFromFloor 30.000000 -10.000000 0.000000 cm
+/run/beamOn 24076175
+
+/gun/posFromFloor 30.000000 0.000000 0.000000 cm
+/run/beamOn 28132585
+
+/gun/posFromFloor 30.000000 10.000000 0.000000 cm
+/run/beamOn 51961722
+
+/gun/posFromFloor 30.000000 20.000000 0.000000 cm
+/run/beamOn 14186091
+
+/gun/posFromFloor 30.000000 30.000000 0.000000 cm
+/run/beamOn 28766617
+
+/gun/posFromFloor 30.000000 40.000000 0.000000 cm
+/run/beamOn 38920030
+
+/gun/posFromFloor 30.000000 50.000000 0.000000 cm
+/run/beamOn 25553874
+
+/gun/posFromFloor 30.000000 100.000000 0.000000 cm
+/run/beamOn 16070028
+
+/gun/posFromFloor 30.000000 200.000000 0.000000 cm
+/run/beamOn 14620213
+
+/gun/posFromFloor 30.000000 300.000000 0.000000 cm
+/run/beamOn 8950718
+
+/gun/posFromFloor 40.000000 -300.000000 0.000000 cm
+/run/beamOn 6177767
+
+/gun/posFromFloor 40.000000 -200.000000 0.000000 cm
+/run/beamOn 6777114
+
+/gun/posFromFloor 40.000000 -100.000000 0.000000 cm
+/run/beamOn 13446366
+
+/gun/posFromFloor 40.000000 -50.000000 0.000000 cm
+/run/beamOn 19886890
+
+/gun/posFromFloor 40.000000 -40.000000 0.000000 cm
+/run/beamOn 28510174
+
+/gun/posFromFloor 40.000000 -30.000000 0.000000 cm
+/run/beamOn 79205300
+
+/gun/posFromFloor 40.000000 -20.000000 0.000000 cm
+/run/beamOn 56135578
+
+/gun/posFromFloor 40.000000 -10.000000 0.000000 cm
+/run/beamOn 93444315
+
+/gun/posFromFloor 40.000000 0.000000 0.000000 cm
+/run/beamOn 43756266
+
+/gun/posFromFloor 40.000000 10.000000 0.000000 cm
+/run/beamOn 21955971
+
+/gun/posFromFloor 40.000000 20.000000 0.000000 cm
+/run/beamOn 38434891
+
+/gun/posFromFloor 40.000000 30.000000 0.000000 cm
+/run/beamOn 59374668
+
+/gun/posFromFloor 40.000000 40.000000 0.000000 cm
+/run/beamOn 23345054
+
+/gun/posFromFloor 40.000000 50.000000 0.000000 cm
+/run/beamOn 143601108
+
+/gun/posFromFloor 40.000000 100.000000 0.000000 cm
+/run/beamOn 14334619
+
+/gun/posFromFloor 40.000000 200.000000 0.000000 cm
+/run/beamOn 17643729
+
+/gun/posFromFloor 40.000000 300.000000 0.000000 cm
+/run/beamOn 5474278
+
+/gun/posFromFloor 50.000000 -300.000000 0.000000 cm
+/run/beamOn 14345865
+
+/gun/posFromFloor 50.000000 -200.000000 0.000000 cm
+/run/beamOn 6624287
+
+/gun/posFromFloor 50.000000 -100.000000 0.000000 cm
+/run/beamOn 19711539
+
+/gun/posFromFloor 50.000000 -50.000000 0.000000 cm
+/run/beamOn 52641467
+
+/gun/posFromFloor 50.000000 -40.000000 0.000000 cm
+/run/beamOn 86586523
+
+/gun/posFromFloor 50.000000 -30.000000 0.000000 cm
+/run/beamOn 77777794
+
+/gun/posFromFloor 50.000000 -20.000000 0.000000 cm
+/run/beamOn 28084785
+
+/gun/posFromFloor 50.000000 -10.000000 0.000000 cm
+/run/beamOn 15385956
+
+/gun/posFromFloor 50.000000 0.000000 0.000000 cm
+/run/beamOn 35163097
+
+/gun/posFromFloor 50.000000 10.000000 0.000000 cm
+/run/beamOn 36059688
+
+/gun/posFromFloor 50.000000 20.000000 0.000000 cm
+/run/beamOn 26131398
+
+/gun/posFromFloor 50.000000 30.000000 0.000000 cm
+/run/beamOn 30806007
+
+/gun/posFromFloor 50.000000 40.000000 0.000000 cm
+/run/beamOn 130374103
+
+/gun/posFromFloor 50.000000 50.000000 0.000000 cm
+/run/beamOn 79916019
+
+/gun/posFromFloor 50.000000 100.000000 0.000000 cm
+/run/beamOn 13751637
+
+/gun/posFromFloor 50.000000 200.000000 0.000000 cm
+/run/beamOn 8855154
+
+/gun/posFromFloor 50.000000 300.000000 0.000000 cm
+/run/beamOn 17886572
+
+/gun/posFromFloor 100.000000 -300.000000 0.000000 cm
+/run/beamOn 13159963
+
+/gun/posFromFloor 100.000000 -200.000000 0.000000 cm
+/run/beamOn 16261636
+
+/gun/posFromFloor 100.000000 -100.000000 0.000000 cm
+/run/beamOn 10652356
+
+/gun/posFromFloor 100.000000 -50.000000 0.000000 cm
+/run/beamOn 21551877
+
+/gun/posFromFloor 100.000000 -40.000000 0.000000 cm
+/run/beamOn 36834654
+
+/gun/posFromFloor 100.000000 -30.000000 0.000000 cm
+/run/beamOn 23219599
+
+/gun/posFromFloor 100.000000 -20.000000 0.000000 cm
+/run/beamOn 41746640
+
+/gun/posFromFloor 100.000000 -10.000000 0.000000 cm
+/run/beamOn 24053649
+
+/gun/posFromFloor 100.000000 0.000000 0.000000 cm
+/run/beamOn 26923852
+
+/gun/posFromFloor 100.000000 10.000000 0.000000 cm
+/run/beamOn 14674283
+
+/gun/posFromFloor 100.000000 20.000000 0.000000 cm
+/run/beamOn 24737811
+
+/gun/posFromFloor 100.000000 30.000000 0.000000 cm
+/run/beamOn 19475169
+
+/gun/posFromFloor 100.000000 40.000000 0.000000 cm
+/run/beamOn 12763282
+
+/gun/posFromFloor 100.000000 50.000000 0.000000 cm
+/run/beamOn 19069047
+
+/gun/posFromFloor 100.000000 100.000000 0.000000 cm
+/run/beamOn 15048229
+
+/gun/posFromFloor 100.000000 200.000000 0.000000 cm
+/run/beamOn 18479715
+
+/gun/posFromFloor 100.000000 300.000000 0.000000 cm
+/run/beamOn 15962754
+
+/gun/posFromFloor 200.000000 -300.000000 0.000000 cm
+/run/beamOn 17548659
+
+/gun/posFromFloor 200.000000 -200.000000 0.000000 cm
+/run/beamOn 17045304
+
+/gun/posFromFloor 200.000000 -100.000000 0.000000 cm
+/run/beamOn 13986678
+
+/gun/posFromFloor 200.000000 -50.000000 0.000000 cm
+/run/beamOn 18729368
+
+/gun/posFromFloor 200.000000 -40.000000 0.000000 cm
+/run/beamOn 27697105
+
+/gun/posFromFloor 200.000000 -30.000000 0.000000 cm
+/run/beamOn 18053967
+
+/gun/posFromFloor 200.000000 -20.000000 0.000000 cm
+/run/beamOn 23774829
+
+/gun/posFromFloor 200.000000 -10.000000 0.000000 cm
+/run/beamOn 18963621
+
+/gun/posFromFloor 200.000000 0.000000 0.000000 cm
+/run/beamOn 16761687
+
+/gun/posFromFloor 200.000000 10.000000 0.000000 cm
+/run/beamOn 15414945
+
+/gun/posFromFloor 200.000000 20.000000 0.000000 cm
+/run/beamOn 12379605
+
+/gun/posFromFloor 200.000000 30.000000 0.000000 cm
+/run/beamOn 25144087
+
+/gun/posFromFloor 200.000000 40.000000 0.000000 cm
+/run/beamOn 43176253
+
+/gun/posFromFloor 200.000000 50.000000 0.000000 cm
+/run/beamOn 11516909
+
+/gun/posFromFloor 200.000000 100.000000 0.000000 cm
+/run/beamOn 15341720
+
+/gun/posFromFloor 200.000000 200.000000 0.000000 cm
+/run/beamOn 15876281
+
+/gun/posFromFloor 200.000000 300.000000 0.000000 cm
+/run/beamOn 32494879
+
+/gun/posFromFloor 300.000000 -300.000000 0.000000 cm
+/run/beamOn 15019819
+
+/gun/posFromFloor 300.000000 -200.000000 0.000000 cm
+/run/beamOn 17145959
+
+/gun/posFromFloor 300.000000 -100.000000 0.000000 cm
+/run/beamOn 10539055
+
+/gun/posFromFloor 300.000000 -50.000000 0.000000 cm
+/run/beamOn 16739881
+
+/gun/posFromFloor 300.000000 -40.000000 0.000000 cm
+/run/beamOn 19572059
+
+/gun/posFromFloor 300.000000 -30.000000 0.000000 cm
+/run/beamOn 18237136
+
+/gun/posFromFloor 300.000000 -20.000000 0.000000 cm
+/run/beamOn 14564545
+
+/gun/posFromFloor 300.000000 -10.000000 0.000000 cm
+/run/beamOn 21110275
+
+/gun/posFromFloor 300.000000 0.000000 0.000000 cm
+/run/beamOn 21911611
+
+/gun/posFromFloor 300.000000 10.000000 0.000000 cm
+/run/beamOn 24899102
+
+/gun/posFromFloor 300.000000 20.000000 0.000000 cm
+/run/beamOn 18041324
+
+/gun/posFromFloor 300.000000 30.000000 0.000000 cm
+/run/beamOn 18382313
+
+/gun/posFromFloor 300.000000 40.000000 0.000000 cm
+/run/beamOn 20639612
+
+/gun/posFromFloor 300.000000 50.000000 0.000000 cm
+/run/beamOn 15194881
+
+/gun/posFromFloor 300.000000 100.000000 0.000000 cm
+/run/beamOn 8201061
+
+/gun/posFromFloor 300.000000 200.000000 0.000000 cm
+/run/beamOn 17660737
+
+/gun/posFromFloor 300.000000 300.000000 0.000000 cm
+/run/beamOn 24081004
+
+/gun/posFromFloor -300.000000 -300.000000 50.000000 cm
+/run/beamOn 10800112
+
+/gun/posFromFloor -300.000000 -200.000000 50.000000 cm
+/run/beamOn 16871129
+
+/gun/posFromFloor -300.000000 -100.000000 50.000000 cm
+/run/beamOn 17382862
+
+/gun/posFromFloor -300.000000 -50.000000 50.000000 cm
+/run/beamOn 8668535
+
+/gun/posFromFloor -300.000000 -40.000000 50.000000 cm
+/run/beamOn 29348569
+
+/gun/posFromFloor -300.000000 -30.000000 50.000000 cm
+/run/beamOn 16288843
+
+/gun/posFromFloor -300.000000 -20.000000 50.000000 cm
+/run/beamOn 18437714
+
+/gun/posFromFloor -300.000000 -10.000000 50.000000 cm
+/run/beamOn 17808568
+
+/gun/posFromFloor -300.000000 0.000000 50.000000 cm
+/run/beamOn 20192620
+
+/gun/posFromFloor -300.000000 10.000000 50.000000 cm
+/run/beamOn 17724133
+
+/gun/posFromFloor -300.000000 20.000000 50.000000 cm
+/run/beamOn 14700678
+
+/gun/posFromFloor -300.000000 30.000000 50.000000 cm
+/run/beamOn 9886831
+
+/gun/posFromFloor -300.000000 40.000000 50.000000 cm
+/run/beamOn 21622648
+
+/gun/posFromFloor -300.000000 50.000000 50.000000 cm
+/run/beamOn 23470963
+
+/gun/posFromFloor -300.000000 100.000000 50.000000 cm
+/run/beamOn 8151559
+
+/gun/posFromFloor -300.000000 200.000000 50.000000 cm
+/run/beamOn 26762701
+
+/gun/posFromFloor -300.000000 300.000000 50.000000 cm
+/run/beamOn 10676179
+
+/gun/posFromFloor -200.000000 -300.000000 50.000000 cm
+/run/beamOn 9704062
+
+/gun/posFromFloor -200.000000 -200.000000 50.000000 cm
+/run/beamOn 39535624
+
+/gun/posFromFloor -200.000000 -100.000000 50.000000 cm
+/run/beamOn 20585457
+
+/gun/posFromFloor -200.000000 -50.000000 50.000000 cm
+/run/beamOn 17015856
+
+/gun/posFromFloor -200.000000 -40.000000 50.000000 cm
+/run/beamOn 22146887
+
+/gun/posFromFloor -200.000000 -30.000000 50.000000 cm
+/run/beamOn 13482185
+
+/gun/posFromFloor -200.000000 -20.000000 50.000000 cm
+/run/beamOn 10130455
+
+/gun/posFromFloor -200.000000 -10.000000 50.000000 cm
+/run/beamOn 16777969
+
+/gun/posFromFloor -200.000000 0.000000 50.000000 cm
+/run/beamOn 11506505
+
+/gun/posFromFloor -200.000000 10.000000 50.000000 cm
+/run/beamOn 30427315
+
+/gun/posFromFloor -200.000000 20.000000 50.000000 cm
+/run/beamOn 16000256
+
+/gun/posFromFloor -200.000000 30.000000 50.000000 cm
+/run/beamOn 20437234
+
+/gun/posFromFloor -200.000000 40.000000 50.000000 cm
+/run/beamOn 13322526
+
+/gun/posFromFloor -200.000000 50.000000 50.000000 cm
+/run/beamOn 39936788
+
+/gun/posFromFloor -200.000000 100.000000 50.000000 cm
+/run/beamOn 16180763
+
+/gun/posFromFloor -200.000000 200.000000 50.000000 cm
+/run/beamOn 5259125
+
+/gun/posFromFloor -200.000000 300.000000 50.000000 cm
+/run/beamOn 5878615
+
+/gun/posFromFloor -100.000000 -300.000000 50.000000 cm
+/run/beamOn 8853336
+
+/gun/posFromFloor -100.000000 -200.000000 50.000000 cm
+/run/beamOn 14931448
+
+/gun/posFromFloor -100.000000 -100.000000 50.000000 cm
+/run/beamOn 32665614
+
+/gun/posFromFloor -100.000000 -50.000000 50.000000 cm
+/run/beamOn 13158161
+
+/gun/posFromFloor -100.000000 -40.000000 50.000000 cm
+/run/beamOn 7976137
+
+/gun/posFromFloor -100.000000 -30.000000 50.000000 cm
+/run/beamOn 19585050
+
+/gun/posFromFloor -100.000000 -20.000000 50.000000 cm
+/run/beamOn 13522547
+
+/gun/posFromFloor -100.000000 -10.000000 50.000000 cm
+/run/beamOn 52311659
+
+/gun/posFromFloor -100.000000 0.000000 50.000000 cm
+/run/beamOn 26569777
+
+/gun/posFromFloor -100.000000 10.000000 50.000000 cm
+/run/beamOn 10241751
+
+/gun/posFromFloor -100.000000 20.000000 50.000000 cm
+/run/beamOn 29314861
+
+/gun/posFromFloor -100.000000 30.000000 50.000000 cm
+/run/beamOn 36180465
+
+/gun/posFromFloor -100.000000 40.000000 50.000000 cm
+/run/beamOn 12233337
+
+/gun/posFromFloor -100.000000 50.000000 50.000000 cm
+/run/beamOn 20349770
+
+/gun/posFromFloor -100.000000 100.000000 50.000000 cm
+/run/beamOn 15613299
+
+/gun/posFromFloor -100.000000 200.000000 50.000000 cm
+/run/beamOn 13381648
+
+/gun/posFromFloor -100.000000 300.000000 50.000000 cm
+/run/beamOn 4799858
+
+/gun/posFromFloor -50.000000 -300.000000 50.000000 cm
+/run/beamOn 25618458
+
+/gun/posFromFloor -50.000000 -200.000000 50.000000 cm
+/run/beamOn 10112346
+
+/gun/posFromFloor -50.000000 -100.000000 50.000000 cm
+/run/beamOn 21287593
+
+/gun/posFromFloor -50.000000 -50.000000 50.000000 cm
+/run/beamOn 36152080
+
+/gun/posFromFloor -50.000000 -40.000000 50.000000 cm
+/run/beamOn 21390625
+
+/gun/posFromFloor -50.000000 -30.000000 50.000000 cm
+/run/beamOn 32838263
+
+/gun/posFromFloor -50.000000 -20.000000 50.000000 cm
+/run/beamOn 15217002
+
+/gun/posFromFloor -50.000000 -10.000000 50.000000 cm
+/run/beamOn 11775252
+
+/gun/posFromFloor -50.000000 0.000000 50.000000 cm
+/run/beamOn 28478872
+
+/gun/posFromFloor -50.000000 10.000000 50.000000 cm
+/run/beamOn 7864544
+
+/gun/posFromFloor -50.000000 20.000000 50.000000 cm
+/run/beamOn 19934689
+
+/gun/posFromFloor -50.000000 30.000000 50.000000 cm
+/run/beamOn 19806202
+
+/gun/posFromFloor -50.000000 40.000000 50.000000 cm
+/run/beamOn 4463004
+
+/gun/posFromFloor -50.000000 50.000000 50.000000 cm
+/run/beamOn 40620584
+
+/gun/posFromFloor -50.000000 100.000000 50.000000 cm
+/run/beamOn 12810091
+
+/gun/posFromFloor -50.000000 200.000000 50.000000 cm
+/run/beamOn 11342001
+
+/gun/posFromFloor -50.000000 300.000000 50.000000 cm
+/run/beamOn 24773873
+
+/gun/posFromFloor -40.000000 -300.000000 50.000000 cm
+/run/beamOn 12134030
+
+/gun/posFromFloor -40.000000 -200.000000 50.000000 cm
+/run/beamOn 22459523
+
+/gun/posFromFloor -40.000000 -100.000000 50.000000 cm
+/run/beamOn 36398150
+
+/gun/posFromFloor -40.000000 -50.000000 50.000000 cm
+/run/beamOn 14226985
+
+/gun/posFromFloor -40.000000 -40.000000 50.000000 cm
+/run/beamOn 63984640
+
+/gun/posFromFloor -40.000000 -30.000000 50.000000 cm
+/run/beamOn 17907589
+
+/gun/posFromFloor -40.000000 -20.000000 50.000000 cm
+/run/beamOn 21263276
+
+/gun/posFromFloor -40.000000 -10.000000 50.000000 cm
+/run/beamOn 21284677
+
+/gun/posFromFloor -40.000000 0.000000 50.000000 cm
+/run/beamOn 28859501
+
+/gun/posFromFloor -40.000000 10.000000 50.000000 cm
+/run/beamOn 43941254
+
+/gun/posFromFloor -40.000000 20.000000 50.000000 cm
+/run/beamOn 11760430
+
+/gun/posFromFloor -40.000000 30.000000 50.000000 cm
+/run/beamOn 13416622
+
+/gun/posFromFloor -40.000000 40.000000 50.000000 cm
+/run/beamOn 13799617
+
+/gun/posFromFloor -40.000000 50.000000 50.000000 cm
+/run/beamOn 30017863
+
+/gun/posFromFloor -40.000000 100.000000 50.000000 cm
+/run/beamOn 9176299
+
+/gun/posFromFloor -40.000000 200.000000 50.000000 cm
+/run/beamOn 18972401
+
+/gun/posFromFloor -40.000000 300.000000 50.000000 cm
+/run/beamOn 8312318
+
+/gun/posFromFloor -30.000000 -300.000000 50.000000 cm
+/run/beamOn 10709892
+
+/gun/posFromFloor -30.000000 -200.000000 50.000000 cm
+/run/beamOn 8851624
+
+/gun/posFromFloor -30.000000 -100.000000 50.000000 cm
+/run/beamOn 46566757
+
+/gun/posFromFloor -30.000000 -50.000000 50.000000 cm
+/run/beamOn 71645931
+
+/gun/posFromFloor -30.000000 -40.000000 50.000000 cm
+/run/beamOn 32020251
+
+/gun/posFromFloor -30.000000 -30.000000 50.000000 cm
+/run/beamOn 14605445
+
+/gun/posFromFloor -30.000000 -20.000000 50.000000 cm
+/run/beamOn 10146434
+
+/gun/posFromFloor -30.000000 -10.000000 50.000000 cm
+/run/beamOn 13976145
+
+/gun/posFromFloor -30.000000 0.000000 50.000000 cm
+/run/beamOn 10739434
+
+/gun/posFromFloor -30.000000 10.000000 50.000000 cm
+/run/beamOn 13356835
+
+/gun/posFromFloor -30.000000 20.000000 50.000000 cm
+/run/beamOn 17048211
+
+/gun/posFromFloor -30.000000 30.000000 50.000000 cm
+/run/beamOn 12078424
+
+/gun/posFromFloor -30.000000 40.000000 50.000000 cm
+/run/beamOn 29737564
+
+/gun/posFromFloor -30.000000 50.000000 50.000000 cm
+/run/beamOn 60733280
+
+/gun/posFromFloor -30.000000 100.000000 50.000000 cm
+/run/beamOn 10003410
+
+/gun/posFromFloor -30.000000 200.000000 50.000000 cm
+/run/beamOn 7770033
+
+/gun/posFromFloor -30.000000 300.000000 50.000000 cm
+/run/beamOn 11925465
+
+/gun/posFromFloor -20.000000 -300.000000 50.000000 cm
+/run/beamOn 16446918
+
+/gun/posFromFloor -20.000000 -200.000000 50.000000 cm
+/run/beamOn 15911623
+
+/gun/posFromFloor -20.000000 -100.000000 50.000000 cm
+/run/beamOn 25167599
+
+/gun/posFromFloor -20.000000 -50.000000 50.000000 cm
+/run/beamOn 21458833
+
+/gun/posFromFloor -20.000000 -40.000000 50.000000 cm
+/run/beamOn 11399420
+
+/gun/posFromFloor -20.000000 -30.000000 50.000000 cm
+/run/beamOn 25278772
+
+/gun/posFromFloor -20.000000 -20.000000 50.000000 cm
+/run/beamOn 6995483
+
+/gun/posFromFloor -20.000000 -10.000000 50.000000 cm
+/run/beamOn 7643198
+
+/gun/posFromFloor -20.000000 0.000000 50.000000 cm
+/run/beamOn 14509934
+
+/gun/posFromFloor -20.000000 10.000000 50.000000 cm
+/run/beamOn 6941003
+
+/gun/posFromFloor -20.000000 20.000000 50.000000 cm
+/run/beamOn 4635124
+
+/gun/posFromFloor -20.000000 30.000000 50.000000 cm
+/run/beamOn 15457403
+
+/gun/posFromFloor -20.000000 40.000000 50.000000 cm
+/run/beamOn 26202850
+
+/gun/posFromFloor -20.000000 50.000000 50.000000 cm
+/run/beamOn 17720866
+
+/gun/posFromFloor -20.000000 100.000000 50.000000 cm
+/run/beamOn 30475831
+
+/gun/posFromFloor -20.000000 200.000000 50.000000 cm
+/run/beamOn 19146890
+
+/gun/posFromFloor -20.000000 300.000000 50.000000 cm
+/run/beamOn 12099820
+
+/gun/posFromFloor -10.000000 -300.000000 50.000000 cm
+/run/beamOn 15187288
+
+/gun/posFromFloor -10.000000 -200.000000 50.000000 cm
+/run/beamOn 21269584
+
+/gun/posFromFloor -10.000000 -100.000000 50.000000 cm
+/run/beamOn 59137884
+
+/gun/posFromFloor -10.000000 -50.000000 50.000000 cm
+/run/beamOn 20396640
+
+/gun/posFromFloor -10.000000 -40.000000 50.000000 cm
+/run/beamOn 15158491
+
+/gun/posFromFloor -10.000000 -30.000000 50.000000 cm
+/run/beamOn 11356811
+
+/gun/posFromFloor -10.000000 -20.000000 50.000000 cm
+/run/beamOn 5855861
+
+/gun/posFromFloor -10.000000 -10.000000 50.000000 cm
+/run/beamOn 6781838
+
+/gun/posFromFloor -10.000000 0.000000 50.000000 cm
+/run/beamOn 5886943
+
+/gun/posFromFloor -10.000000 10.000000 50.000000 cm
+/run/beamOn 6092048
+
+/gun/posFromFloor -10.000000 20.000000 50.000000 cm
+/run/beamOn 2186446
+
+/gun/posFromFloor -10.000000 30.000000 50.000000 cm
+/run/beamOn 11147158
+
+/gun/posFromFloor -10.000000 40.000000 50.000000 cm
+/run/beamOn 7087917
+
+/gun/posFromFloor -10.000000 50.000000 50.000000 cm
+/run/beamOn 23247942
+
+/gun/posFromFloor -10.000000 100.000000 50.000000 cm
+/run/beamOn 7156234
+
+/gun/posFromFloor -10.000000 200.000000 50.000000 cm
+/run/beamOn 19220964
+
+/gun/posFromFloor -10.000000 300.000000 50.000000 cm
+/run/beamOn 8544232
+
+/gun/posFromFloor 0.000000 -300.000000 50.000000 cm
+/run/beamOn 10988707
+
+/gun/posFromFloor 0.000000 -200.000000 50.000000 cm
+/run/beamOn 84230691
+
+/gun/posFromFloor 0.000000 -100.000000 50.000000 cm
+/run/beamOn 13941841
+
+/gun/posFromFloor 0.000000 -50.000000 50.000000 cm
+/run/beamOn 37450874
+
+/gun/posFromFloor 0.000000 -40.000000 50.000000 cm
+/run/beamOn 10123151
+
+/gun/posFromFloor 0.000000 -30.000000 50.000000 cm
+/run/beamOn 13712010
+
+/gun/posFromFloor 0.000000 -20.000000 50.000000 cm
+/run/beamOn 7429451
+
+/gun/posFromFloor 0.000000 -10.000000 50.000000 cm
+/run/beamOn 5866952
+
+/gun/posFromFloor 0.000000 0.000000 50.000000 cm
+/run/beamOn 5855186
+
+/gun/posFromFloor 0.000000 10.000000 50.000000 cm
+/run/beamOn 3329530
+
+/gun/posFromFloor 0.000000 20.000000 50.000000 cm
+/run/beamOn 159489
+
+/gun/posFromFloor 0.000000 30.000000 50.000000 cm
+/run/beamOn 3089035
+
+/gun/posFromFloor 0.000000 40.000000 50.000000 cm
+/run/beamOn 10164779
+
+/gun/posFromFloor 0.000000 50.000000 50.000000 cm
+/run/beamOn 15418935
+
+/gun/posFromFloor 0.000000 100.000000 50.000000 cm
+/run/beamOn 12009803
+
+/gun/posFromFloor 0.000000 200.000000 50.000000 cm
+/run/beamOn 4540143
+
+/gun/posFromFloor 0.000000 300.000000 50.000000 cm
+/run/beamOn 16269993
+
+/gun/posFromFloor 10.000000 -300.000000 50.000000 cm
+/run/beamOn 6588195
+
+/gun/posFromFloor 10.000000 -200.000000 50.000000 cm
+/run/beamOn 19749953
+
+/gun/posFromFloor 10.000000 -100.000000 50.000000 cm
+/run/beamOn 10977773
+
+/gun/posFromFloor 10.000000 -50.000000 50.000000 cm
+/run/beamOn 14799421
+
+/gun/posFromFloor 10.000000 -40.000000 50.000000 cm
+/run/beamOn 27893692
+
+/gun/posFromFloor 10.000000 -30.000000 50.000000 cm
+/run/beamOn 11261984
+
+/gun/posFromFloor 10.000000 -20.000000 50.000000 cm
+/run/beamOn 8169995
+
+/gun/posFromFloor 10.000000 -10.000000 50.000000 cm
+/run/beamOn 5395429
+
+/gun/posFromFloor 10.000000 0.000000 50.000000 cm
+/run/beamOn 5269977
+
+/gun/posFromFloor 10.000000 10.000000 50.000000 cm
+/run/beamOn 4971649
+
+/gun/posFromFloor 10.000000 20.000000 50.000000 cm
+/run/beamOn 4007928
+
+/gun/posFromFloor 10.000000 30.000000 50.000000 cm
+/run/beamOn 7121460
+
+/gun/posFromFloor 10.000000 40.000000 50.000000 cm
+/run/beamOn 12595670
+
+/gun/posFromFloor 10.000000 50.000000 50.000000 cm
+/run/beamOn 12570102
+
+/gun/posFromFloor 10.000000 100.000000 50.000000 cm
+/run/beamOn 14426159
+
+/gun/posFromFloor 10.000000 200.000000 50.000000 cm
+/run/beamOn 29290999
+
+/gun/posFromFloor 10.000000 300.000000 50.000000 cm
+/run/beamOn 17488856
+
+/gun/posFromFloor 20.000000 -300.000000 50.000000 cm
+/run/beamOn 18995894
+
+/gun/posFromFloor 20.000000 -200.000000 50.000000 cm
+/run/beamOn 24190933
+
+/gun/posFromFloor 20.000000 -100.000000 50.000000 cm
+/run/beamOn 23999926
+
+/gun/posFromFloor 20.000000 -50.000000 50.000000 cm
+/run/beamOn 24521907
+
+/gun/posFromFloor 20.000000 -40.000000 50.000000 cm
+/run/beamOn 18260067
+
+/gun/posFromFloor 20.000000 -30.000000 50.000000 cm
+/run/beamOn 12936296
+
+/gun/posFromFloor 20.000000 -20.000000 50.000000 cm
+/run/beamOn 8804247
+
+/gun/posFromFloor 20.000000 -10.000000 50.000000 cm
+/run/beamOn 12765920
+
+/gun/posFromFloor 20.000000 0.000000 50.000000 cm
+/run/beamOn 11055750
+
+/gun/posFromFloor 20.000000 10.000000 50.000000 cm
+/run/beamOn 10498696
+
+/gun/posFromFloor 20.000000 20.000000 50.000000 cm
+/run/beamOn 7758049
+
+/gun/posFromFloor 20.000000 30.000000 50.000000 cm
+/run/beamOn 16994841
+
+/gun/posFromFloor 20.000000 40.000000 50.000000 cm
+/run/beamOn 10311566
+
+/gun/posFromFloor 20.000000 50.000000 50.000000 cm
+/run/beamOn 10392061
+
+/gun/posFromFloor 20.000000 100.000000 50.000000 cm
+/run/beamOn 14692284
+
+/gun/posFromFloor 20.000000 200.000000 50.000000 cm
+/run/beamOn 13183693
+
+/gun/posFromFloor 20.000000 300.000000 50.000000 cm
+/run/beamOn 18860849
+
+/gun/posFromFloor 30.000000 -300.000000 50.000000 cm
+/run/beamOn 11713662
+
+/gun/posFromFloor 30.000000 -200.000000 50.000000 cm
+/run/beamOn 19497205
+
+/gun/posFromFloor 30.000000 -100.000000 50.000000 cm
+/run/beamOn 22721276
+
+/gun/posFromFloor 30.000000 -50.000000 50.000000 cm
+/run/beamOn 33113994
+
+/gun/posFromFloor 30.000000 -40.000000 50.000000 cm
+/run/beamOn 26095587
+
+/gun/posFromFloor 30.000000 -30.000000 50.000000 cm
+/run/beamOn 20906695
+
+/gun/posFromFloor 30.000000 -20.000000 50.000000 cm
+/run/beamOn 18534505
+
+/gun/posFromFloor 30.000000 -10.000000 50.000000 cm
+/run/beamOn 16174103
+
+/gun/posFromFloor 30.000000 0.000000 50.000000 cm
+/run/beamOn 12446710
+
+/gun/posFromFloor 30.000000 10.000000 50.000000 cm
+/run/beamOn 18861718
+
+/gun/posFromFloor 30.000000 20.000000 50.000000 cm
+/run/beamOn 16069387
+
+/gun/posFromFloor 30.000000 30.000000 50.000000 cm
+/run/beamOn 11355835
+
+/gun/posFromFloor 30.000000 40.000000 50.000000 cm
+/run/beamOn 13871724
+
+/gun/posFromFloor 30.000000 50.000000 50.000000 cm
+/run/beamOn 24075547
+
+/gun/posFromFloor 30.000000 100.000000 50.000000 cm
+/run/beamOn 7141862
+
+/gun/posFromFloor 30.000000 200.000000 50.000000 cm
+/run/beamOn 7626571
+
+/gun/posFromFloor 30.000000 300.000000 50.000000 cm
+/run/beamOn 9701590
+
+/gun/posFromFloor 40.000000 -300.000000 50.000000 cm
+/run/beamOn 15292007
+
+/gun/posFromFloor 40.000000 -200.000000 50.000000 cm
+/run/beamOn 17060402
+
+/gun/posFromFloor 40.000000 -100.000000 50.000000 cm
+/run/beamOn 9608608
+
+/gun/posFromFloor 40.000000 -50.000000 50.000000 cm
+/run/beamOn 36881523
+
+/gun/posFromFloor 40.000000 -40.000000 50.000000 cm
+/run/beamOn 12711287
+
+/gun/posFromFloor 40.000000 -30.000000 50.000000 cm
+/run/beamOn 14438562
+
+/gun/posFromFloor 40.000000 -20.000000 50.000000 cm
+/run/beamOn 14159855
+
+/gun/posFromFloor 40.000000 -10.000000 50.000000 cm
+/run/beamOn 15161363
+
+/gun/posFromFloor 40.000000 0.000000 50.000000 cm
+/run/beamOn 28056980
+
+/gun/posFromFloor 40.000000 10.000000 50.000000 cm
+/run/beamOn 20149935
+
+/gun/posFromFloor 40.000000 20.000000 50.000000 cm
+/run/beamOn 13610848
+
+/gun/posFromFloor 40.000000 30.000000 50.000000 cm
+/run/beamOn 31274848
+
+/gun/posFromFloor 40.000000 40.000000 50.000000 cm
+/run/beamOn 23588195
+
+/gun/posFromFloor 40.000000 50.000000 50.000000 cm
+/run/beamOn 40634658
+
+/gun/posFromFloor 40.000000 100.000000 50.000000 cm
+/run/beamOn 16150624
+
+/gun/posFromFloor 40.000000 200.000000 50.000000 cm
+/run/beamOn 8060154
+
+/gun/posFromFloor 40.000000 300.000000 50.000000 cm
+/run/beamOn 8379524
+
+/gun/posFromFloor 50.000000 -300.000000 50.000000 cm
+/run/beamOn 15136152
+
+/gun/posFromFloor 50.000000 -200.000000 50.000000 cm
+/run/beamOn 13235052
+
+/gun/posFromFloor 50.000000 -100.000000 50.000000 cm
+/run/beamOn 10035932
+
+/gun/posFromFloor 50.000000 -50.000000 50.000000 cm
+/run/beamOn 57339182
+
+/gun/posFromFloor 50.000000 -40.000000 50.000000 cm
+/run/beamOn 103657077
+
+/gun/posFromFloor 50.000000 -30.000000 50.000000 cm
+/run/beamOn 28242592
+
+/gun/posFromFloor 50.000000 -20.000000 50.000000 cm
+/run/beamOn 38150782
+
+/gun/posFromFloor 50.000000 -10.000000 50.000000 cm
+/run/beamOn 26303891
+
+/gun/posFromFloor 50.000000 0.000000 50.000000 cm
+/run/beamOn 38526749
+
+/gun/posFromFloor 50.000000 10.000000 50.000000 cm
+/run/beamOn 31093025
+
+/gun/posFromFloor 50.000000 20.000000 50.000000 cm
+/run/beamOn 24966091
+
+/gun/posFromFloor 50.000000 30.000000 50.000000 cm
+/run/beamOn 27049652
+
+/gun/posFromFloor 50.000000 40.000000 50.000000 cm
+/run/beamOn 41355651
+
+/gun/posFromFloor 50.000000 50.000000 50.000000 cm
+/run/beamOn 29316853
+
+/gun/posFromFloor 50.000000 100.000000 50.000000 cm
+/run/beamOn 9808283
+
+/gun/posFromFloor 50.000000 200.000000 50.000000 cm
+/run/beamOn 21173581
+
+/gun/posFromFloor 50.000000 300.000000 50.000000 cm
+/run/beamOn 10373702
+
+/gun/posFromFloor 100.000000 -300.000000 50.000000 cm
+/run/beamOn 10018817
+
+/gun/posFromFloor 100.000000 -200.000000 50.000000 cm
+/run/beamOn 18405713
+
+/gun/posFromFloor 100.000000 -100.000000 50.000000 cm
+/run/beamOn 31608952
+
+/gun/posFromFloor 100.000000 -50.000000 50.000000 cm
+/run/beamOn 13763257
+
+/gun/posFromFloor 100.000000 -40.000000 50.000000 cm
+/run/beamOn 20138230
+
+/gun/posFromFloor 100.000000 -30.000000 50.000000 cm
+/run/beamOn 22134729
+
+/gun/posFromFloor 100.000000 -20.000000 50.000000 cm
+/run/beamOn 15827224
+
+/gun/posFromFloor 100.000000 -10.000000 50.000000 cm
+/run/beamOn 22806393
+
+/gun/posFromFloor 100.000000 0.000000 50.000000 cm
+/run/beamOn 29986663
+
+/gun/posFromFloor 100.000000 10.000000 50.000000 cm
+/run/beamOn 21912959
+
+/gun/posFromFloor 100.000000 20.000000 50.000000 cm
+/run/beamOn 21360924
+
+/gun/posFromFloor 100.000000 30.000000 50.000000 cm
+/run/beamOn 16369468
+
+/gun/posFromFloor 100.000000 40.000000 50.000000 cm
+/run/beamOn 44159320
+
+/gun/posFromFloor 100.000000 50.000000 50.000000 cm
+/run/beamOn 15097790
+
+/gun/posFromFloor 100.000000 100.000000 50.000000 cm
+/run/beamOn 20340316
+
+/gun/posFromFloor 100.000000 200.000000 50.000000 cm
+/run/beamOn 7375391
+
+/gun/posFromFloor 100.000000 300.000000 50.000000 cm
+/run/beamOn 13683621
+
+/gun/posFromFloor 200.000000 -300.000000 50.000000 cm
+/run/beamOn 23744218
+
+/gun/posFromFloor 200.000000 -200.000000 50.000000 cm
+/run/beamOn 21791082
+
+/gun/posFromFloor 200.000000 -100.000000 50.000000 cm
+/run/beamOn 23297071
+
+/gun/posFromFloor 200.000000 -50.000000 50.000000 cm
+/run/beamOn 15679179
+
+/gun/posFromFloor 200.000000 -40.000000 50.000000 cm
+/run/beamOn 35088326
+
+/gun/posFromFloor 200.000000 -30.000000 50.000000 cm
+/run/beamOn 8075888
+
+/gun/posFromFloor 200.000000 -20.000000 50.000000 cm
+/run/beamOn 15586997
+
+/gun/posFromFloor 200.000000 -10.000000 50.000000 cm
+/run/beamOn 32089460
+
+/gun/posFromFloor 200.000000 0.000000 50.000000 cm
+/run/beamOn 52190452
+
+/gun/posFromFloor 200.000000 10.000000 50.000000 cm
+/run/beamOn 25942071
+
+/gun/posFromFloor 200.000000 20.000000 50.000000 cm
+/run/beamOn 18312956
+
+/gun/posFromFloor 200.000000 30.000000 50.000000 cm
+/run/beamOn 23068117
+
+/gun/posFromFloor 200.000000 40.000000 50.000000 cm
+/run/beamOn 44265549
+
+/gun/posFromFloor 200.000000 50.000000 50.000000 cm
+/run/beamOn 23795586
+
+/gun/posFromFloor 200.000000 100.000000 50.000000 cm
+/run/beamOn 14663348
+
+/gun/posFromFloor 200.000000 200.000000 50.000000 cm
+/run/beamOn 15100514
+
+/gun/posFromFloor 200.000000 300.000000 50.000000 cm
+/run/beamOn 6194278
+
+/gun/posFromFloor 300.000000 -300.000000 50.000000 cm
+/run/beamOn 24459908
+
+/gun/posFromFloor 300.000000 -200.000000 50.000000 cm
+/run/beamOn 10014407
+
+/gun/posFromFloor 300.000000 -100.000000 50.000000 cm
+/run/beamOn 12778949
+
+/gun/posFromFloor 300.000000 -50.000000 50.000000 cm
+/run/beamOn 16663540
+
+/gun/posFromFloor 300.000000 -40.000000 50.000000 cm
+/run/beamOn 30014619
+
+/gun/posFromFloor 300.000000 -30.000000 50.000000 cm
+/run/beamOn 38274910
+
+/gun/posFromFloor 300.000000 -20.000000 50.000000 cm
+/run/beamOn 14313997
+
+/gun/posFromFloor 300.000000 -10.000000 50.000000 cm
+/run/beamOn 23325383
+
+/gun/posFromFloor 300.000000 0.000000 50.000000 cm
+/run/beamOn 17608430
+
+/gun/posFromFloor 300.000000 10.000000 50.000000 cm
+/run/beamOn 26620398
+
+/gun/posFromFloor 300.000000 20.000000 50.000000 cm
+/run/beamOn 15724048
+
+/gun/posFromFloor 300.000000 30.000000 50.000000 cm
+/run/beamOn 31489426
+
+/gun/posFromFloor 300.000000 40.000000 50.000000 cm
+/run/beamOn 44957454
+
+/gun/posFromFloor 300.000000 50.000000 50.000000 cm
+/run/beamOn 19218789
+
+/gun/posFromFloor 300.000000 100.000000 50.000000 cm
+/run/beamOn 25742594
+
+/gun/posFromFloor 300.000000 200.000000 50.000000 cm
+/run/beamOn 23946224
+
+/gun/posFromFloor 300.000000 300.000000 50.000000 cm
+/run/beamOn 17863099
+
+/gun/posFromFloor -300.000000 -300.000000 100.000000 cm
+/run/beamOn 9710792
+
+/gun/posFromFloor -300.000000 -200.000000 100.000000 cm
+/run/beamOn 13648269
+
+/gun/posFromFloor -300.000000 -100.000000 100.000000 cm
+/run/beamOn 14410861
+
+/gun/posFromFloor -300.000000 -50.000000 100.000000 cm
+/run/beamOn 25081225
+
+/gun/posFromFloor -300.000000 -40.000000 100.000000 cm
+/run/beamOn 17571690
+
+/gun/posFromFloor -300.000000 -30.000000 100.000000 cm
+/run/beamOn 19241768
+
+/gun/posFromFloor -300.000000 -20.000000 100.000000 cm
+/run/beamOn 24787812
+
+/gun/posFromFloor -300.000000 -10.000000 100.000000 cm
+/run/beamOn 32930887
+
+/gun/posFromFloor -300.000000 0.000000 100.000000 cm
+/run/beamOn 50111957
+
+/gun/posFromFloor -300.000000 10.000000 100.000000 cm
+/run/beamOn 24923378
+
+/gun/posFromFloor -300.000000 20.000000 100.000000 cm
+/run/beamOn 14205198
+
+/gun/posFromFloor -300.000000 30.000000 100.000000 cm
+/run/beamOn 11388527
+
+/gun/posFromFloor -300.000000 40.000000 100.000000 cm
+/run/beamOn 16592587
+
+/gun/posFromFloor -300.000000 50.000000 100.000000 cm
+/run/beamOn 13548406
+
+/gun/posFromFloor -300.000000 100.000000 100.000000 cm
+/run/beamOn 25612870
+
+/gun/posFromFloor -300.000000 200.000000 100.000000 cm
+/run/beamOn 20354318
+
+/gun/posFromFloor -300.000000 300.000000 100.000000 cm
+/run/beamOn 16956869
+
+/gun/posFromFloor -200.000000 -300.000000 100.000000 cm
+/run/beamOn 15220753
+
+/gun/posFromFloor -200.000000 -200.000000 100.000000 cm
+/run/beamOn 25702953
+
+/gun/posFromFloor -200.000000 -100.000000 100.000000 cm
+/run/beamOn 14070274
+
+/gun/posFromFloor -200.000000 -50.000000 100.000000 cm
+/run/beamOn 8254218
+
+/gun/posFromFloor -200.000000 -40.000000 100.000000 cm
+/run/beamOn 26863323
+
+/gun/posFromFloor -200.000000 -30.000000 100.000000 cm
+/run/beamOn 12001682
+
+/gun/posFromFloor -200.000000 -20.000000 100.000000 cm
+/run/beamOn 4854615
+
+/gun/posFromFloor -200.000000 -10.000000 100.000000 cm
+/run/beamOn 22171215
+
+/gun/posFromFloor -200.000000 0.000000 100.000000 cm
+/run/beamOn 19287204
+
+/gun/posFromFloor -200.000000 10.000000 100.000000 cm
+/run/beamOn 11086079
+
+/gun/posFromFloor -200.000000 20.000000 100.000000 cm
+/run/beamOn 16938097
+
+/gun/posFromFloor -200.000000 30.000000 100.000000 cm
+/run/beamOn 10360330
+
+/gun/posFromFloor -200.000000 40.000000 100.000000 cm
+/run/beamOn 24343250
+
+/gun/posFromFloor -200.000000 50.000000 100.000000 cm
+/run/beamOn 6304550
+
+/gun/posFromFloor -200.000000 100.000000 100.000000 cm
+/run/beamOn 7556427
+
+/gun/posFromFloor -200.000000 200.000000 100.000000 cm
+/run/beamOn 27461959
+
+/gun/posFromFloor -200.000000 300.000000 100.000000 cm
+/run/beamOn 14101809
+
+/gun/posFromFloor -100.000000 -300.000000 100.000000 cm
+/run/beamOn 15736025
+
+/gun/posFromFloor -100.000000 -200.000000 100.000000 cm
+/run/beamOn 8925598
+
+/gun/posFromFloor -100.000000 -100.000000 100.000000 cm
+/run/beamOn 19606156
+
+/gun/posFromFloor -100.000000 -50.000000 100.000000 cm
+/run/beamOn 30762996
+
+/gun/posFromFloor -100.000000 -40.000000 100.000000 cm
+/run/beamOn 12051803
+
+/gun/posFromFloor -100.000000 -30.000000 100.000000 cm
+/run/beamOn 11151215
+
+/gun/posFromFloor -100.000000 -20.000000 100.000000 cm
+/run/beamOn 12925414
+
+/gun/posFromFloor -100.000000 -10.000000 100.000000 cm
+/run/beamOn 9558373
+
+/gun/posFromFloor -100.000000 0.000000 100.000000 cm
+/run/beamOn 18708842
+
+/gun/posFromFloor -100.000000 10.000000 100.000000 cm
+/run/beamOn 63652951
+
+/gun/posFromFloor -100.000000 20.000000 100.000000 cm
+/run/beamOn 49492913
+
+/gun/posFromFloor -100.000000 30.000000 100.000000 cm
+/run/beamOn 8087373
+
+/gun/posFromFloor -100.000000 40.000000 100.000000 cm
+/run/beamOn 9443832
+
+/gun/posFromFloor -100.000000 50.000000 100.000000 cm
+/run/beamOn 19440162
+
+/gun/posFromFloor -100.000000 100.000000 100.000000 cm
+/run/beamOn 12171839
+
+/gun/posFromFloor -100.000000 200.000000 100.000000 cm
+/run/beamOn 9699709
+
+/gun/posFromFloor -100.000000 300.000000 100.000000 cm
+/run/beamOn 19404835
+
+/gun/posFromFloor -50.000000 -300.000000 100.000000 cm
+/run/beamOn 27204527
+
+/gun/posFromFloor -50.000000 -200.000000 100.000000 cm
+/run/beamOn 22475867
+
+/gun/posFromFloor -50.000000 -100.000000 100.000000 cm
+/run/beamOn 10518634
+
+/gun/posFromFloor -50.000000 -50.000000 100.000000 cm
+/run/beamOn 12558416
+
+/gun/posFromFloor -50.000000 -40.000000 100.000000 cm
+/run/beamOn 26509317
+
+/gun/posFromFloor -50.000000 -30.000000 100.000000 cm
+/run/beamOn 61261615
+
+/gun/posFromFloor -50.000000 -20.000000 100.000000 cm
+/run/beamOn 14595670
+
+/gun/posFromFloor -50.000000 -10.000000 100.000000 cm
+/run/beamOn 13513549
+
+/gun/posFromFloor -50.000000 0.000000 100.000000 cm
+/run/beamOn 11669433
+
+/gun/posFromFloor -50.000000 10.000000 100.000000 cm
+/run/beamOn 12345966
+
+/gun/posFromFloor -50.000000 20.000000 100.000000 cm
+/run/beamOn 9440499
+
+/gun/posFromFloor -50.000000 30.000000 100.000000 cm
+/run/beamOn 44742239
+
+/gun/posFromFloor -50.000000 40.000000 100.000000 cm
+/run/beamOn 36624476
+
+/gun/posFromFloor -50.000000 50.000000 100.000000 cm
+/run/beamOn 44290568
+
+/gun/posFromFloor -50.000000 100.000000 100.000000 cm
+/run/beamOn 6775694
+
+/gun/posFromFloor -50.000000 200.000000 100.000000 cm
+/run/beamOn 37536844
+
+/gun/posFromFloor -50.000000 300.000000 100.000000 cm
+/run/beamOn 10495930
+
+/gun/posFromFloor -40.000000 -300.000000 100.000000 cm
+/run/beamOn 18579789
+
+/gun/posFromFloor -40.000000 -200.000000 100.000000 cm
+/run/beamOn 20890969
+
+/gun/posFromFloor -40.000000 -100.000000 100.000000 cm
+/run/beamOn 23730849
+
+/gun/posFromFloor -40.000000 -50.000000 100.000000 cm
+/run/beamOn 23660830
+
+/gun/posFromFloor -40.000000 -40.000000 100.000000 cm
+/run/beamOn 26941497
+
+/gun/posFromFloor -40.000000 -30.000000 100.000000 cm
+/run/beamOn 52969691
+
+/gun/posFromFloor -40.000000 -20.000000 100.000000 cm
+/run/beamOn 24522779
+
+/gun/posFromFloor -40.000000 -10.000000 100.000000 cm
+/run/beamOn 21962719
+
+/gun/posFromFloor -40.000000 0.000000 100.000000 cm
+/run/beamOn 53056481
+
+/gun/posFromFloor -40.000000 10.000000 100.000000 cm
+/run/beamOn 108643431
+
+/gun/posFromFloor -40.000000 20.000000 100.000000 cm
+/run/beamOn 21381782
+
+/gun/posFromFloor -40.000000 30.000000 100.000000 cm
+/run/beamOn 17229671
+
+/gun/posFromFloor -40.000000 40.000000 100.000000 cm
+/run/beamOn 25308183
+
+/gun/posFromFloor -40.000000 50.000000 100.000000 cm
+/run/beamOn 4572655
+
+/gun/posFromFloor -40.000000 100.000000 100.000000 cm
+/run/beamOn 10384874
+
+/gun/posFromFloor -40.000000 200.000000 100.000000 cm
+/run/beamOn 14684309
+
+/gun/posFromFloor -40.000000 300.000000 100.000000 cm
+/run/beamOn 10125854
+
+/gun/posFromFloor -30.000000 -300.000000 100.000000 cm
+/run/beamOn 20347641
+
+/gun/posFromFloor -30.000000 -200.000000 100.000000 cm
+/run/beamOn 16283484
+
+/gun/posFromFloor -30.000000 -100.000000 100.000000 cm
+/run/beamOn 11265560
+
+/gun/posFromFloor -30.000000 -50.000000 100.000000 cm
+/run/beamOn 16957561
+
+/gun/posFromFloor -30.000000 -40.000000 100.000000 cm
+/run/beamOn 8473667
+
+/gun/posFromFloor -30.000000 -30.000000 100.000000 cm
+/run/beamOn 7527239
+
+/gun/posFromFloor -30.000000 -20.000000 100.000000 cm
+/run/beamOn 21863741
+
+/gun/posFromFloor -30.000000 -10.000000 100.000000 cm
+/run/beamOn 7421960
+
+/gun/posFromFloor -30.000000 0.000000 100.000000 cm
+/run/beamOn 21811440
+
+/gun/posFromFloor -30.000000 10.000000 100.000000 cm
+/run/beamOn 7013556
+
+/gun/posFromFloor -30.000000 20.000000 100.000000 cm
+/run/beamOn 15873645
+
+/gun/posFromFloor -30.000000 30.000000 100.000000 cm
+/run/beamOn 18262084
+
+/gun/posFromFloor -30.000000 40.000000 100.000000 cm
+/run/beamOn 38391010
+
+/gun/posFromFloor -30.000000 50.000000 100.000000 cm
+/run/beamOn 19059790
+
+/gun/posFromFloor -30.000000 100.000000 100.000000 cm
+/run/beamOn 38980493
+
+/gun/posFromFloor -30.000000 200.000000 100.000000 cm
+/run/beamOn 10266584
+
+/gun/posFromFloor -30.000000 300.000000 100.000000 cm
+/run/beamOn 14533469
+
+/gun/posFromFloor -20.000000 -300.000000 100.000000 cm
+/run/beamOn 12105528
+
+/gun/posFromFloor -20.000000 -200.000000 100.000000 cm
+/run/beamOn 14766017
+
+/gun/posFromFloor -20.000000 -100.000000 100.000000 cm
+/run/beamOn 35391410
+
+/gun/posFromFloor -20.000000 -50.000000 100.000000 cm
+/run/beamOn 13778094
+
+/gun/posFromFloor -20.000000 -40.000000 100.000000 cm
+/run/beamOn 107988675
+
+/gun/posFromFloor -20.000000 -30.000000 100.000000 cm
+/run/beamOn 13997005
+
+/gun/posFromFloor -20.000000 -20.000000 100.000000 cm
+/run/beamOn 13359048
+
+/gun/posFromFloor -20.000000 -10.000000 100.000000 cm
+/run/beamOn 11379832
+
+/gun/posFromFloor -20.000000 0.000000 100.000000 cm
+/run/beamOn 8601752
+
+/gun/posFromFloor -20.000000 10.000000 100.000000 cm
+/run/beamOn 12496459
+
+/gun/posFromFloor -20.000000 20.000000 100.000000 cm
+/run/beamOn 20533549
+
+/gun/posFromFloor -20.000000 30.000000 100.000000 cm
+/run/beamOn 34520748
+
+/gun/posFromFloor -20.000000 40.000000 100.000000 cm
+/run/beamOn 19143425
+
+/gun/posFromFloor -20.000000 50.000000 100.000000 cm
+/run/beamOn 21589813
+
+/gun/posFromFloor -20.000000 100.000000 100.000000 cm
+/run/beamOn 9565552
+
+/gun/posFromFloor -20.000000 200.000000 100.000000 cm
+/run/beamOn 7072129
+
+/gun/posFromFloor -20.000000 300.000000 100.000000 cm
+/run/beamOn 15951374
+
+/gun/posFromFloor -10.000000 -300.000000 100.000000 cm
+/run/beamOn 12719702
+
+/gun/posFromFloor -10.000000 -200.000000 100.000000 cm
+/run/beamOn 14782573
+
+/gun/posFromFloor -10.000000 -100.000000 100.000000 cm
+/run/beamOn 34052033
+
+/gun/posFromFloor -10.000000 -50.000000 100.000000 cm
+/run/beamOn 21817568
+
+/gun/posFromFloor -10.000000 -40.000000 100.000000 cm
+/run/beamOn 24194081
+
+/gun/posFromFloor -10.000000 -30.000000 100.000000 cm
+/run/beamOn 13527563
+
+/gun/posFromFloor -10.000000 -20.000000 100.000000 cm
+/run/beamOn 6625187
+
+/gun/posFromFloor -10.000000 -10.000000 100.000000 cm
+/run/beamOn 4737993
+
+/gun/posFromFloor -10.000000 0.000000 100.000000 cm
+/run/beamOn 3943018
+
+/gun/posFromFloor -10.000000 10.000000 100.000000 cm
+/run/beamOn 4799453
+
+/gun/posFromFloor -10.000000 20.000000 100.000000 cm
+/run/beamOn 10324785
+
+/gun/posFromFloor -10.000000 30.000000 100.000000 cm
+/run/beamOn 4942737
+
+/gun/posFromFloor -10.000000 40.000000 100.000000 cm
+/run/beamOn 4933214
+
+/gun/posFromFloor -10.000000 50.000000 100.000000 cm
+/run/beamOn 45876725
+
+/gun/posFromFloor -10.000000 100.000000 100.000000 cm
+/run/beamOn 13755954
+
+/gun/posFromFloor -10.000000 200.000000 100.000000 cm
+/run/beamOn 36866026
+
+/gun/posFromFloor -10.000000 300.000000 100.000000 cm
+/run/beamOn 23310510
+
+/gun/posFromFloor 0.000000 -300.000000 100.000000 cm
+/run/beamOn 22172194
+
+/gun/posFromFloor 0.000000 -200.000000 100.000000 cm
+/run/beamOn 17182019
+
+/gun/posFromFloor 0.000000 -100.000000 100.000000 cm
+/run/beamOn 17271538
+
+/gun/posFromFloor 0.000000 -50.000000 100.000000 cm
+/run/beamOn 13525153
+
+/gun/posFromFloor 0.000000 -40.000000 100.000000 cm
+/run/beamOn 10333658
+
+/gun/posFromFloor 0.000000 -30.000000 100.000000 cm
+/run/beamOn 25632713
+
+/gun/posFromFloor 0.000000 -20.000000 100.000000 cm
+/run/beamOn 6061895
+
+/gun/posFromFloor 0.000000 -10.000000 100.000000 cm
+/run/beamOn 2547632
+
+/gun/posFromFloor 0.000000 0.000000 100.000000 cm
+/run/beamOn 1686581
+
+/gun/posFromFloor 0.000000 10.000000 100.000000 cm
+/run/beamOn 6444410
+
+/gun/posFromFloor 0.000000 20.000000 100.000000 cm
+/run/beamOn 18544047
+
+/gun/posFromFloor 0.000000 30.000000 100.000000 cm
+/run/beamOn 10158901
+
+/gun/posFromFloor 0.000000 40.000000 100.000000 cm
+/run/beamOn 17748223
+
+/gun/posFromFloor 0.000000 50.000000 100.000000 cm
+/run/beamOn 39917983
+
+/gun/posFromFloor 0.000000 100.000000 100.000000 cm
+/run/beamOn 74658240
+
+/gun/posFromFloor 0.000000 200.000000 100.000000 cm
+/run/beamOn 25609591
+
+/gun/posFromFloor 0.000000 300.000000 100.000000 cm
+/run/beamOn 7788370
+
+/gun/posFromFloor 10.000000 -300.000000 100.000000 cm
+/run/beamOn 23943797
+
+/gun/posFromFloor 10.000000 -200.000000 100.000000 cm
+/run/beamOn 7265066
+
+/gun/posFromFloor 10.000000 -100.000000 100.000000 cm
+/run/beamOn 23208152
+
+/gun/posFromFloor 10.000000 -50.000000 100.000000 cm
+/run/beamOn 40187485
+
+/gun/posFromFloor 10.000000 -40.000000 100.000000 cm
+/run/beamOn 16169180
+
+/gun/posFromFloor 10.000000 -30.000000 100.000000 cm
+/run/beamOn 14127239
+
+/gun/posFromFloor 10.000000 -20.000000 100.000000 cm
+/run/beamOn 17623640
+
+/gun/posFromFloor 10.000000 -10.000000 100.000000 cm
+/run/beamOn 4289839
+
+/gun/posFromFloor 10.000000 0.000000 100.000000 cm
+/run/beamOn 3709855
+
+/gun/posFromFloor 10.000000 10.000000 100.000000 cm
+/run/beamOn 4255463
+
+/gun/posFromFloor 10.000000 20.000000 100.000000 cm
+/run/beamOn 9430913
+
+/gun/posFromFloor 10.000000 30.000000 100.000000 cm
+/run/beamOn 18780643
+
+/gun/posFromFloor 10.000000 40.000000 100.000000 cm
+/run/beamOn 9900067
+
+/gun/posFromFloor 10.000000 50.000000 100.000000 cm
+/run/beamOn 27511745
+
+/gun/posFromFloor 10.000000 100.000000 100.000000 cm
+/run/beamOn 14032656
+
+/gun/posFromFloor 10.000000 200.000000 100.000000 cm
+/run/beamOn 11168512
+
+/gun/posFromFloor 10.000000 300.000000 100.000000 cm
+/run/beamOn 8638320
+
+/gun/posFromFloor 20.000000 -300.000000 100.000000 cm
+/run/beamOn 9180526
+
+/gun/posFromFloor 20.000000 -200.000000 100.000000 cm
+/run/beamOn 10544811
+
+/gun/posFromFloor 20.000000 -100.000000 100.000000 cm
+/run/beamOn 18500699
+
+/gun/posFromFloor 20.000000 -50.000000 100.000000 cm
+/run/beamOn 32786068
+
+/gun/posFromFloor 20.000000 -40.000000 100.000000 cm
+/run/beamOn 32206805
+
+/gun/posFromFloor 20.000000 -30.000000 100.000000 cm
+/run/beamOn 24395064
+
+/gun/posFromFloor 20.000000 -20.000000 100.000000 cm
+/run/beamOn 14906656
+
+/gun/posFromFloor 20.000000 -10.000000 100.000000 cm
+/run/beamOn 9483007
+
+/gun/posFromFloor 20.000000 0.000000 100.000000 cm
+/run/beamOn 7083654
+
+/gun/posFromFloor 20.000000 10.000000 100.000000 cm
+/run/beamOn 9562796
+
+/gun/posFromFloor 20.000000 20.000000 100.000000 cm
+/run/beamOn 25755422
+
+/gun/posFromFloor 20.000000 30.000000 100.000000 cm
+/run/beamOn 27406523
+
+/gun/posFromFloor 20.000000 40.000000 100.000000 cm
+/run/beamOn 11231847
+
+/gun/posFromFloor 20.000000 50.000000 100.000000 cm
+/run/beamOn 16522241
+
+/gun/posFromFloor 20.000000 100.000000 100.000000 cm
+/run/beamOn 24971288
+
+/gun/posFromFloor 20.000000 200.000000 100.000000 cm
+/run/beamOn 22892779
+
+/gun/posFromFloor 20.000000 300.000000 100.000000 cm
+/run/beamOn 13844343
+
+/gun/posFromFloor 30.000000 -300.000000 100.000000 cm
+/run/beamOn 14151070
+
+/gun/posFromFloor 30.000000 -200.000000 100.000000 cm
+/run/beamOn 12456551
+
+/gun/posFromFloor 30.000000 -100.000000 100.000000 cm
+/run/beamOn 18352587
+
+/gun/posFromFloor 30.000000 -50.000000 100.000000 cm
+/run/beamOn 32886921
+
+/gun/posFromFloor 30.000000 -40.000000 100.000000 cm
+/run/beamOn 14518364
+
+/gun/posFromFloor 30.000000 -30.000000 100.000000 cm
+/run/beamOn 12451935
+
+/gun/posFromFloor 30.000000 -20.000000 100.000000 cm
+/run/beamOn 36169062
+
+/gun/posFromFloor 30.000000 -10.000000 100.000000 cm
+/run/beamOn 12996399
+
+/gun/posFromFloor 30.000000 0.000000 100.000000 cm
+/run/beamOn 7030759
+
+/gun/posFromFloor 30.000000 10.000000 100.000000 cm
+/run/beamOn 9647273
+
+/gun/posFromFloor 30.000000 20.000000 100.000000 cm
+/run/beamOn 36156842
+
+/gun/posFromFloor 30.000000 30.000000 100.000000 cm
+/run/beamOn 19220753
+
+/gun/posFromFloor 30.000000 40.000000 100.000000 cm
+/run/beamOn 26554975
+
+/gun/posFromFloor 30.000000 50.000000 100.000000 cm
+/run/beamOn 17680645
+
+/gun/posFromFloor 30.000000 100.000000 100.000000 cm
+/run/beamOn 10039531
+
+/gun/posFromFloor 30.000000 200.000000 100.000000 cm
+/run/beamOn 9643971
+
+/gun/posFromFloor 30.000000 300.000000 100.000000 cm
+/run/beamOn 6298027
+
+/gun/posFromFloor 40.000000 -300.000000 100.000000 cm
+/run/beamOn 7065046
+
+/gun/posFromFloor 40.000000 -200.000000 100.000000 cm
+/run/beamOn 16047651
+
+/gun/posFromFloor 40.000000 -100.000000 100.000000 cm
+/run/beamOn 20581429
+
+/gun/posFromFloor 40.000000 -50.000000 100.000000 cm
+/run/beamOn 37610499
+
+/gun/posFromFloor 40.000000 -40.000000 100.000000 cm
+/run/beamOn 28821865
+
+/gun/posFromFloor 40.000000 -30.000000 100.000000 cm
+/run/beamOn 54899267
+
+/gun/posFromFloor 40.000000 -20.000000 100.000000 cm
+/run/beamOn 9515707
+
+/gun/posFromFloor 40.000000 -10.000000 100.000000 cm
+/run/beamOn 10214244
+
+/gun/posFromFloor 40.000000 0.000000 100.000000 cm
+/run/beamOn 12627512
+
+/gun/posFromFloor 40.000000 10.000000 100.000000 cm
+/run/beamOn 35801937
+
+/gun/posFromFloor 40.000000 20.000000 100.000000 cm
+/run/beamOn 8150216
+
+/gun/posFromFloor 40.000000 30.000000 100.000000 cm
+/run/beamOn 42129342
+
+/gun/posFromFloor 40.000000 40.000000 100.000000 cm
+/run/beamOn 46078518
+
+/gun/posFromFloor 40.000000 50.000000 100.000000 cm
+/run/beamOn 130756114
+
+/gun/posFromFloor 40.000000 100.000000 100.000000 cm
+/run/beamOn 8080365
+
+/gun/posFromFloor 40.000000 200.000000 100.000000 cm
+/run/beamOn 30884472
+
+/gun/posFromFloor 40.000000 300.000000 100.000000 cm
+/run/beamOn 6885653
+
+/gun/posFromFloor 50.000000 -300.000000 100.000000 cm
+/run/beamOn 22690817
+
+/gun/posFromFloor 50.000000 -200.000000 100.000000 cm
+/run/beamOn 36308578
+
+/gun/posFromFloor 50.000000 -100.000000 100.000000 cm
+/run/beamOn 20894040
+
+/gun/posFromFloor 50.000000 -50.000000 100.000000 cm
+/run/beamOn 26970821
+
+/gun/posFromFloor 50.000000 -40.000000 100.000000 cm
+/run/beamOn 51781494
+
+/gun/posFromFloor 50.000000 -30.000000 100.000000 cm
+/run/beamOn 81817162
+
+/gun/posFromFloor 50.000000 -20.000000 100.000000 cm
+/run/beamOn 60499150
+
+/gun/posFromFloor 50.000000 -10.000000 100.000000 cm
+/run/beamOn 54695786
+
+/gun/posFromFloor 50.000000 0.000000 100.000000 cm
+/run/beamOn 25953644
+
+/gun/posFromFloor 50.000000 10.000000 100.000000 cm
+/run/beamOn 46368037
+
+/gun/posFromFloor 50.000000 20.000000 100.000000 cm
+/run/beamOn 22569682
+
+/gun/posFromFloor 50.000000 30.000000 100.000000 cm
+/run/beamOn 36689671
+
+/gun/posFromFloor 50.000000 40.000000 100.000000 cm
+/run/beamOn 13208467
+
+/gun/posFromFloor 50.000000 50.000000 100.000000 cm
+/run/beamOn 30211688
+
+/gun/posFromFloor 50.000000 100.000000 100.000000 cm
+/run/beamOn 13444087
+
+/gun/posFromFloor 50.000000 200.000000 100.000000 cm
+/run/beamOn 9454011
+
+/gun/posFromFloor 50.000000 300.000000 100.000000 cm
+/run/beamOn 9322679
+
+/gun/posFromFloor 100.000000 -300.000000 100.000000 cm
+/run/beamOn 7438876
+
+/gun/posFromFloor 100.000000 -200.000000 100.000000 cm
+/run/beamOn 44325342
+
+/gun/posFromFloor 100.000000 -100.000000 100.000000 cm
+/run/beamOn 13385643
+
+/gun/posFromFloor 100.000000 -50.000000 100.000000 cm
+/run/beamOn 29979216
+
+/gun/posFromFloor 100.000000 -40.000000 100.000000 cm
+/run/beamOn 21880016
+
+/gun/posFromFloor 100.000000 -30.000000 100.000000 cm
+/run/beamOn 18338093
+
+/gun/posFromFloor 100.000000 -20.000000 100.000000 cm
+/run/beamOn 19416043
+
+/gun/posFromFloor 100.000000 -10.000000 100.000000 cm
+/run/beamOn 21342219
+
+/gun/posFromFloor 100.000000 0.000000 100.000000 cm
+/run/beamOn 38413220
+
+/gun/posFromFloor 100.000000 10.000000 100.000000 cm
+/run/beamOn 21197810
+
+/gun/posFromFloor 100.000000 20.000000 100.000000 cm
+/run/beamOn 18988364
+
+/gun/posFromFloor 100.000000 30.000000 100.000000 cm
+/run/beamOn 19785273
+
+/gun/posFromFloor 100.000000 40.000000 100.000000 cm
+/run/beamOn 19746967
+
+/gun/posFromFloor 100.000000 50.000000 100.000000 cm
+/run/beamOn 26829955
+
+/gun/posFromFloor 100.000000 100.000000 100.000000 cm
+/run/beamOn 23974341
+
+/gun/posFromFloor 100.000000 200.000000 100.000000 cm
+/run/beamOn 20453440
+
+/gun/posFromFloor 100.000000 300.000000 100.000000 cm
+/run/beamOn 8152077
+
+/gun/posFromFloor 200.000000 -300.000000 100.000000 cm
+/run/beamOn 30406798
+
+/gun/posFromFloor 200.000000 -200.000000 100.000000 cm
+/run/beamOn 22099400
+
+/gun/posFromFloor 200.000000 -100.000000 100.000000 cm
+/run/beamOn 30116519
+
+/gun/posFromFloor 200.000000 -50.000000 100.000000 cm
+/run/beamOn 16530469
+
+/gun/posFromFloor 200.000000 -40.000000 100.000000 cm
+/run/beamOn 30540212
+
+/gun/posFromFloor 200.000000 -30.000000 100.000000 cm
+/run/beamOn 45218900
+
+/gun/posFromFloor 200.000000 -20.000000 100.000000 cm
+/run/beamOn 19207112
+
+/gun/posFromFloor 200.000000 -10.000000 100.000000 cm
+/run/beamOn 29399255
+
+/gun/posFromFloor 200.000000 0.000000 100.000000 cm
+/run/beamOn 10639221
+
+/gun/posFromFloor 200.000000 10.000000 100.000000 cm
+/run/beamOn 12314813
+
+/gun/posFromFloor 200.000000 20.000000 100.000000 cm
+/run/beamOn 14214854
+
+/gun/posFromFloor 200.000000 30.000000 100.000000 cm
+/run/beamOn 25408979
+
+/gun/posFromFloor 200.000000 40.000000 100.000000 cm
+/run/beamOn 21005135
+
+/gun/posFromFloor 200.000000 50.000000 100.000000 cm
+/run/beamOn 39252781
+
+/gun/posFromFloor 200.000000 100.000000 100.000000 cm
+/run/beamOn 20790207
+
+/gun/posFromFloor 200.000000 200.000000 100.000000 cm
+/run/beamOn 24430876
+
+/gun/posFromFloor 200.000000 300.000000 100.000000 cm
+/run/beamOn 16572552
+
+/gun/posFromFloor 300.000000 -300.000000 100.000000 cm
+/run/beamOn 9882439
+
+/gun/posFromFloor 300.000000 -200.000000 100.000000 cm
+/run/beamOn 19696838
+
+/gun/posFromFloor 300.000000 -100.000000 100.000000 cm
+/run/beamOn 18988015
+
+/gun/posFromFloor 300.000000 -50.000000 100.000000 cm
+/run/beamOn 18817654
+
+/gun/posFromFloor 300.000000 -40.000000 100.000000 cm
+/run/beamOn 9773956
+
+/gun/posFromFloor 300.000000 -30.000000 100.000000 cm
+/run/beamOn 17422509
+
+/gun/posFromFloor 300.000000 -20.000000 100.000000 cm
+/run/beamOn 37274590
+
+/gun/posFromFloor 300.000000 -10.000000 100.000000 cm
+/run/beamOn 34934010
+
+/gun/posFromFloor 300.000000 0.000000 100.000000 cm
+/run/beamOn 12517104
+
+/gun/posFromFloor 300.000000 10.000000 100.000000 cm
+/run/beamOn 29888701
+
+/gun/posFromFloor 300.000000 20.000000 100.000000 cm
+/run/beamOn 24040624
+
+/gun/posFromFloor 300.000000 30.000000 100.000000 cm
+/run/beamOn 15632974
+
+/gun/posFromFloor 300.000000 40.000000 100.000000 cm
+/run/beamOn 21926105
+
+/gun/posFromFloor 300.000000 50.000000 100.000000 cm
+/run/beamOn 12406245
+
+/gun/posFromFloor 300.000000 100.000000 100.000000 cm
+/run/beamOn 19810510
+
+/gun/posFromFloor 300.000000 200.000000 100.000000 cm
+/run/beamOn 78353088
+
+/gun/posFromFloor 300.000000 300.000000 100.000000 cm
+/run/beamOn 24494501
+
+/gun/posFromFloor -300.000000 -300.000000 150.000000 cm
+/run/beamOn 20778098
+
+/gun/posFromFloor -300.000000 -200.000000 150.000000 cm
+/run/beamOn 12175610
+
+/gun/posFromFloor -300.000000 -100.000000 150.000000 cm
+/run/beamOn 13151423
+
+/gun/posFromFloor -300.000000 -50.000000 150.000000 cm
+/run/beamOn 28954816
+
+/gun/posFromFloor -300.000000 -40.000000 150.000000 cm
+/run/beamOn 16321890
+
+/gun/posFromFloor -300.000000 -30.000000 150.000000 cm
+/run/beamOn 21394473
+
+/gun/posFromFloor -300.000000 -20.000000 150.000000 cm
+/run/beamOn 15220229
+
+/gun/posFromFloor -300.000000 -10.000000 150.000000 cm
+/run/beamOn 19097808
+
+/gun/posFromFloor -300.000000 0.000000 150.000000 cm
+/run/beamOn 7545173
+
+/gun/posFromFloor -300.000000 10.000000 150.000000 cm
+/run/beamOn 31421585
+
+/gun/posFromFloor -300.000000 20.000000 150.000000 cm
+/run/beamOn 42326995
+
+/gun/posFromFloor -300.000000 30.000000 150.000000 cm
+/run/beamOn 23370572
+
+/gun/posFromFloor -300.000000 40.000000 150.000000 cm
+/run/beamOn 15964781
+
+/gun/posFromFloor -300.000000 50.000000 150.000000 cm
+/run/beamOn 8110666
+
+/gun/posFromFloor -300.000000 100.000000 150.000000 cm
+/run/beamOn 34466151
+
+/gun/posFromFloor -300.000000 200.000000 150.000000 cm
+/run/beamOn 3878936
+
+/gun/posFromFloor -300.000000 300.000000 150.000000 cm
+/run/beamOn 12864084
+
+/gun/posFromFloor -200.000000 -300.000000 150.000000 cm
+/run/beamOn 11955351
+
+/gun/posFromFloor -200.000000 -200.000000 150.000000 cm
+/run/beamOn 18142079
+
+/gun/posFromFloor -200.000000 -100.000000 150.000000 cm
+/run/beamOn 35923097
+
+/gun/posFromFloor -200.000000 -50.000000 150.000000 cm
+/run/beamOn 33715395
+
+/gun/posFromFloor -200.000000 -40.000000 150.000000 cm
+/run/beamOn 19344550
+
+/gun/posFromFloor -200.000000 -30.000000 150.000000 cm
+/run/beamOn 9723605
+
+/gun/posFromFloor -200.000000 -20.000000 150.000000 cm
+/run/beamOn 4542883
+
+/gun/posFromFloor -200.000000 -10.000000 150.000000 cm
+/run/beamOn 46970955
+
+/gun/posFromFloor -200.000000 0.000000 150.000000 cm
+/run/beamOn 9985605
+
+/gun/posFromFloor -200.000000 10.000000 150.000000 cm
+/run/beamOn 18704967
+
+/gun/posFromFloor -200.000000 20.000000 150.000000 cm
+/run/beamOn 25364438
+
+/gun/posFromFloor -200.000000 30.000000 150.000000 cm
+/run/beamOn 6537027
+
+/gun/posFromFloor -200.000000 40.000000 150.000000 cm
+/run/beamOn 17955558
+
+/gun/posFromFloor -200.000000 50.000000 150.000000 cm
+/run/beamOn 21653126
+
+/gun/posFromFloor -200.000000 100.000000 150.000000 cm
+/run/beamOn 17171608
+
+/gun/posFromFloor -200.000000 200.000000 150.000000 cm
+/run/beamOn 12678111
+
+/gun/posFromFloor -200.000000 300.000000 150.000000 cm
+/run/beamOn 125139393
+
+/gun/posFromFloor -100.000000 -300.000000 150.000000 cm
+/run/beamOn 29021449
+
+/gun/posFromFloor -100.000000 -200.000000 150.000000 cm
+/run/beamOn 19877366
+
+/gun/posFromFloor -100.000000 -100.000000 150.000000 cm
+/run/beamOn 15236931
+
+/gun/posFromFloor -100.000000 -50.000000 150.000000 cm
+/run/beamOn 13525895
+
+/gun/posFromFloor -100.000000 -40.000000 150.000000 cm
+/run/beamOn 10103121
+
+/gun/posFromFloor -100.000000 -30.000000 150.000000 cm
+/run/beamOn 15210873
+
+/gun/posFromFloor -100.000000 -20.000000 150.000000 cm
+/run/beamOn 24331410
+
+/gun/posFromFloor -100.000000 -10.000000 150.000000 cm
+/run/beamOn 11941497
+
+/gun/posFromFloor -100.000000 0.000000 150.000000 cm
+/run/beamOn 32695112
+
+/gun/posFromFloor -100.000000 10.000000 150.000000 cm
+/run/beamOn 18692098
+
+/gun/posFromFloor -100.000000 20.000000 150.000000 cm
+/run/beamOn 3731817
+
+/gun/posFromFloor -100.000000 30.000000 150.000000 cm
+/run/beamOn 21719775
+
+/gun/posFromFloor -100.000000 40.000000 150.000000 cm
+/run/beamOn 10433564
+
+/gun/posFromFloor -100.000000 50.000000 150.000000 cm
+/run/beamOn 36827371
+
+/gun/posFromFloor -100.000000 100.000000 150.000000 cm
+/run/beamOn 11517085
+
+/gun/posFromFloor -100.000000 200.000000 150.000000 cm
+/run/beamOn 11459365
+
+/gun/posFromFloor -100.000000 300.000000 150.000000 cm
+/run/beamOn 8793461
+
+/gun/posFromFloor -50.000000 -300.000000 150.000000 cm
+/run/beamOn 9787752
+
+/gun/posFromFloor -50.000000 -200.000000 150.000000 cm
+/run/beamOn 25581826
+
+/gun/posFromFloor -50.000000 -100.000000 150.000000 cm
+/run/beamOn 10771849
+
+/gun/posFromFloor -50.000000 -50.000000 150.000000 cm
+/run/beamOn 28649213
+
+/gun/posFromFloor -50.000000 -40.000000 150.000000 cm
+/run/beamOn 18608456
+
+/gun/posFromFloor -50.000000 -30.000000 150.000000 cm
+/run/beamOn 14435823
+
+/gun/posFromFloor -50.000000 -20.000000 150.000000 cm
+/run/beamOn 12351997
+
+/gun/posFromFloor -50.000000 -10.000000 150.000000 cm
+/run/beamOn 63703767
+
+/gun/posFromFloor -50.000000 0.000000 150.000000 cm
+/run/beamOn 93752587
+
+/gun/posFromFloor -50.000000 10.000000 150.000000 cm
+/run/beamOn 7137921
+
+/gun/posFromFloor -50.000000 20.000000 150.000000 cm
+/run/beamOn 15218134
+
+/gun/posFromFloor -50.000000 30.000000 150.000000 cm
+/run/beamOn 9098553
+
+/gun/posFromFloor -50.000000 40.000000 150.000000 cm
+/run/beamOn 26145018
+
+/gun/posFromFloor -50.000000 50.000000 150.000000 cm
+/run/beamOn 9994927
+
+/gun/posFromFloor -50.000000 100.000000 150.000000 cm
+/run/beamOn 14632344
+
+/gun/posFromFloor -50.000000 200.000000 150.000000 cm
+/run/beamOn 13654810
+
+/gun/posFromFloor -50.000000 300.000000 150.000000 cm
+/run/beamOn 15296800
+
+/gun/posFromFloor -40.000000 -300.000000 150.000000 cm
+/run/beamOn 10040190
+
+/gun/posFromFloor -40.000000 -200.000000 150.000000 cm
+/run/beamOn 9563675
+
+/gun/posFromFloor -40.000000 -100.000000 150.000000 cm
+/run/beamOn 19988732
+
+/gun/posFromFloor -40.000000 -50.000000 150.000000 cm
+/run/beamOn 33600803
+
+/gun/posFromFloor -40.000000 -40.000000 150.000000 cm
+/run/beamOn 14555726
+
+/gun/posFromFloor -40.000000 -30.000000 150.000000 cm
+/run/beamOn 14463326
+
+/gun/posFromFloor -40.000000 -20.000000 150.000000 cm
+/run/beamOn 8866375
+
+/gun/posFromFloor -40.000000 -10.000000 150.000000 cm
+/run/beamOn 39048951
+
+/gun/posFromFloor -40.000000 0.000000 150.000000 cm
+/run/beamOn 75215309
+
+/gun/posFromFloor -40.000000 10.000000 150.000000 cm
+/run/beamOn 23412940
+
+/gun/posFromFloor -40.000000 20.000000 150.000000 cm
+/run/beamOn 32620318
+
+/gun/posFromFloor -40.000000 30.000000 150.000000 cm
+/run/beamOn 19716939
+
+/gun/posFromFloor -40.000000 40.000000 150.000000 cm
+/run/beamOn 35993712
+
+/gun/posFromFloor -40.000000 50.000000 150.000000 cm
+/run/beamOn 21368911
+
+/gun/posFromFloor -40.000000 100.000000 150.000000 cm
+/run/beamOn 22925173
+
+/gun/posFromFloor -40.000000 200.000000 150.000000 cm
+/run/beamOn 13666247
+
+/gun/posFromFloor -40.000000 300.000000 150.000000 cm
+/run/beamOn 11358841
+
+/gun/posFromFloor -30.000000 -300.000000 150.000000 cm
+/run/beamOn 11663003
+
+/gun/posFromFloor -30.000000 -200.000000 150.000000 cm
+/run/beamOn 12571475
+
+/gun/posFromFloor -30.000000 -100.000000 150.000000 cm
+/run/beamOn 35837607
+
+/gun/posFromFloor -30.000000 -50.000000 150.000000 cm
+/run/beamOn 30161053
+
+/gun/posFromFloor -30.000000 -40.000000 150.000000 cm
+/run/beamOn 23056514
+
+/gun/posFromFloor -30.000000 -30.000000 150.000000 cm
+/run/beamOn 9859655
+
+/gun/posFromFloor -30.000000 -20.000000 150.000000 cm
+/run/beamOn 17974716
+
+/gun/posFromFloor -30.000000 -10.000000 150.000000 cm
+/run/beamOn 10317360
+
+/gun/posFromFloor -30.000000 0.000000 150.000000 cm
+/run/beamOn 14118625
+
+/gun/posFromFloor -30.000000 10.000000 150.000000 cm
+/run/beamOn 20430472
+
+/gun/posFromFloor -30.000000 20.000000 150.000000 cm
+/run/beamOn 16745969
+
+/gun/posFromFloor -30.000000 30.000000 150.000000 cm
+/run/beamOn 12174081
+
+/gun/posFromFloor -30.000000 40.000000 150.000000 cm
+/run/beamOn 19852799
+
+/gun/posFromFloor -30.000000 50.000000 150.000000 cm
+/run/beamOn 11318958
+
+/gun/posFromFloor -30.000000 100.000000 150.000000 cm
+/run/beamOn 16954234
+
+/gun/posFromFloor -30.000000 200.000000 150.000000 cm
+/run/beamOn 11086864
+
+/gun/posFromFloor -30.000000 300.000000 150.000000 cm
+/run/beamOn 10523167
+
+/gun/posFromFloor -20.000000 -300.000000 150.000000 cm
+/run/beamOn 14449595
+
+/gun/posFromFloor -20.000000 -200.000000 150.000000 cm
+/run/beamOn 10292567
+
+/gun/posFromFloor -20.000000 -100.000000 150.000000 cm
+/run/beamOn 9883626
+
+/gun/posFromFloor -20.000000 -50.000000 150.000000 cm
+/run/beamOn 10852517
+
+/gun/posFromFloor -20.000000 -40.000000 150.000000 cm
+/run/beamOn 17858433
+
+/gun/posFromFloor -20.000000 -30.000000 150.000000 cm
+/run/beamOn 41256933
+
+/gun/posFromFloor -20.000000 -20.000000 150.000000 cm
+/run/beamOn 10864024
+
+/gun/posFromFloor -20.000000 -10.000000 150.000000 cm
+/run/beamOn 10608064
+
+/gun/posFromFloor -20.000000 0.000000 150.000000 cm
+/run/beamOn 5157382
+
+/gun/posFromFloor -20.000000 10.000000 150.000000 cm
+/run/beamOn 26171368
+
+/gun/posFromFloor -20.000000 20.000000 150.000000 cm
+/run/beamOn 15279239
+
+/gun/posFromFloor -20.000000 30.000000 150.000000 cm
+/run/beamOn 21867145
+
+/gun/posFromFloor -20.000000 40.000000 150.000000 cm
+/run/beamOn 26196257
+
+/gun/posFromFloor -20.000000 50.000000 150.000000 cm
+/run/beamOn 22696458
+
+/gun/posFromFloor -20.000000 100.000000 150.000000 cm
+/run/beamOn 18261537
+
+/gun/posFromFloor -20.000000 200.000000 150.000000 cm
+/run/beamOn 17017803
+
+/gun/posFromFloor -20.000000 300.000000 150.000000 cm
+/run/beamOn 46175993
+
+/gun/posFromFloor -10.000000 -300.000000 150.000000 cm
+/run/beamOn 11033964
+
+/gun/posFromFloor -10.000000 -200.000000 150.000000 cm
+/run/beamOn 21383854
+
+/gun/posFromFloor -10.000000 -100.000000 150.000000 cm
+/run/beamOn 7058684
+
+/gun/posFromFloor -10.000000 -50.000000 150.000000 cm
+/run/beamOn 18690161
+
+/gun/posFromFloor -10.000000 -40.000000 150.000000 cm
+/run/beamOn 29156328
+
+/gun/posFromFloor -10.000000 -30.000000 150.000000 cm
+/run/beamOn 18759986
+
+/gun/posFromFloor -10.000000 -20.000000 150.000000 cm
+/run/beamOn 16905024
+
+/gun/posFromFloor -10.000000 -10.000000 150.000000 cm
+/run/beamOn 7688122
+
+/gun/posFromFloor -10.000000 0.000000 150.000000 cm
+/run/beamOn 46977973
+
+/gun/posFromFloor -10.000000 10.000000 150.000000 cm
+/run/beamOn 25561234
+
+/gun/posFromFloor -10.000000 20.000000 150.000000 cm
+/run/beamOn 8552190
+
+/gun/posFromFloor -10.000000 30.000000 150.000000 cm
+/run/beamOn 24831126
+
+/gun/posFromFloor -10.000000 40.000000 150.000000 cm
+/run/beamOn 10799436
+
+/gun/posFromFloor -10.000000 50.000000 150.000000 cm
+/run/beamOn 37354441
+
+/gun/posFromFloor -10.000000 100.000000 150.000000 cm
+/run/beamOn 10285405
+
+/gun/posFromFloor -10.000000 200.000000 150.000000 cm
+/run/beamOn 16407522
+
+/gun/posFromFloor -10.000000 300.000000 150.000000 cm
+/run/beamOn 30230247
+
+/gun/posFromFloor 0.000000 -300.000000 150.000000 cm
+/run/beamOn 15614437
+
+/gun/posFromFloor 0.000000 -200.000000 150.000000 cm
+/run/beamOn 15817948
+
+/gun/posFromFloor 0.000000 -100.000000 150.000000 cm
+/run/beamOn 12295674
+
+/gun/posFromFloor 0.000000 -50.000000 150.000000 cm
+/run/beamOn 13689931
+
+/gun/posFromFloor 0.000000 -40.000000 150.000000 cm
+/run/beamOn 14202086
+
+/gun/posFromFloor 0.000000 -30.000000 150.000000 cm
+/run/beamOn 37899832
+
+/gun/posFromFloor 0.000000 -20.000000 150.000000 cm
+/run/beamOn 134446251
+
+/gun/posFromFloor 0.000000 -10.000000 150.000000 cm
+/run/beamOn 28910494
+
+/gun/posFromFloor 0.000000 0.000000 150.000000 cm
+/run/beamOn 29802733
+
+/gun/posFromFloor 0.000000 10.000000 150.000000 cm
+/run/beamOn 43594907
+
+/gun/posFromFloor 0.000000 20.000000 150.000000 cm
+/run/beamOn 9844799
+
+/gun/posFromFloor 0.000000 30.000000 150.000000 cm
+/run/beamOn 6939920
+
+/gun/posFromFloor 0.000000 40.000000 150.000000 cm
+/run/beamOn 20635796
+
+/gun/posFromFloor 0.000000 50.000000 150.000000 cm
+/run/beamOn 9052942
+
+/gun/posFromFloor 0.000000 100.000000 150.000000 cm
+/run/beamOn 6458844
+
+/gun/posFromFloor 0.000000 200.000000 150.000000 cm
+/run/beamOn 9663811
+
+/gun/posFromFloor 0.000000 300.000000 150.000000 cm
+/run/beamOn 10156244
+
+/gun/posFromFloor 10.000000 -300.000000 150.000000 cm
+/run/beamOn 13509350
+
+/gun/posFromFloor 10.000000 -200.000000 150.000000 cm
+/run/beamOn 11770438
+
+/gun/posFromFloor 10.000000 -100.000000 150.000000 cm
+/run/beamOn 12188030
+
+/gun/posFromFloor 10.000000 -50.000000 150.000000 cm
+/run/beamOn 18822026
+
+/gun/posFromFloor 10.000000 -40.000000 150.000000 cm
+/run/beamOn 29554010
+
+/gun/posFromFloor 10.000000 -30.000000 150.000000 cm
+/run/beamOn 53202611
+
+/gun/posFromFloor 10.000000 -20.000000 150.000000 cm
+/run/beamOn 26276040
+
+/gun/posFromFloor 10.000000 -10.000000 150.000000 cm
+/run/beamOn 32698954
+
+/gun/posFromFloor 10.000000 0.000000 150.000000 cm
+/run/beamOn 10402748
+
+/gun/posFromFloor 10.000000 10.000000 150.000000 cm
+/run/beamOn 9572348
+
+/gun/posFromFloor 10.000000 20.000000 150.000000 cm
+/run/beamOn 14379085
+
+/gun/posFromFloor 10.000000 30.000000 150.000000 cm
+/run/beamOn 25136144
+
+/gun/posFromFloor 10.000000 40.000000 150.000000 cm
+/run/beamOn 30187376
+
+/gun/posFromFloor 10.000000 50.000000 150.000000 cm
+/run/beamOn 24343329
+
+/gun/posFromFloor 10.000000 100.000000 150.000000 cm
+/run/beamOn 31159393
+
+/gun/posFromFloor 10.000000 200.000000 150.000000 cm
+/run/beamOn 11593749
+
+/gun/posFromFloor 10.000000 300.000000 150.000000 cm
+/run/beamOn 9062965
+
+/gun/posFromFloor 20.000000 -300.000000 150.000000 cm
+/run/beamOn 14576956
+
+/gun/posFromFloor 20.000000 -200.000000 150.000000 cm
+/run/beamOn 7112206
+
+/gun/posFromFloor 20.000000 -100.000000 150.000000 cm
+/run/beamOn 14517523
+
+/gun/posFromFloor 20.000000 -50.000000 150.000000 cm
+/run/beamOn 22639896
+
+/gun/posFromFloor 20.000000 -40.000000 150.000000 cm
+/run/beamOn 29450548
+
+/gun/posFromFloor 20.000000 -30.000000 150.000000 cm
+/run/beamOn 27778634
+
+/gun/posFromFloor 20.000000 -20.000000 150.000000 cm
+/run/beamOn 36903729
+
+/gun/posFromFloor 20.000000 -10.000000 150.000000 cm
+/run/beamOn 6214711
+
+/gun/posFromFloor 20.000000 0.000000 150.000000 cm
+/run/beamOn 59071952
+
+/gun/posFromFloor 20.000000 10.000000 150.000000 cm
+/run/beamOn 11650384
+
+/gun/posFromFloor 20.000000 20.000000 150.000000 cm
+/run/beamOn 6055816
+
+/gun/posFromFloor 20.000000 30.000000 150.000000 cm
+/run/beamOn 15686501
+
+/gun/posFromFloor 20.000000 40.000000 150.000000 cm
+/run/beamOn 40693988
+
+/gun/posFromFloor 20.000000 50.000000 150.000000 cm
+/run/beamOn 46784396
+
+/gun/posFromFloor 20.000000 100.000000 150.000000 cm
+/run/beamOn 14762629
+
+/gun/posFromFloor 20.000000 200.000000 150.000000 cm
+/run/beamOn 10734872
+
+/gun/posFromFloor 20.000000 300.000000 150.000000 cm
+/run/beamOn 31811224
+
+/gun/posFromFloor 30.000000 -300.000000 150.000000 cm
+/run/beamOn 9516395
+
+/gun/posFromFloor 30.000000 -200.000000 150.000000 cm
+/run/beamOn 10489175
+
+/gun/posFromFloor 30.000000 -100.000000 150.000000 cm
+/run/beamOn 16980201
+
+/gun/posFromFloor 30.000000 -50.000000 150.000000 cm
+/run/beamOn 36767487
+
+/gun/posFromFloor 30.000000 -40.000000 150.000000 cm
+/run/beamOn 26454193
+
+/gun/posFromFloor 30.000000 -30.000000 150.000000 cm
+/run/beamOn 18038639
+
+/gun/posFromFloor 30.000000 -20.000000 150.000000 cm
+/run/beamOn 18623471
+
+/gun/posFromFloor 30.000000 -10.000000 150.000000 cm
+/run/beamOn 26039506
+
+/gun/posFromFloor 30.000000 0.000000 150.000000 cm
+/run/beamOn 43263874
+
+/gun/posFromFloor 30.000000 10.000000 150.000000 cm
+/run/beamOn 48878163
+
+/gun/posFromFloor 30.000000 20.000000 150.000000 cm
+/run/beamOn 7796481
+
+/gun/posFromFloor 30.000000 30.000000 150.000000 cm
+/run/beamOn 52678680
+
+/gun/posFromFloor 30.000000 40.000000 150.000000 cm
+/run/beamOn 14039142
+
+/gun/posFromFloor 30.000000 50.000000 150.000000 cm
+/run/beamOn 9587579
+
+/gun/posFromFloor 30.000000 100.000000 150.000000 cm
+/run/beamOn 7534928
+
+/gun/posFromFloor 30.000000 200.000000 150.000000 cm
+/run/beamOn 13122859
+
+/gun/posFromFloor 30.000000 300.000000 150.000000 cm
+/run/beamOn 9402499
+
+/gun/posFromFloor 40.000000 -300.000000 150.000000 cm
+/run/beamOn 8259501
+
+/gun/posFromFloor 40.000000 -200.000000 150.000000 cm
+/run/beamOn 23770500
+
+/gun/posFromFloor 40.000000 -100.000000 150.000000 cm
+/run/beamOn 5074915
+
+/gun/posFromFloor 40.000000 -50.000000 150.000000 cm
+/run/beamOn 29665015
+
+/gun/posFromFloor 40.000000 -40.000000 150.000000 cm
+/run/beamOn 7836626
+
+/gun/posFromFloor 40.000000 -30.000000 150.000000 cm
+/run/beamOn 22170160
+
+/gun/posFromFloor 40.000000 -20.000000 150.000000 cm
+/run/beamOn 22634757
+
+/gun/posFromFloor 40.000000 -10.000000 150.000000 cm
+/run/beamOn 22881566
+
+/gun/posFromFloor 40.000000 0.000000 150.000000 cm
+/run/beamOn 47764961
+
+/gun/posFromFloor 40.000000 10.000000 150.000000 cm
+/run/beamOn 4201712
+
+/gun/posFromFloor 40.000000 20.000000 150.000000 cm
+/run/beamOn 8223687
+
+/gun/posFromFloor 40.000000 30.000000 150.000000 cm
+/run/beamOn 14786584
+
+/gun/posFromFloor 40.000000 40.000000 150.000000 cm
+/run/beamOn 29427500
+
+/gun/posFromFloor 40.000000 50.000000 150.000000 cm
+/run/beamOn 2770891
+
+/gun/posFromFloor 40.000000 100.000000 150.000000 cm
+/run/beamOn 26852792
+
+/gun/posFromFloor 40.000000 200.000000 150.000000 cm
+/run/beamOn 13507244
+
+/gun/posFromFloor 40.000000 300.000000 150.000000 cm
+/run/beamOn 21390107
+
+/gun/posFromFloor 50.000000 -300.000000 150.000000 cm
+/run/beamOn 26247834
+
+/gun/posFromFloor 50.000000 -200.000000 150.000000 cm
+/run/beamOn 16113608
+
+/gun/posFromFloor 50.000000 -100.000000 150.000000 cm
+/run/beamOn 7990472
+
+/gun/posFromFloor 50.000000 -50.000000 150.000000 cm
+/run/beamOn 16814559
+
+/gun/posFromFloor 50.000000 -40.000000 150.000000 cm
+/run/beamOn 38663325
+
+/gun/posFromFloor 50.000000 -30.000000 150.000000 cm
+/run/beamOn 14349098
+
+/gun/posFromFloor 50.000000 -20.000000 150.000000 cm
+/run/beamOn 7624095
+
+/gun/posFromFloor 50.000000 -10.000000 150.000000 cm
+/run/beamOn 11189132
+
+/gun/posFromFloor 50.000000 0.000000 150.000000 cm
+/run/beamOn 26702064
+
+/gun/posFromFloor 50.000000 10.000000 150.000000 cm
+/run/beamOn 14059563
+
+/gun/posFromFloor 50.000000 20.000000 150.000000 cm
+/run/beamOn 40253035
+
+/gun/posFromFloor 50.000000 30.000000 150.000000 cm
+/run/beamOn 10951823
+
+/gun/posFromFloor 50.000000 40.000000 150.000000 cm
+/run/beamOn 12313145
+
+/gun/posFromFloor 50.000000 50.000000 150.000000 cm
+/run/beamOn 18376174
+
+/gun/posFromFloor 50.000000 100.000000 150.000000 cm
+/run/beamOn 18492201
+
+/gun/posFromFloor 50.000000 200.000000 150.000000 cm
+/run/beamOn 6335425
+
+/gun/posFromFloor 50.000000 300.000000 150.000000 cm
+/run/beamOn 8242402
+
+/gun/posFromFloor 100.000000 -300.000000 150.000000 cm
+/run/beamOn 16096657
+
+/gun/posFromFloor 100.000000 -200.000000 150.000000 cm
+/run/beamOn 17753278
+
+/gun/posFromFloor 100.000000 -100.000000 150.000000 cm
+/run/beamOn 30532830
+
+/gun/posFromFloor 100.000000 -50.000000 150.000000 cm
+/run/beamOn 21704156
+
+/gun/posFromFloor 100.000000 -40.000000 150.000000 cm
+/run/beamOn 26352329
+
+/gun/posFromFloor 100.000000 -30.000000 150.000000 cm
+/run/beamOn 11807464
+
+/gun/posFromFloor 100.000000 -20.000000 150.000000 cm
+/run/beamOn 28315765
+
+/gun/posFromFloor 100.000000 -10.000000 150.000000 cm
+/run/beamOn 25984098
+
+/gun/posFromFloor 100.000000 0.000000 150.000000 cm
+/run/beamOn 10435698
+
+/gun/posFromFloor 100.000000 10.000000 150.000000 cm
+/run/beamOn 17235649
+
+/gun/posFromFloor 100.000000 20.000000 150.000000 cm
+/run/beamOn 52702837
+
+/gun/posFromFloor 100.000000 30.000000 150.000000 cm
+/run/beamOn 27803811
+
+/gun/posFromFloor 100.000000 40.000000 150.000000 cm
+/run/beamOn 15732712
+
+/gun/posFromFloor 100.000000 50.000000 150.000000 cm
+/run/beamOn 19397682
+
+/gun/posFromFloor 100.000000 100.000000 150.000000 cm
+/run/beamOn 31032787
+
+/gun/posFromFloor 100.000000 200.000000 150.000000 cm
+/run/beamOn 23503220
+
+/gun/posFromFloor 100.000000 300.000000 150.000000 cm
+/run/beamOn 16364355
+
+/gun/posFromFloor 200.000000 -300.000000 150.000000 cm
+/run/beamOn 14957132
+
+/gun/posFromFloor 200.000000 -200.000000 150.000000 cm
+/run/beamOn 10577827
+
+/gun/posFromFloor 200.000000 -100.000000 150.000000 cm
+/run/beamOn 23440625
+
+/gun/posFromFloor 200.000000 -50.000000 150.000000 cm
+/run/beamOn 13685347
+
+/gun/posFromFloor 200.000000 -40.000000 150.000000 cm
+/run/beamOn 16433197
+
+/gun/posFromFloor 200.000000 -30.000000 150.000000 cm
+/run/beamOn 11858747
+
+/gun/posFromFloor 200.000000 -20.000000 150.000000 cm
+/run/beamOn 41701114
+
+/gun/posFromFloor 200.000000 -10.000000 150.000000 cm
+/run/beamOn 13017028
+
+/gun/posFromFloor 200.000000 0.000000 150.000000 cm
+/run/beamOn 20945926
+
+/gun/posFromFloor 200.000000 10.000000 150.000000 cm
+/run/beamOn 21605577
+
+/gun/posFromFloor 200.000000 20.000000 150.000000 cm
+/run/beamOn 21464095
+
+/gun/posFromFloor 200.000000 30.000000 150.000000 cm
+/run/beamOn 26638315
+
+/gun/posFromFloor 200.000000 40.000000 150.000000 cm
+/run/beamOn 15746192
+
+/gun/posFromFloor 200.000000 50.000000 150.000000 cm
+/run/beamOn 13921811
+
+/gun/posFromFloor 200.000000 100.000000 150.000000 cm
+/run/beamOn 21912547
+
+/gun/posFromFloor 200.000000 200.000000 150.000000 cm
+/run/beamOn 26514837
+
+/gun/posFromFloor 200.000000 300.000000 150.000000 cm
+/run/beamOn 18151348
+
+/gun/posFromFloor 300.000000 -300.000000 150.000000 cm
+/run/beamOn 18937745
+
+/gun/posFromFloor 300.000000 -200.000000 150.000000 cm
+/run/beamOn 7606546
+
+/gun/posFromFloor 300.000000 -100.000000 150.000000 cm
+/run/beamOn 18860432
+
+/gun/posFromFloor 300.000000 -50.000000 150.000000 cm
+/run/beamOn 19734100
+
+/gun/posFromFloor 300.000000 -40.000000 150.000000 cm
+/run/beamOn 11125658
+
+/gun/posFromFloor 300.000000 -30.000000 150.000000 cm
+/run/beamOn 21745881
+
+/gun/posFromFloor 300.000000 -20.000000 150.000000 cm
+/run/beamOn 21927941
+
+/gun/posFromFloor 300.000000 -10.000000 150.000000 cm
+/run/beamOn 27024776
+
+/gun/posFromFloor 300.000000 0.000000 150.000000 cm
+/run/beamOn 21181202
+
+/gun/posFromFloor 300.000000 10.000000 150.000000 cm
+/run/beamOn 12594918
+
+/gun/posFromFloor 300.000000 20.000000 150.000000 cm
+/run/beamOn 25055670
+
+/gun/posFromFloor 300.000000 30.000000 150.000000 cm
+/run/beamOn 15159681
+
+/gun/posFromFloor 300.000000 40.000000 150.000000 cm
+/run/beamOn 21458351
+
+/gun/posFromFloor 300.000000 50.000000 150.000000 cm
+/run/beamOn 16605690
+
+/gun/posFromFloor 300.000000 100.000000 150.000000 cm
+/run/beamOn 28296654
+
+/gun/posFromFloor 300.000000 200.000000 150.000000 cm
+/run/beamOn 28597809
+
+/gun/posFromFloor 300.000000 300.000000 150.000000 cm
+/run/beamOn 32737530
+
+/gun/posFromFloor -300.000000 -300.000000 200.000000 cm
+/run/beamOn 10314821
+
+/gun/posFromFloor -300.000000 -200.000000 200.000000 cm
+/run/beamOn 15583637
+
+/gun/posFromFloor -300.000000 -100.000000 200.000000 cm
+/run/beamOn 17138275
+
+/gun/posFromFloor -300.000000 -50.000000 200.000000 cm
+/run/beamOn 9125793
+
+/gun/posFromFloor -300.000000 -40.000000 200.000000 cm
+/run/beamOn 21858280
+
+/gun/posFromFloor -300.000000 -30.000000 200.000000 cm
+/run/beamOn 15017729
+
+/gun/posFromFloor -300.000000 -20.000000 200.000000 cm
+/run/beamOn 18659980
+
+/gun/posFromFloor -300.000000 -10.000000 200.000000 cm
+/run/beamOn 8789526
+
+/gun/posFromFloor -300.000000 0.000000 200.000000 cm
+/run/beamOn 11559812
+
+/gun/posFromFloor -300.000000 10.000000 200.000000 cm
+/run/beamOn 28531964
+
+/gun/posFromFloor -300.000000 20.000000 200.000000 cm
+/run/beamOn 14634040
+
+/gun/posFromFloor -300.000000 30.000000 200.000000 cm
+/run/beamOn 16542961
+
+/gun/posFromFloor -300.000000 40.000000 200.000000 cm
+/run/beamOn 45215134
+
+/gun/posFromFloor -300.000000 50.000000 200.000000 cm
+/run/beamOn 22990145
+
+/gun/posFromFloor -300.000000 100.000000 200.000000 cm
+/run/beamOn 30860869
+
+/gun/posFromFloor -300.000000 200.000000 200.000000 cm
+/run/beamOn 33688087
+
+/gun/posFromFloor -300.000000 300.000000 200.000000 cm
+/run/beamOn 9561040
+
+/gun/posFromFloor -200.000000 -300.000000 200.000000 cm
+/run/beamOn 37367937
+
+/gun/posFromFloor -200.000000 -200.000000 200.000000 cm
+/run/beamOn 7667482
+
+/gun/posFromFloor -200.000000 -100.000000 200.000000 cm
+/run/beamOn 12294473
+
+/gun/posFromFloor -200.000000 -50.000000 200.000000 cm
+/run/beamOn 51804927
+
+/gun/posFromFloor -200.000000 -40.000000 200.000000 cm
+/run/beamOn 13551636
+
+/gun/posFromFloor -200.000000 -30.000000 200.000000 cm
+/run/beamOn 18906391
+
+/gun/posFromFloor -200.000000 -20.000000 200.000000 cm
+/run/beamOn 19830812
+
+/gun/posFromFloor -200.000000 -10.000000 200.000000 cm
+/run/beamOn 14127296
+
+/gun/posFromFloor -200.000000 0.000000 200.000000 cm
+/run/beamOn 17998466
+
+/gun/posFromFloor -200.000000 10.000000 200.000000 cm
+/run/beamOn 15371590
+
+/gun/posFromFloor -200.000000 20.000000 200.000000 cm
+/run/beamOn 8202328
+
+/gun/posFromFloor -200.000000 30.000000 200.000000 cm
+/run/beamOn 15234380
+
+/gun/posFromFloor -200.000000 40.000000 200.000000 cm
+/run/beamOn 12643892
+
+/gun/posFromFloor -200.000000 50.000000 200.000000 cm
+/run/beamOn 17342027
+
+/gun/posFromFloor -200.000000 100.000000 200.000000 cm
+/run/beamOn 37193605
+
+/gun/posFromFloor -200.000000 200.000000 200.000000 cm
+/run/beamOn 17550033
+
+/gun/posFromFloor -200.000000 300.000000 200.000000 cm
+/run/beamOn 27703716
+
+/gun/posFromFloor -100.000000 -300.000000 200.000000 cm
+/run/beamOn 17240897
+
+/gun/posFromFloor -100.000000 -200.000000 200.000000 cm
+/run/beamOn 14660698
+
+/gun/posFromFloor -100.000000 -100.000000 200.000000 cm
+/run/beamOn 13356367
+
+/gun/posFromFloor -100.000000 -50.000000 200.000000 cm
+/run/beamOn 18929530
+
+/gun/posFromFloor -100.000000 -40.000000 200.000000 cm
+/run/beamOn 11958320
+
+/gun/posFromFloor -100.000000 -30.000000 200.000000 cm
+/run/beamOn 20307316
+
+/gun/posFromFloor -100.000000 -20.000000 200.000000 cm
+/run/beamOn 34296202
+
+/gun/posFromFloor -100.000000 -10.000000 200.000000 cm
+/run/beamOn 10189285
+
+/gun/posFromFloor -100.000000 0.000000 200.000000 cm
+/run/beamOn 38985937
+
+/gun/posFromFloor -100.000000 10.000000 200.000000 cm
+/run/beamOn 108327213
+
+/gun/posFromFloor -100.000000 20.000000 200.000000 cm
+/run/beamOn 7862454
+
+/gun/posFromFloor -100.000000 30.000000 200.000000 cm
+/run/beamOn 50790765
+
+/gun/posFromFloor -100.000000 40.000000 200.000000 cm
+/run/beamOn 10190677
+
+/gun/posFromFloor -100.000000 50.000000 200.000000 cm
+/run/beamOn 16756513
+
+/gun/posFromFloor -100.000000 100.000000 200.000000 cm
+/run/beamOn 24932325
+
+/gun/posFromFloor -100.000000 200.000000 200.000000 cm
+/run/beamOn 17847414
+
+/gun/posFromFloor -100.000000 300.000000 200.000000 cm
+/run/beamOn 28222741
+
+/gun/posFromFloor -50.000000 -300.000000 200.000000 cm
+/run/beamOn 28544357
+
+/gun/posFromFloor -50.000000 -200.000000 200.000000 cm
+/run/beamOn 14326249
+
+/gun/posFromFloor -50.000000 -100.000000 200.000000 cm
+/run/beamOn 9922215
+
+/gun/posFromFloor -50.000000 -50.000000 200.000000 cm
+/run/beamOn 12606879
+
+/gun/posFromFloor -50.000000 -40.000000 200.000000 cm
+/run/beamOn 12512966
+
+/gun/posFromFloor -50.000000 -30.000000 200.000000 cm
+/run/beamOn 32173535
+
+/gun/posFromFloor -50.000000 -20.000000 200.000000 cm
+/run/beamOn 61760800
+
+/gun/posFromFloor -50.000000 -10.000000 200.000000 cm
+/run/beamOn 51537351
+
+/gun/posFromFloor -50.000000 0.000000 200.000000 cm
+/run/beamOn 62227801
+
+/gun/posFromFloor -50.000000 10.000000 200.000000 cm
+/run/beamOn 14652787
+
+/gun/posFromFloor -50.000000 20.000000 200.000000 cm
+/run/beamOn 72557005
+
+/gun/posFromFloor -50.000000 30.000000 200.000000 cm
+/run/beamOn 18452110
+
+/gun/posFromFloor -50.000000 40.000000 200.000000 cm
+/run/beamOn 24820682
+
+/gun/posFromFloor -50.000000 50.000000 200.000000 cm
+/run/beamOn 7190757
+
+/gun/posFromFloor -50.000000 100.000000 200.000000 cm
+/run/beamOn 9255421
+
+/gun/posFromFloor -50.000000 200.000000 200.000000 cm
+/run/beamOn 8173446
+
+/gun/posFromFloor -50.000000 300.000000 200.000000 cm
+/run/beamOn 11714119
+
+/gun/posFromFloor -40.000000 -300.000000 200.000000 cm
+/run/beamOn 25089800
+
+/gun/posFromFloor -40.000000 -200.000000 200.000000 cm
+/run/beamOn 6621848
+
+/gun/posFromFloor -40.000000 -100.000000 200.000000 cm
+/run/beamOn 9638146
+
+/gun/posFromFloor -40.000000 -50.000000 200.000000 cm
+/run/beamOn 56516955
+
+/gun/posFromFloor -40.000000 -40.000000 200.000000 cm
+/run/beamOn 20815712
+
+/gun/posFromFloor -40.000000 -30.000000 200.000000 cm
+/run/beamOn 10998445
+
+/gun/posFromFloor -40.000000 -20.000000 200.000000 cm
+/run/beamOn 14484159
+
+/gun/posFromFloor -40.000000 -10.000000 200.000000 cm
+/run/beamOn 17862761
+
+/gun/posFromFloor -40.000000 0.000000 200.000000 cm
+/run/beamOn 26130131
+
+/gun/posFromFloor -40.000000 10.000000 200.000000 cm
+/run/beamOn 13374526
+
+/gun/posFromFloor -40.000000 20.000000 200.000000 cm
+/run/beamOn 13845802
+
+/gun/posFromFloor -40.000000 30.000000 200.000000 cm
+/run/beamOn 24139219
+
+/gun/posFromFloor -40.000000 40.000000 200.000000 cm
+/run/beamOn 18364344
+
+/gun/posFromFloor -40.000000 50.000000 200.000000 cm
+/run/beamOn 31748131
+
+/gun/posFromFloor -40.000000 100.000000 200.000000 cm
+/run/beamOn 24160881
+
+/gun/posFromFloor -40.000000 200.000000 200.000000 cm
+/run/beamOn 11754335
+
+/gun/posFromFloor -40.000000 300.000000 200.000000 cm
+/run/beamOn 35963577
+
+/gun/posFromFloor -30.000000 -300.000000 200.000000 cm
+/run/beamOn 13317927
+
+/gun/posFromFloor -30.000000 -200.000000 200.000000 cm
+/run/beamOn 19042959
+
+/gun/posFromFloor -30.000000 -100.000000 200.000000 cm
+/run/beamOn 8238734
+
+/gun/posFromFloor -30.000000 -50.000000 200.000000 cm
+/run/beamOn 35662681
+
+/gun/posFromFloor -30.000000 -40.000000 200.000000 cm
+/run/beamOn 13906404
+
+/gun/posFromFloor -30.000000 -30.000000 200.000000 cm
+/run/beamOn 17050887
+
+/gun/posFromFloor -30.000000 -20.000000 200.000000 cm
+/run/beamOn 15261423
+
+/gun/posFromFloor -30.000000 -10.000000 200.000000 cm
+/run/beamOn 77288713
+
+/gun/posFromFloor -30.000000 0.000000 200.000000 cm
+/run/beamOn 6104587
+
+/gun/posFromFloor -30.000000 10.000000 200.000000 cm
+/run/beamOn 22064589
+
+/gun/posFromFloor -30.000000 20.000000 200.000000 cm
+/run/beamOn 3243213
+
+/gun/posFromFloor -30.000000 30.000000 200.000000 cm
+/run/beamOn 17556736
+
+/gun/posFromFloor -30.000000 40.000000 200.000000 cm
+/run/beamOn 13595125
+
+/gun/posFromFloor -30.000000 50.000000 200.000000 cm
+/run/beamOn 7195853
+
+/gun/posFromFloor -30.000000 100.000000 200.000000 cm
+/run/beamOn 24524997
+
+/gun/posFromFloor -30.000000 200.000000 200.000000 cm
+/run/beamOn 6819142
+
+/gun/posFromFloor -30.000000 300.000000 200.000000 cm
+/run/beamOn 6856667
+
+/gun/posFromFloor -20.000000 -300.000000 200.000000 cm
+/run/beamOn 14312042
+
+/gun/posFromFloor -20.000000 -200.000000 200.000000 cm
+/run/beamOn 22842282
+
+/gun/posFromFloor -20.000000 -100.000000 200.000000 cm
+/run/beamOn 8907913
+
+/gun/posFromFloor -20.000000 -50.000000 200.000000 cm
+/run/beamOn 28265044
+
+/gun/posFromFloor -20.000000 -40.000000 200.000000 cm
+/run/beamOn 16695494
+
+/gun/posFromFloor -20.000000 -30.000000 200.000000 cm
+/run/beamOn 7263617
+
+/gun/posFromFloor -20.000000 -20.000000 200.000000 cm
+/run/beamOn 6170200
+
+/gun/posFromFloor -20.000000 -10.000000 200.000000 cm
+/run/beamOn 18300804
+
+/gun/posFromFloor -20.000000 0.000000 200.000000 cm
+/run/beamOn 19937689
+
+/gun/posFromFloor -20.000000 10.000000 200.000000 cm
+/run/beamOn 25471280
+
+/gun/posFromFloor -20.000000 20.000000 200.000000 cm
+/run/beamOn 7657486
+
+/gun/posFromFloor -20.000000 30.000000 200.000000 cm
+/run/beamOn 20331982
+
+/gun/posFromFloor -20.000000 40.000000 200.000000 cm
+/run/beamOn 10005912
+
+/gun/posFromFloor -20.000000 50.000000 200.000000 cm
+/run/beamOn 13742115
+
+/gun/posFromFloor -20.000000 100.000000 200.000000 cm
+/run/beamOn 7028195
+
+/gun/posFromFloor -20.000000 200.000000 200.000000 cm
+/run/beamOn 9194993
+
+/gun/posFromFloor -20.000000 300.000000 200.000000 cm
+/run/beamOn 6604953
+
+/gun/posFromFloor -10.000000 -300.000000 200.000000 cm
+/run/beamOn 11960287
+
+/gun/posFromFloor -10.000000 -200.000000 200.000000 cm
+/run/beamOn 13082081
+
+/gun/posFromFloor -10.000000 -100.000000 200.000000 cm
+/run/beamOn 14761778
+
+/gun/posFromFloor -10.000000 -50.000000 200.000000 cm
+/run/beamOn 12313072
+
+/gun/posFromFloor -10.000000 -40.000000 200.000000 cm
+/run/beamOn 10679243
+
+/gun/posFromFloor -10.000000 -30.000000 200.000000 cm
+/run/beamOn 19404342
+
+/gun/posFromFloor -10.000000 -20.000000 200.000000 cm
+/run/beamOn 13627331
+
+/gun/posFromFloor -10.000000 -10.000000 200.000000 cm
+/run/beamOn 19329141
+
+/gun/posFromFloor -10.000000 0.000000 200.000000 cm
+/run/beamOn 19101270
+
+/gun/posFromFloor -10.000000 10.000000 200.000000 cm
+/run/beamOn 49241657
+
+/gun/posFromFloor -10.000000 20.000000 200.000000 cm
+/run/beamOn 26041303
+
+/gun/posFromFloor -10.000000 30.000000 200.000000 cm
+/run/beamOn 25715608
+
+/gun/posFromFloor -10.000000 40.000000 200.000000 cm
+/run/beamOn 10156754
+
+/gun/posFromFloor -10.000000 50.000000 200.000000 cm
+/run/beamOn 21393844
+
+/gun/posFromFloor -10.000000 100.000000 200.000000 cm
+/run/beamOn 11093642
+
+/gun/posFromFloor -10.000000 200.000000 200.000000 cm
+/run/beamOn 17247575
+
+/gun/posFromFloor -10.000000 300.000000 200.000000 cm
+/run/beamOn 15692623
+
+/gun/posFromFloor 0.000000 -300.000000 200.000000 cm
+/run/beamOn 10493108
+
+/gun/posFromFloor 0.000000 -200.000000 200.000000 cm
+/run/beamOn 7783472
+
+/gun/posFromFloor 0.000000 -100.000000 200.000000 cm
+/run/beamOn 12868890
+
+/gun/posFromFloor 0.000000 -50.000000 200.000000 cm
+/run/beamOn 16108824
+
+/gun/posFromFloor 0.000000 -40.000000 200.000000 cm
+/run/beamOn 21849828
+
+/gun/posFromFloor 0.000000 -30.000000 200.000000 cm
+/run/beamOn 11779255
+
+/gun/posFromFloor 0.000000 -20.000000 200.000000 cm
+/run/beamOn 17147516
+
+/gun/posFromFloor 0.000000 -10.000000 200.000000 cm
+/run/beamOn 28099583
+
+/gun/posFromFloor 0.000000 0.000000 200.000000 cm
+/run/beamOn 37113097
+
+/gun/posFromFloor 0.000000 10.000000 200.000000 cm
+/run/beamOn 17981670
+
+/gun/posFromFloor 0.000000 20.000000 200.000000 cm
+/run/beamOn 8523655
+
+/gun/posFromFloor 0.000000 30.000000 200.000000 cm
+/run/beamOn 28083174
+
+/gun/posFromFloor 0.000000 40.000000 200.000000 cm
+/run/beamOn 18742215
+
+/gun/posFromFloor 0.000000 50.000000 200.000000 cm
+/run/beamOn 38177618
+
+/gun/posFromFloor 0.000000 100.000000 200.000000 cm
+/run/beamOn 18567239
+
+/gun/posFromFloor 0.000000 200.000000 200.000000 cm
+/run/beamOn 7522512
+
+/gun/posFromFloor 0.000000 300.000000 200.000000 cm
+/run/beamOn 10760724
+
+/gun/posFromFloor 10.000000 -300.000000 200.000000 cm
+/run/beamOn 14673582
+
+/gun/posFromFloor 10.000000 -200.000000 200.000000 cm
+/run/beamOn 20181657
+
+/gun/posFromFloor 10.000000 -100.000000 200.000000 cm
+/run/beamOn 33710332
+
+/gun/posFromFloor 10.000000 -50.000000 200.000000 cm
+/run/beamOn 15508411
+
+/gun/posFromFloor 10.000000 -40.000000 200.000000 cm
+/run/beamOn 33722038
+
+/gun/posFromFloor 10.000000 -30.000000 200.000000 cm
+/run/beamOn 12797232
+
+/gun/posFromFloor 10.000000 -20.000000 200.000000 cm
+/run/beamOn 14274526
+
+/gun/posFromFloor 10.000000 -10.000000 200.000000 cm
+/run/beamOn 11122745
+
+/gun/posFromFloor 10.000000 0.000000 200.000000 cm
+/run/beamOn 9814260
+
+/gun/posFromFloor 10.000000 10.000000 200.000000 cm
+/run/beamOn 12086900
+
+/gun/posFromFloor 10.000000 20.000000 200.000000 cm
+/run/beamOn 9030308
+
+/gun/posFromFloor 10.000000 30.000000 200.000000 cm
+/run/beamOn 18731376
+
+/gun/posFromFloor 10.000000 40.000000 200.000000 cm
+/run/beamOn 7272372
+
+/gun/posFromFloor 10.000000 50.000000 200.000000 cm
+/run/beamOn 14433169
+
+/gun/posFromFloor 10.000000 100.000000 200.000000 cm
+/run/beamOn 7603689
+
+/gun/posFromFloor 10.000000 200.000000 200.000000 cm
+/run/beamOn 10356368
+
+/gun/posFromFloor 10.000000 300.000000 200.000000 cm
+/run/beamOn 28273679
+
+/gun/posFromFloor 20.000000 -300.000000 200.000000 cm
+/run/beamOn 23442833
+
+/gun/posFromFloor 20.000000 -200.000000 200.000000 cm
+/run/beamOn 7797705
+
+/gun/posFromFloor 20.000000 -100.000000 200.000000 cm
+/run/beamOn 39901103
+
+/gun/posFromFloor 20.000000 -50.000000 200.000000 cm
+/run/beamOn 19086937
+
+/gun/posFromFloor 20.000000 -40.000000 200.000000 cm
+/run/beamOn 22252466
+
+/gun/posFromFloor 20.000000 -30.000000 200.000000 cm
+/run/beamOn 8929848
+
+/gun/posFromFloor 20.000000 -20.000000 200.000000 cm
+/run/beamOn 18927824
+
+/gun/posFromFloor 20.000000 -10.000000 200.000000 cm
+/run/beamOn 8742344
+
+/gun/posFromFloor 20.000000 0.000000 200.000000 cm
+/run/beamOn 25420432
+
+/gun/posFromFloor 20.000000 10.000000 200.000000 cm
+/run/beamOn 16647836
+
+/gun/posFromFloor 20.000000 20.000000 200.000000 cm
+/run/beamOn 26575468
+
+/gun/posFromFloor 20.000000 30.000000 200.000000 cm
+/run/beamOn 42772227
+
+/gun/posFromFloor 20.000000 40.000000 200.000000 cm
+/run/beamOn 4630794
+
+/gun/posFromFloor 20.000000 50.000000 200.000000 cm
+/run/beamOn 12600867
+
+/gun/posFromFloor 20.000000 100.000000 200.000000 cm
+/run/beamOn 20208944
+
+/gun/posFromFloor 20.000000 200.000000 200.000000 cm
+/run/beamOn 19164082
+
+/gun/posFromFloor 20.000000 300.000000 200.000000 cm
+/run/beamOn 16959077
+
+/gun/posFromFloor 30.000000 -300.000000 200.000000 cm
+/run/beamOn 18071477
+
+/gun/posFromFloor 30.000000 -200.000000 200.000000 cm
+/run/beamOn 10897129
+
+/gun/posFromFloor 30.000000 -100.000000 200.000000 cm
+/run/beamOn 27829676
+
+/gun/posFromFloor 30.000000 -50.000000 200.000000 cm
+/run/beamOn 11549644
+
+/gun/posFromFloor 30.000000 -40.000000 200.000000 cm
+/run/beamOn 70464876
+
+/gun/posFromFloor 30.000000 -30.000000 200.000000 cm
+/run/beamOn 19789436
+
+/gun/posFromFloor 30.000000 -20.000000 200.000000 cm
+/run/beamOn 42241056
+
+/gun/posFromFloor 30.000000 -10.000000 200.000000 cm
+/run/beamOn 11327349
+
+/gun/posFromFloor 30.000000 0.000000 200.000000 cm
+/run/beamOn 54711940
+
+/gun/posFromFloor 30.000000 10.000000 200.000000 cm
+/run/beamOn 11042722
+
+/gun/posFromFloor 30.000000 20.000000 200.000000 cm
+/run/beamOn 8794762
+
+/gun/posFromFloor 30.000000 30.000000 200.000000 cm
+/run/beamOn 26828380
+
+/gun/posFromFloor 30.000000 40.000000 200.000000 cm
+/run/beamOn 36869086
+
+/gun/posFromFloor 30.000000 50.000000 200.000000 cm
+/run/beamOn 18731826
+
+/gun/posFromFloor 30.000000 100.000000 200.000000 cm
+/run/beamOn 13142919
+
+/gun/posFromFloor 30.000000 200.000000 200.000000 cm
+/run/beamOn 6232941
+
+/gun/posFromFloor 30.000000 300.000000 200.000000 cm
+/run/beamOn 11702737
+
+/gun/posFromFloor 40.000000 -300.000000 200.000000 cm
+/run/beamOn 6069851
+
+/gun/posFromFloor 40.000000 -200.000000 200.000000 cm
+/run/beamOn 6988593
+
+/gun/posFromFloor 40.000000 -100.000000 200.000000 cm
+/run/beamOn 8459544
+
+/gun/posFromFloor 40.000000 -50.000000 200.000000 cm
+/run/beamOn 16892461
+
+/gun/posFromFloor 40.000000 -40.000000 200.000000 cm
+/run/beamOn 9736988
+
+/gun/posFromFloor 40.000000 -30.000000 200.000000 cm
+/run/beamOn 22005818
+
+/gun/posFromFloor 40.000000 -20.000000 200.000000 cm
+/run/beamOn 13068005
+
+/gun/posFromFloor 40.000000 -10.000000 200.000000 cm
+/run/beamOn 19492119
+
+/gun/posFromFloor 40.000000 0.000000 200.000000 cm
+/run/beamOn 11403888
+
+/gun/posFromFloor 40.000000 10.000000 200.000000 cm
+/run/beamOn 10889857
+
+/gun/posFromFloor 40.000000 20.000000 200.000000 cm
+/run/beamOn 26572499
+
+/gun/posFromFloor 40.000000 30.000000 200.000000 cm
+/run/beamOn 6527612
+
+/gun/posFromFloor 40.000000 40.000000 200.000000 cm
+/run/beamOn 10460251
+
+/gun/posFromFloor 40.000000 50.000000 200.000000 cm
+/run/beamOn 12845970
+
+/gun/posFromFloor 40.000000 100.000000 200.000000 cm
+/run/beamOn 34723253
+
+/gun/posFromFloor 40.000000 200.000000 200.000000 cm
+/run/beamOn 15936025
+
+/gun/posFromFloor 40.000000 300.000000 200.000000 cm
+/run/beamOn 13069925
+
+/gun/posFromFloor 50.000000 -300.000000 200.000000 cm
+/run/beamOn 20335662
+
+/gun/posFromFloor 50.000000 -200.000000 200.000000 cm
+/run/beamOn 35502196
+
+/gun/posFromFloor 50.000000 -100.000000 200.000000 cm
+/run/beamOn 18206401
+
+/gun/posFromFloor 50.000000 -50.000000 200.000000 cm
+/run/beamOn 11996211
+
+/gun/posFromFloor 50.000000 -40.000000 200.000000 cm
+/run/beamOn 15826377
+
+/gun/posFromFloor 50.000000 -30.000000 200.000000 cm
+/run/beamOn 18788132
+
+/gun/posFromFloor 50.000000 -20.000000 200.000000 cm
+/run/beamOn 23967212
+
+/gun/posFromFloor 50.000000 -10.000000 200.000000 cm
+/run/beamOn 28923486
+
+/gun/posFromFloor 50.000000 0.000000 200.000000 cm
+/run/beamOn 37440594
+
+/gun/posFromFloor 50.000000 10.000000 200.000000 cm
+/run/beamOn 10451223
+
+/gun/posFromFloor 50.000000 20.000000 200.000000 cm
+/run/beamOn 8029044
+
+/gun/posFromFloor 50.000000 30.000000 200.000000 cm
+/run/beamOn 18196879
+
+/gun/posFromFloor 50.000000 40.000000 200.000000 cm
+/run/beamOn 12461699
+
+/gun/posFromFloor 50.000000 50.000000 200.000000 cm
+/run/beamOn 24423166
+
+/gun/posFromFloor 50.000000 100.000000 200.000000 cm
+/run/beamOn 18030316
+
+/gun/posFromFloor 50.000000 200.000000 200.000000 cm
+/run/beamOn 16552594
+
+/gun/posFromFloor 50.000000 300.000000 200.000000 cm
+/run/beamOn 12828572
+
+/gun/posFromFloor 100.000000 -300.000000 200.000000 cm
+/run/beamOn 11474345
+
+/gun/posFromFloor 100.000000 -200.000000 200.000000 cm
+/run/beamOn 18056108
+
+/gun/posFromFloor 100.000000 -100.000000 200.000000 cm
+/run/beamOn 40347192
+
+/gun/posFromFloor 100.000000 -50.000000 200.000000 cm
+/run/beamOn 16020134
+
+/gun/posFromFloor 100.000000 -40.000000 200.000000 cm
+/run/beamOn 12977594
+
+/gun/posFromFloor 100.000000 -30.000000 200.000000 cm
+/run/beamOn 14404305
+
+/gun/posFromFloor 100.000000 -20.000000 200.000000 cm
+/run/beamOn 22593328
+
+/gun/posFromFloor 100.000000 -10.000000 200.000000 cm
+/run/beamOn 15062999
+
+/gun/posFromFloor 100.000000 0.000000 200.000000 cm
+/run/beamOn 11547798
+
+/gun/posFromFloor 100.000000 10.000000 200.000000 cm
+/run/beamOn 4657300
+
+/gun/posFromFloor 100.000000 20.000000 200.000000 cm
+/run/beamOn 16791571
+
+/gun/posFromFloor 100.000000 30.000000 200.000000 cm
+/run/beamOn 10271140
+
+/gun/posFromFloor 100.000000 40.000000 200.000000 cm
+/run/beamOn 15777244
+
+/gun/posFromFloor 100.000000 50.000000 200.000000 cm
+/run/beamOn 25023885
+
+/gun/posFromFloor 100.000000 100.000000 200.000000 cm
+/run/beamOn 53122115
+
+/gun/posFromFloor 100.000000 200.000000 200.000000 cm
+/run/beamOn 14627167
+
+/gun/posFromFloor 100.000000 300.000000 200.000000 cm
+/run/beamOn 17709317
+
+/gun/posFromFloor 200.000000 -300.000000 200.000000 cm
+/run/beamOn 27635586
+
+/gun/posFromFloor 200.000000 -200.000000 200.000000 cm
+/run/beamOn 15889768
+
+/gun/posFromFloor 200.000000 -100.000000 200.000000 cm
+/run/beamOn 18720229
+
+/gun/posFromFloor 200.000000 -50.000000 200.000000 cm
+/run/beamOn 12575225
+
+/gun/posFromFloor 200.000000 -40.000000 200.000000 cm
+/run/beamOn 18447265
+
+/gun/posFromFloor 200.000000 -30.000000 200.000000 cm
+/run/beamOn 23727108
+
+/gun/posFromFloor 200.000000 -20.000000 200.000000 cm
+/run/beamOn 24843405
+
+/gun/posFromFloor 200.000000 -10.000000 200.000000 cm
+/run/beamOn 17549497
+
+/gun/posFromFloor 200.000000 0.000000 200.000000 cm
+/run/beamOn 20936737
+
+/gun/posFromFloor 200.000000 10.000000 200.000000 cm
+/run/beamOn 13864246
+
+/gun/posFromFloor 200.000000 20.000000 200.000000 cm
+/run/beamOn 27311410
+
+/gun/posFromFloor 200.000000 30.000000 200.000000 cm
+/run/beamOn 24452708
+
+/gun/posFromFloor 200.000000 40.000000 200.000000 cm
+/run/beamOn 14030646
+
+/gun/posFromFloor 200.000000 50.000000 200.000000 cm
+/run/beamOn 11492062
+
+/gun/posFromFloor 200.000000 100.000000 200.000000 cm
+/run/beamOn 10105453
+
+/gun/posFromFloor 200.000000 200.000000 200.000000 cm
+/run/beamOn 13001043
+
+/gun/posFromFloor 200.000000 300.000000 200.000000 cm
+/run/beamOn 18520112
+
+/gun/posFromFloor 300.000000 -300.000000 200.000000 cm
+/run/beamOn 11709988
+
+/gun/posFromFloor 300.000000 -200.000000 200.000000 cm
+/run/beamOn 16245800
+
+/gun/posFromFloor 300.000000 -100.000000 200.000000 cm
+/run/beamOn 9566970
+
+/gun/posFromFloor 300.000000 -50.000000 200.000000 cm
+/run/beamOn 14441705
+
+/gun/posFromFloor 300.000000 -40.000000 200.000000 cm
+/run/beamOn 25193211
+
+/gun/posFromFloor 300.000000 -30.000000 200.000000 cm
+/run/beamOn 12979533
+
+/gun/posFromFloor 300.000000 -20.000000 200.000000 cm
+/run/beamOn 15926621
+
+/gun/posFromFloor 300.000000 -10.000000 200.000000 cm
+/run/beamOn 28108319
+
+/gun/posFromFloor 300.000000 0.000000 200.000000 cm
+/run/beamOn 16496139
+
+/gun/posFromFloor 300.000000 10.000000 200.000000 cm
+/run/beamOn 43811690
+
+/gun/posFromFloor 300.000000 20.000000 200.000000 cm
+/run/beamOn 8785355
+
+/gun/posFromFloor 300.000000 30.000000 200.000000 cm
+/run/beamOn 14180053
+
+/gun/posFromFloor 300.000000 40.000000 200.000000 cm
+/run/beamOn 21295271
+
+/gun/posFromFloor 300.000000 50.000000 200.000000 cm
+/run/beamOn 21632880
+
+/gun/posFromFloor 300.000000 100.000000 200.000000 cm
+/run/beamOn 53921352
+
+/gun/posFromFloor 300.000000 200.000000 200.000000 cm
+/run/beamOn 23392699
+
+/gun/posFromFloor 300.000000 300.000000 200.000000 cm
+/run/beamOn 37111684
+

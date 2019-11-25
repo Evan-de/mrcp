@@ -1,0 +1,8 @@
+# GeneralParticleSource :
+/gps/ang/type iso
+/gps/particle gamma
+/gps/pos/type Point
+/gps/energy 0.662 MeV
+# standing floor centre
+/gps/pos/centre -0.81036 0.96016 -87.8602 cm
+

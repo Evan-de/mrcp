@@ -1,0 +1,17 @@
+# Example macro file to run in the batch mode
+
+# Set the verbose
+/run/verbose 2
+#/tracking/verbose 2
+
+# Set the number of threads for multi-threading mode
+#/run/numberOfThreads  1
+
+# Initialize
+/run/initialize
+
+# Source setting
+/control/execute source.mac
+
+# beamOn
+/run/beamOn 1000
