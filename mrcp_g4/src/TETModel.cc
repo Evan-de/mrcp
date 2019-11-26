@@ -138,7 +138,7 @@ void TETModel::ImportEleData(const G4String& eleFilePath)
 
     // --- Get data --- //
     G4int nTets;
-    G4int nodeID0, nodeID1, nodeID2, nodeID3;
+    size_t nodeID0, nodeID1, nodeID2, nodeID3;
     G4int subModelID;
     G4int dummyValue;
 
@@ -218,7 +218,7 @@ void TETModel::ImportMaterialData(const G4String& materialFilePath)
         // Build material
         G4Material* theMaterial =
             new G4Material(
-                subModelName, density, zaid_fraction_Map.size(),
+                subModelName, density, static_cast<G4int>(zaid_fraction_Map.size()),
                 kStateSolid, NTP_Temperature, STP_Pressure
                 );
         G4NistManager* nistManager = G4NistManager::Instance();
@@ -348,7 +348,7 @@ void TETModel::CalculateModelDetails()
     for(size_t i = 0; i < tet_Vector.size(); ++i)
     {
         G4double tetVolume = tet_Vector[i]->GetCubicVolume();
-        G4int subModelID = tetID_subModelID_Map[i];
+        G4int subModelID = tetID_subModelID_Map[static_cast<G4int>(i)];
         G4double tetDensity = GetSubModelMaterial(subModelID)->GetDensity();
         G4double tetMass = tetDensity*tetVolume;
 

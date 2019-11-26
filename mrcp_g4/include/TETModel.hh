@@ -45,12 +45,12 @@ public:
     G4ThreeVector GetBoundingBoxMax() const { return fBoundingBoxMax; }
     G4ThreeVector GetBoundingBoxCen() const { return fBoundingBoxCen; }
     G4ThreeVector GetBoundingBoxSize() const { return fBoundingBoxSize; }
-    G4int GetNumTets() const { return tet_Vector.size(); }
+    size_t GetNumTets() const { return tet_Vector.size(); }
     G4double GetTotalVolume() const { return fTETModelVolume; }
     G4double GetTotalMass() const { return fTETModelMass; }
 
     // --- Tetrahedron information --- //
-    G4Tet* GetTetrahedron(G4int tetID) const { return tet_Vector.at(tetID); }
+    G4Tet* GetTetrahedron(size_t tetID) const { return tet_Vector.at(tetID); }
 
     // --- SubModel information --- //
     G4int GetSubModelID(G4int tetID) const { return tetID_subModelID_Map.at(tetID); }
