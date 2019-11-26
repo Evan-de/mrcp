@@ -2,7 +2,9 @@
 #include "MRCPRun.hh"
 #include "Primary_ParticleGun.hh"
 
-extern G4String OUTPUT_FILENAME; // From main() argument (-o)
+#include <experimental/filesystem>
+
+extern std::experimental::filesystem::v1::path OUTPUT_FILENAME; // From main() argument (-o)
 
 G4String RunAction::fPrimaryInfo;
 

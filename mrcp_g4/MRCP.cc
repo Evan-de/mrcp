@@ -57,6 +57,9 @@
 // Randomize class to set seed number
 #include "Randomize.hh"
 
+// C++ STL
+#include <experimental/filesystem>
+
 // --- main() Arguments usage explanation --- //
 namespace
 {
@@ -69,32 +72,32 @@ void PrintUsage()
         << "\n\t[-o] <Set outfile> default: ""[MACRO].out"", inputtype: string"
         << "\n\t[-p] <Set tetra model file & path> "
         << "\n\t\tdefault: ""$PHANTOM or ../phantoms/ICRP-AM"", inputtype: string"
-        << "\n\t[-t] <Set nThreads> default: 1, inputtype: int"
+#ifdef G4MULTITHREADED
+        << "\n\t[-t] <Set nThreads> default: 1, inputtype: int, Max: "
+        << G4Threading::G4GetNumberOfCores()
+#endif
         << "\n\t[-u] <Set UISession> default: tcsh, inputtype: string"
         << G4endl;
-    G4cerr << "\tNote: -t option is available only for multi-threaded mode. Max: "
-        << G4Threading::G4GetNumberOfCores() << G4endl;
 }
 }
 
 // --- Global variables for main() arguments --- //
-G4String OUTPUT_FILENAME; // Passed to RunAction class.
+std::experimental::filesystem::v1::path OUTPUT_FILENAME; // Passed to RunAction class.
 
 int main(int argc, char** argv)
 {
     // --- Default setting for main() arguments ---//
-    G4String macro_FileName = "";
-    ::OUTPUT_FILENAME = "";
-    G4String mainPhantom_FilePath = "../phantoms/ICRP-AM";
+    std::experimental::filesystem::v1::path macro_FileName;
+    std::experimental::filesystem::v1::path mainPhantom_FilePath{"../phantoms/ICRP-AM"};
     const char* envVar_PHANTOM = ::getenv("PHANTOM") ;
     if(envVar_PHANTOM != nullptr) // Use if $PHANTOM environment variable exist
-        mainPhantom_FilePath = G4String(envVar_PHANTOM);
+        mainPhantom_FilePath = envVar_PHANTOM;
 #ifdef G4MULTITHREADED
     G4int nThreads = 1;
 #endif
     G4String session = "tcsh";
 
-    // --- Parsing main() Arg   uments --- //
+    // --- Parsing main() Arguments --- //
     for(G4int i = 1; i<argc; i += 2)
     {
         if(G4String(argv[i])=="-m") macro_FileName = argv[i+1];
@@ -115,12 +118,13 @@ int main(int argc, char** argv)
         PrintUsage();
         return 1;
     }
-    if(macro_FileName.size() && !(::OUTPUT_FILENAME.size()))
-    {
-        size_t fileNameStartPos = macro_FileName.rfind('/');
-        size_t extensionStartPos = macro_FileName.rfind('.');
 
-        ::OUTPUT_FILENAME = "output/" + macro_FileName.substr(fileNameStartPos).substr(0, extensionStartPos - fileNameStartPos) + ".out";
+    // Macro name is given but output file name is not,
+    // output file name will be {macro name w/o extension}.out
+    if(!macro_FileName.empty() && ::OUTPUT_FILENAME.empty())
+    {
+        ::OUTPUT_FILENAME = macro_FileName;
+        ::OUTPUT_FILENAME.replace_extension(".out");
     }
 
     // --- Choose the Random engine --- //
@@ -134,7 +138,7 @@ int main(int argc, char** argv)
 #else
     auto runManager = new G4RunManager;
 #endif
-    G4VUserDetectorConstruction* mainDC = new DetectorConstruction(mainPhantom_FilePath);
+    G4VUserDetectorConstruction* mainDC = new DetectorConstruction(mainPhantom_FilePath.string());
     runManager->SetUserInitialization(mainDC);
     G4VModularPhysicsList* mainPhys = new PhysicsList;
     runManager->SetUserInitialization(mainPhys);
@@ -143,10 +147,10 @@ int main(int argc, char** argv)
 
     // --- Batch mode or Interactive mode setting --- //
     auto uiManager = G4UImanager::GetUIpointer();
-    if(macro_FileName.size()) // macro was provided
+    if(!macro_FileName.empty()) // macro was provided
     {
         G4String command = "/control/execute ";
-        uiManager->ApplyCommand(command + macro_FileName);
+        uiManager->ApplyCommand(command + macro_FileName.string());
     }
     else // interactive mode
     {
