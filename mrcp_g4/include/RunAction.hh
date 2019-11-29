@@ -8,8 +8,9 @@
 #include "G4Timer.hh"
 
 #include <fstream>
+#include <experimental/filesystem>
 
-class MRCPRun;
+class Run;
 class Primary_ParticleGun;
 
 class RunAction: public G4UserRunAction
@@ -23,8 +24,8 @@ public:
     virtual void EndOfRunAction(const G4Run*);
 
 private:
-    void PrintResultsInRows(std::ostream& out, const MRCPRun* theRun);
-    void PrintResultsInCols(std::ostream& out, const MRCPRun* theRun);
+    void PrintDataInRows(std::ostream& out, const std::map< G4String, std::pair<G4double, G4double> >& data);
+    void PrintDataInCols(std::ostream& out, const std::map< G4String, std::pair<G4double, G4double> >& data);
 
     G4Timer* fInitTimer;
     G4Timer* fRunTimer;

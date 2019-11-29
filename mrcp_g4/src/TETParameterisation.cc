@@ -1,5 +1,6 @@
 #include "TETParameterisation.hh"
 #include "TETModelStore.hh"
+#include "MRCPModel.hh"
 
 TETParameterisation::TETParameterisation(G4String tetModelName)
 : G4VPVParameterisation()
@@ -30,8 +31,10 @@ G4Material* TETParameterisation::ComputeMaterial(
     // Set VisAttributes
     phy->GetLogicalVolume()->SetVisAttributes(subModelVisAttributes_Map.at(subModelID));
 
-    // return G4Material*
-    return fTETModel->GetSubModelMaterial(subModelID);
+    // If the model is MRCPModel, replace its material to MRCP material.
+    MRCPModel* mrcpModel = dynamic_cast<MRCPModel*>(fTETModel);
+    if(mrcpModel) return mrcpModel->GetSubModelMaterial(subModelID);
+    else return phy->GetLogicalVolume()->GetMaterial();
 }
 
 

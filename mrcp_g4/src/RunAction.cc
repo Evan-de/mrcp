@@ -1,8 +1,6 @@
 #include "RunAction.hh"
-#include "MRCPRun.hh"
+#include "Run.hh"
 #include "Primary_ParticleGun.hh"
-
-#include <experimental/filesystem>
 
 extern std::experimental::filesystem::v1::path OUTPUT_FILENAME; // From main() argument (-o)
 
@@ -31,7 +29,7 @@ RunAction::~RunAction()
 
 G4Run* RunAction::GenerateRun()
 {
-    return new MRCPRun;
+    return new Run;
 //    return new G4Run;
 }
 
@@ -69,11 +67,12 @@ void RunAction::EndOfRunAction(const G4Run* aRun)
     fRunTimer->Stop();
 
     // --- Print the results --- //
-    auto theRun = dynamic_cast<const MRCPRun*>(aRun);
+    auto theRun = dynamic_cast<const Run*>(aRun);
     if(theRun)
     {
-        PrintResultsInRows(G4cout, theRun);
-        PrintResultsInCols(ofs, theRun);
+        const auto& protQData = theRun->GetProtQ();
+        PrintDataInRows(G4cout, protQData);
+        PrintDataInCols(ofs, protQData);
     }
 
     // --- Initialization starts for next run --- //
@@ -81,46 +80,46 @@ void RunAction::EndOfRunAction(const G4Run* aRun)
     fInitTimer->Start();
 }
 
-void RunAction::PrintResultsInRows(std::ostream& out, const MRCPRun* theRun)
+void RunAction::PrintDataInRows(std::ostream& out, const std::map< G4String, std::pair<G4double, G4double> >& data)
 {
-    G4int nEvents = theRun->GetNumberOfEvent();
+    G4int nEvents = G4RunManager::GetRunManager()->GetCurrentRun()->GetNumberOfEvent();
+    G4int runID = G4RunManager::GetRunManager()->GetCurrentRun()->GetRunID();
 
     out << std::fixed;
-    out << "======================================================================" << G4endl;
-    out << " Run ID: " << theRun->GetRunID() << G4endl;
+    out << "===========================================================================" << G4endl;
+    out << " Run ID: " << runID << G4endl;
     out << " Initialization time (s): " << fInitTimer->GetRealElapsed() << G4endl;
     out << " Running time (s): " << fRunTimer->GetRealElapsed() << G4endl;
     out << " Number of threads: " << G4Threading::GetNumberOfRunningWorkerThreads() << G4endl;
     out << " Number of event processed: " << nEvents << G4endl;
     out << " Source: " << fPrimaryInfo << G4endl;
-    out << "======================================================================" << G4endl;
+    out << "===========================================================================" << G4endl;
     out << std::scientific;
 
-    out << std::setw(35) << "Protection Quantity"
-        << std::setw(20) << "Mean dose (Gy or Sv)"
-        << std::setw(20) << "Relative error" << G4endl;
+    out << std::setw(25) << "Protection Quantity"
+        << std::setw(25) << "Mean dose (Gy or Sv)"
+        << std::setw(25) << "Relative error" << G4endl;
 
-    for(const auto& protQ: theRun->GetProtectionQuantities())
+    for(const auto& datum: data)
     {
-        G4double totalDose = std::get<1>(protQ);
-        G4double totalSquareDose = std::get<2>(protQ);
+        G4double totalDose = std::get<0>(datum.second);
+        G4double totalSquareDose = std::get<1>(datum.second);
         G4double meanDose = totalDose/nEvents;
         G4double stdevDose = sqrt( (totalSquareDose/nEvents) - (meanDose * meanDose) );
         G4double relativeError = (stdevDose/sqrt(nEvents)) / meanDose;
 
-        out << std::setw(35) << std::get<0>(protQ)
-            << std::setw(20) << meanDose/gray
-            << std::setw(20) << relativeError << G4endl;
+        out << std::setw(25) << datum.first
+            << std::setw(25) << meanDose/gray
+            << std::setw(25) << relativeError << G4endl;
     }
 
     out << G4endl << G4endl;
 }
 
-void RunAction::PrintResultsInCols(std::ostream& out, const MRCPRun* theRun)
+void RunAction::PrintDataInCols(std::ostream& out, const std::map< G4String, std::pair<G4double, G4double> >& data)
 {
-    G4int nEvents = theRun->GetNumberOfEvent();
-    G4int runID = theRun->GetRunID();
-    const auto& protQs = theRun->GetProtectionQuantities();
+    G4int nEvents = G4RunManager::GetRunManager()->GetCurrentRun()->GetNumberOfEvent();
+    G4int runID = G4RunManager::GetRunManager()->GetCurrentRun()->GetRunID();
 
     // --- Header --- //
     if(runID==0)
@@ -134,9 +133,9 @@ void RunAction::PrintResultsInCols(std::ostream& out, const MRCPRun* theRun)
             << "Source" << "\t";
 
         out << std::scientific;
-        for(const auto& protQ: protQs)
-            out << std::get<0>(protQ) << "(Gy|Sv)" << "\t"
-                << "RelativeError" << "\t";
+        for(const auto& datum: data)
+            out << datum.first << "(Gy|Sv)" << "\t"
+                << datum.first + "Error" << "\t";
 
         out << G4endl;
     }
@@ -153,10 +152,10 @@ void RunAction::PrintResultsInCols(std::ostream& out, const MRCPRun* theRun)
 
     out.precision(6);
     out << std::scientific;
-    for(const auto& protQ: protQs)
+    for(const auto& datum: data)
     {
-        G4double totalDose = std::get<1>(protQ);
-        G4double totalSquareDose = std::get<2>(protQ);
+        G4double totalDose = std::get<0>(datum.second);
+        G4double totalSquareDose = std::get<1>(datum.second);
         G4double meanDose = totalDose/nEvents;
         G4double stdevDose = sqrt( (totalSquareDose/nEvents) - (meanDose * meanDose) );
         G4double relativeError = (stdevDose/sqrt(nEvents)) / meanDose;

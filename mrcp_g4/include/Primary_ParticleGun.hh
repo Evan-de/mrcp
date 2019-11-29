@@ -38,7 +38,6 @@ private:
     void DefineCommands();
 
     void SetNuclide(const G4String& nuclideName);
-    void SetPositionFromPhantomFloor(G4ThreeVector position, G4String unitString);
 
     G4ThreeVector SampleISODirection();
 
@@ -63,7 +62,7 @@ class NuclideSource
 {
 public:
     NuclideSource(G4String nuclideName);
-    virtual ~NuclideSource() {}
+    ~NuclideSource() {}
 
     std::tuple<G4String, G4double, G4double> SampleDecayProduct(); // ParticleName, Energy, Weight
 

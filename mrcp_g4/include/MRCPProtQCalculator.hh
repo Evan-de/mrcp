@@ -1,65 +1,27 @@
-#ifndef MRCPDoseCalculation_hh_
-#define MRCPDoseCalculation_hh_
+#ifndef MRCPPROTQCALCULATOR_HH
+#define MRCPPROTQCALCULATOR_HH
 
-#include "globals.hh"
+#include "TETModelStore.hh"
 
-#include <map>
-#include <vector>
+#include "G4THitsMap.hh"
 
-class TETModel;
-
-enum class SubModelName_PRIV; // SubModel names of privious MRCP
-enum class ProtQName; // Protection quantities
+class MRCPModel;
+enum class SubModelName_PRIV;
 
 using SubModelName = SubModelName_PRIV;
 
-class MRCPDoseCalculation
+class MRCPProtQCalculator
 {
 public:
-    MRCPDoseCalculation(G4String tetModelName);
+    MRCPProtQCalculator(const G4String& phantomName, G4VHitsCollection* evtMap);
 
-    // Usage
-    // 1. Set@@Map(), 2. CalculateProtectionQuantities(), 3. GetProtectionQuantities(). 4. Clear()
-
-    // SetEDepMap: protection quantities calculated by simple average. (incl. Extrathoracic & WholeBody)
-    // SetRBMDoseMap: Red bone marrow Dose (by Mass ratio & DRF)
-    // SetBSDoseMap: Bone surface Dose (by Mass ratio & DRF)
-    void SetEDepMap(std::map<G4int, G4double*>* eDepMap);
-    void SetRBMDoseMap(std::map<G4int, G4double*>* RBMDoseMap);
-    void SetBSDoseMap(std::map<G4int, G4double*>* BSDoseMap);
-
-    // Calculate protection quantities using the maps set by user
-    void CalculateProtectionQuantities();
-
-    // Get Protection quantity
-    G4double GetProtectionQuantity(ProtQName protQ)
-    {
-        if(protQ_Map.find(protQ) == protQ_Map.end())
-            return 0.;
-        else
-            return protQ_Map.at(protQ);
-    }
-
-    // Clear data, EDepMap, RBMDoseMap, and BSDoseMap
-    void Clear();
-
-    // Convert ProtQName to G4String
-    static G4String ProtQNameString(ProtQName protQ);
+    G4double GetWholebodyDose();
+    G4double GetOrganDose(G4String organName);
+    G4double GetEffectiveDose();
 
 private:
-    void Create_protQ_subModels_Map();
-    void Create_SimpleProtQ_Vector();
-    G4double CalculateAverageDose(const std::vector<SubModelName>& subModels);
-
-    TETModel* fTETModel;
-
-    std::map<G4int, G4double*>* fEDepMap;
-    std::map<G4int, G4double*>* fRBMDoseMap;
-    std::map<G4int, G4double*>* fBSDoseMap;
-    std::map<ProtQName, G4double> protQ_Map;
-
-    std::map< ProtQName, std::vector<SubModelName> > protQ_subModels_Map;
-    std::vector<ProtQName> simpleProtQ_Vector;
+    MRCPModel* fMRCPModel;
+    G4THitsMap<G4double>* fEvtMap;
 };
 
 enum class SubModelName_PRIV // Must be identical to material file

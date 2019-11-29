@@ -11,7 +11,15 @@
 /run/initialize
 
 # Source setting
-/control/execute source.mac
+/gun/angleBiasing PhantomBox
+/gun/nuclide Co60_p
 
-# beamOn
-/run/beamOn 1000
+/gun/position -50 0 0 cm
+/run/beamOn 1000000
+
+/gun/position 0 0 0 cm
+/run/beamOn 1000000
+
+/gun/position 50 0 0 cm
+/run/beamOn 1000000
+

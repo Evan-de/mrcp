@@ -46,36 +46,12 @@ void Primary_ParticleGun::DefineCommands()
         fMessenger->DeclareProperty("angleBiasing", fAngleBiasingPVName, "Bias source direction to the G4Box shape physical volume.");
     angleBiasingCmd.SetParameterName("physicalVolume", true);
     angleBiasingCmd.SetDefaultValue("");
-
-    fMessenger->DeclareMethod("posFromFloor", &Primary_ParticleGun::SetPositionFromPhantomFloor,
-                              "Calculate source position from center of the phantom floor.");
 }
 
 void Primary_ParticleGun::SetNuclide(const G4String& nuclideName)
 {
     if(fNuclideSource) delete fNuclideSource;
     fNuclideSource = new NuclideSource(fNuclideName = nuclideName);
-}
-
-void Primary_ParticleGun::SetPositionFromPhantomFloor(G4ThreeVector position, G4String unitString)
-{
-    G4double unitDouble = G4UIcommand::ConvertToDimensionedDouble(("1 " + unitString).c_str());
-    G4ThreeVector dimensionedPosition = position * unitDouble;
-
-    auto theTETModel = TETModelStore::GetInstance()->GetTETModel("MainPhantom");
-    if(!theTETModel)
-    {
-        G4Exception("Primary_ParticleGun::SetPositionFromPhantomFloor()", "", JustWarning,
-            G4String("      no MainPhantom. " ).c_str());
-        fPrimary->SetParticlePosition(dimensionedPosition);
-        return;
-    }
-
-    G4ThreeVector tetModelCenter = theTETModel->GetBoundingBoxCen();
-    G4double tetModelHeight = theTETModel->GetBoundingBoxSize().z();
-    G4ThreeVector tetModelFloor = tetModelCenter - G4ThreeVector(0., 0., tetModelHeight/2.);
-
-    fPrimary->SetParticlePosition(tetModelFloor + dimensionedPosition);
 }
 
 G4ThreeVector Primary_ParticleGun::SampleISODirection()
