@@ -6,6 +6,7 @@
 #include "G4SDManager.hh"
 #include "G4THitsMap.hh"
 
+class MRCPProtQCalculator;
 class Primary_ParticleGun;
 
 class Run: public G4Run
@@ -21,6 +22,8 @@ public:
 
 private:
     G4int fPhantomDose_HCID;
+
+    MRCPProtQCalculator* mainPhantomProtQ;
     std::map< G4String, std::pair<G4double, G4double> > fProtQ;
 
     const Primary_ParticleGun* fPrimaryGeneratorAction;

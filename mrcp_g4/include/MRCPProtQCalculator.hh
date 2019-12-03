@@ -6,25 +6,34 @@
 #include "G4THitsMap.hh"
 
 class MRCPModel;
-enum class SubModelName_PRIV;
-
-using SubModelName = SubModelName_PRIV;
 
 class MRCPProtQCalculator
 {
 public:
-    MRCPProtQCalculator(const G4String& phantomName, G4VHitsCollection* evtMap);
-
-    G4double GetWholebodyDose();
-    G4double GetOrganDose(G4String organName);
-    G4double GetEffectiveDose();
+    MRCPProtQCalculator(const G4String& phantomName);
 
 private:
     MRCPModel* fMRCPModel;
-    G4THitsMap<G4double>* fEvtMap;
+    enum class SubModel_PRIV;
+
+public:
+    using SubModel = SubModel_PRIV;
+
+    G4double GetWholebodyDose(const G4THitsMap<G4double>* subModelDoseMap);
+
+    enum class Organ;
+    G4double GetOrganDose(Organ organName, const G4THitsMap<G4double>* subModelDoseMap);
+    G4double GetEffectiveDose(const G4THitsMap<G4double>* subModelDoseMap);
+
+private:
+    std::map< Organ, std::map<G4int, G4double> > protQ_subModelWeights_Map;
+
+    // --- Protection quantity presets --- //
+    void Preset_WholeBodyDose();
+    void Preset_OrganDose(); // except Organ::WholeBody
 };
 
-enum class SubModelName_PRIV // Must be identical to material file
+enum class MRCPProtQCalculator::SubModel_PRIV // Must be identical to material file
 {
     FIRST = 1,
 
@@ -202,55 +211,34 @@ enum class SubModelName_PRIV // Must be identical to material file
     LAST = 170
 };
 
-enum class ProtQName
+enum class MRCPProtQCalculator::Organ
 {
     // wT = .12
-    HT_RedBoneMarrow_byDRF, HT_ColonTarget, HT_Lungs,
-    HT_StomachTarget, HT_Breast, HT_RemainderTarget,
+    RedBoneMarrow, Colon, Lungs, Stomach, Breast,
 
     // wT = .08
-    HT_Gonads, // testes or ovaries
+    Gonads,
 
     // wT = .04
-    HT_Bladder, HT_OesophagusTarget, HT_Liver, HT_Thyroid,
+    Bladder, Oesophagus, Liver, Thyroid,
 
     // wT = .01
-    HT_BoneSurface_byDRF, HT_Brain, HT_SalivaryGlands, HT_SkinTarget,
+    BoneSurface, Brain, SalivaryGlands, Skin,
 
     // Remainder
-    HT_Adrenals, HT_ExtrathoracicTarget, HT_GallBladder,
-    HT_Heart, HT_Kidneys, HT_LymphaticNodes, HT_Muscle,
-    HT_OralMucosa, HT_Pancreas, HT_ProstateUtreus,
-    HT_SmallIntestineTarget, HT_Spleen, HT_Thymus,
+    Adrenals, Extrathoracic, GallBladder, Heart, Kidneys,
+    LymphaticNodes, Muscle, OralMucosa, Pancreas, ProstateUterus,
+    SmallIntestine, Spleen, Thymus,
 
-    // Sub-region for Extrathoracic
-    HT_ET1Target, HT_ET2Target,
+    // Others
+    WholeBody, EyeLens,
 
-    // Bone dose by mass ratio
-    HT_RedBoneMarrow_byMassRatio,
-    HT_BoneSurface_byMassRatio,
+    // Target+@ organs
+    ColonWhole, StomachWhole, OesophagusWhole, SkinWhole, ExtrathoracicWhole,
+    SmallIntestineWhole, EyeLensWhole,
 
-    // Other organs
-    HT_EyeLensTarget,
-
-    // Target+@ (thin organs)
-    HT_ColonWhole,
-    HT_StomachWhole,
-    HT_RemainderWhole,
-    HT_OesophagusWhole,
-    HT_SkinWhole,
-    HT_ExtrathoracicWhole,
-    HT_SmallIntestineWhole,
-    HT_ET1Whole,
-    HT_ET2Whole,
-    HT_EyeLensWhole,
-
-    // Other Quantities
-    EffectiveDose, // DRF for bones, Target layer for thin organs
-    EffectiveDose_byDRFWhole, // DRF for bones, Whole organ for thin organs
-    EffectiveDose_byMassRatioTarget, // Mass ratio for bones, Target layer for thin organs
-    EffectiveDose_byMassRatioWhole, // Mass ratio for bones, whole organ for thin organs
-    WholeBodyDose
+    // Bone dose by Mass ratio
+    RedBoneMarrow_byMassRatio, BoneSurface_byMassRatio
 };
 
 #endif

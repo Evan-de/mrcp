@@ -7,32 +7,43 @@ Run::Run()
 {
     // --- Get PrimaryGeneratorAction --- //
     fPrimaryGeneratorAction = dynamic_cast<const Primary_ParticleGun*>(G4RunManager::GetRunManager()->GetUserPrimaryGeneratorAction());
+
+    // --- MRCPCalculator --- //
+    mainPhantomProtQ = new MRCPProtQCalculator("MainPhantom");
 }
 
 Run::~Run()
 {
+    delete mainPhantomProtQ;
     if(!fProtQ.empty()) fProtQ.clear();
 }
 
 void Run::RecordEvent(const G4Event* anEvent)
 {
-    G4double primaryWeight = 1.;
-    if(fPrimaryGeneratorAction) primaryWeight = fPrimaryGeneratorAction->GetPrimaryWeight();
-
+    // --- Obtain dose map of this event --- //
     if(fPhantomDose_HCID==-1)
         fPhantomDose_HCID = G4SDManager::GetSDMpointer()->GetCollectionID("MainPhantom/dose");
 
     auto HCE = anEvent->GetHCofThisEvent();
     if(!HCE) return;
 
-    auto evtMap = HCE->GetHC(fPhantomDose_HCID);
+    auto doseMap = static_cast<G4THitsMap<G4double>*>(HCE->GetHC(fPhantomDose_HCID));
 
-    MRCPProtQCalculator mrcpProtQCalc("MainPhantom", evtMap);
+    // --- Calculate protection quantities from submodel doses --- //
+    G4double primaryWeight = 1.;
+    if(fPrimaryGeneratorAction) primaryWeight = fPrimaryGeneratorAction->GetPrimaryWeight();
 
-    G4double wholeBodyDose = mrcpProtQCalc.GetWholebodyDose();
+    // Whole body dose
+    G4double wholeBodyDose = mainPhantomProtQ->GetWholebodyDose(doseMap);
     wholeBodyDose *= primaryWeight;
-    fProtQ["WholeBodyDose"].first += wholeBodyDose;
-    fProtQ["WholeBodyDose"].second += wholeBodyDose * wholeBodyDose;
+    fProtQ["01. WholeBodyDose"].first += wholeBodyDose;
+    fProtQ["01. WholeBodyDose"].second += wholeBodyDose * wholeBodyDose;
+
+    // Effective dose
+    G4double effectiveDose = mainPhantomProtQ->GetEffectiveDose(doseMap);
+    effectiveDose *= primaryWeight;
+    fProtQ["02. EffectiveDose"].first += effectiveDose;
+    fProtQ["02. EffectiveDose"].second += effectiveDose * effectiveDose;
 
     G4Run::RecordEvent(anEvent);
 }

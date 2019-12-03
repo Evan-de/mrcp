@@ -1,4 +1,4 @@
-RunID	InitT(s)	RunT(s)	NThreads	NEvents	Source	WholeBodyDose(Gy|Sv)	WholeBodyDoseError	
-0	152.560	185.250	1	1000000	Co60_p@(-50,0,0)cm	5.859006e-17	8.310492e-03	
-1	2.108	278.031	1	1000000	Co60_p@(0,0,0)cm	3.824578e-16	3.027668e-03	
-2	2.176	183.717	1	1000000	Co60_p@(50,0,0)cm	5.881601e-17	8.314735e-03	
+RunID	InitT(s)	RunT(s)	NThreads	NEvents	Source	01. WholeBodyDose(Gy|Sv)	01. WholeBodyDoseError	02. EffectiveDose(Gy|Sv)	02. EffectiveDoseError	
+0	154.729	200.160	1	1000000	Co60_p@(-50,0,0)cm	9.785784e-17	6.422954e-03	5.781402e-17	1.184209e-01	
+1	1.498	251.396	1	1000000	Co60_p@(0,0,0)cm	1.780300e-16	4.683824e-03	8.111870e-17	1.025826e-01	
+2	1.578	210.272	1	1000000	Co60_p@(50,0,0)cm	9.401413e-17	6.562744e-03	4.451789e-17	1.378593e-01	
