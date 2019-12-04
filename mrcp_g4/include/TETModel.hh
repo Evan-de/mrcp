@@ -31,6 +31,7 @@ public:
     G4ThreeVector GetBoundingBoxSize() const { return fBoundingBoxSize; }
     size_t GetNumTets() const { return tet_Vector.size(); }
     G4double GetTotalVolume() const { return fWholeVolume; }
+    virtual void Print() const;
 
     // --- Tetrahedron information --- //
     G4Tet* GetTetrahedron(G4int tetID) const { return tet_Vector.at(static_cast<size_t>(tetID)); }
@@ -42,7 +43,8 @@ public:
     G4double GetSubModelVolume(G4int subModelID) const;
     G4Colour GetSubModelColour(G4int subModelID) const;
 
-    virtual void Print() const;
+    // --- Calculation --- //
+    G4bool IsInside(const G4ThreeVector pt);
 
 private:
     void ImportNodeData(const G4String& nodeFilePath);
@@ -74,5 +76,8 @@ private:
     std::map<G4int, G4double> subModelVolume_Map;
     std::map<G4int, G4int> subModelNumTets_Map;
 };
+
+// Additional Functions
+G4ThreeVector SampleRndPointInTet(const G4Tet* tet);
 
 #endif

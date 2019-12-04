@@ -1,0 +1,25 @@
+# Example macro file to run in the batch mode
+
+# Set the verbose
+/run/verbose 2
+#/tracking/verbose 2
+
+# Set the number of threads for multi-threading mode
+#/run/numberOfThreads  1
+
+# Initialize
+/run/initialize
+
+# Source setting
+/gun/angleBiasing PhantomBox
+/gun/nuclide Co60_p
+
+/gun/position -50 0 0 cm
+/run/beamOn 1000000
+
+/gun/position 0 0 0 cm
+/run/beamOn 1000000
+
+/gun/position 50 0 0 cm
+/run/beamOn 1000000
+

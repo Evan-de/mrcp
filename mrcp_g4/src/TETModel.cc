@@ -77,6 +77,13 @@ void TETModel::Print() const
     G4cout << "   Number of tetrahedrons     " << tet_Vector.size() << G4endl << G4endl;
 }
 
+G4bool TETModel::IsInside(const G4ThreeVector pt)
+{
+    for(const auto& tet: tet_Vector)
+        if(tet->Inside(pt - fBoundingBoxCen)==kInside) return true;
+    return false;
+}
+
 // --- Private functions --- //
 void TETModel::ImportNodeData(const G4String& nodeFilePath)
 {
@@ -221,4 +228,41 @@ void TETModel::CalculateModelDetails()
 
         fWholeVolume += tetVolume;
     }
+}
+
+// --- Additional Functions --- //
+G4ThreeVector SampleRndPointInTet(const G4Tet* tet)
+{
+    // sample random point in a tetrahedron (ref. http://vcg.isti.cnr.it/jgt/tetra.htm)
+    G4double c1 = G4UniformRand();
+    G4double c2 = G4UniformRand();
+    G4double c3 = G4UniformRand();
+
+    if((c1 + c2)>1.)
+    {
+        c1 = 1. - c1;
+        c2 = 1. - c2;
+    }
+
+    if((c2 + c3)>1.)
+    {
+        G4double c3_prv = c3;
+        c3 = 1. - c1 - c2;
+        c2 = 1. - c3_prv;
+    }
+    else if((c1 + c2 + c3)>1.)
+    {
+        G4double c3_prv = c3;
+        c3 = c1 + c2 + c3 - 1.;
+        c1 = 1. - c2 - c3_prv;
+    }
+
+    G4double c0 = 1. - c1 - c2 - c3;
+    G4ThreeVector rndPoint =
+            tet->GetVertices().at(0) * c0 +
+            tet->GetVertices().at(1) * c1 +
+            tet->GetVertices().at(2) * c2 +
+            tet->GetVertices().at(3) * c3;
+
+    return rndPoint;
 }
