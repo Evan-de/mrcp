@@ -32,6 +32,9 @@ void Primary_ParticleGun::GeneratePrimaries(G4Event* anEvent)
 
     fPrimary->SetParticleMomentumDirection(SampleISODirection());
     fPrimary->GeneratePrimaryVertex(anEvent);
+
+    // Weight setting
+    anEvent->GetPrimaryVertex()->SetWeight(fWeight);
 }
 
 void Primary_ParticleGun::DefineCommands()

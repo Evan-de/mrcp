@@ -1,13 +1,9 @@
 #include "Run.hh"
-#include "Primary_ParticleGun.hh"
 #include "MRCPProtQCalculator.hh"
 
 Run::Run()
 : G4Run(), fPhantomDose_HCID(-1)
 {
-    // --- Get PrimaryGeneratorAction --- //
-    fPrimaryGeneratorAction = dynamic_cast<const Primary_ParticleGun*>(G4RunManager::GetRunManager()->GetUserPrimaryGeneratorAction());
-
     // --- MRCPCalculator --- //
     mainPhantomProtQ = new MRCPProtQCalculator("MainPhantom");
 }
@@ -29,19 +25,13 @@ void Run::RecordEvent(const G4Event* anEvent)
 
     auto doseMap = static_cast<G4THitsMap<G4double>*>(HCE->GetHC(fPhantomDose_HCID));
 
-    // --- Calculate protection quantities from submodel doses --- //
-    G4double primaryWeight = 1.;
-    if(fPrimaryGeneratorAction) primaryWeight = fPrimaryGeneratorAction->GetPrimaryWeight();
-
     // Whole body dose
     G4double wholeBodyDose = mainPhantomProtQ->GetWholebodyDose(doseMap);
-    wholeBodyDose *= primaryWeight;
     fProtQ["01. WholeBodyDose"].first += wholeBodyDose;
     fProtQ["01. WholeBodyDose"].second += wholeBodyDose * wholeBodyDose;
 
     // Effective dose
     G4double effectiveDose = mainPhantomProtQ->GetEffectiveDose(doseMap);
-    effectiveDose *= primaryWeight;
     fProtQ["02. EffectiveDose"].first += effectiveDose;
     fProtQ["02. EffectiveDose"].second += effectiveDose * effectiveDose;
 

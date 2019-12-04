@@ -18,12 +18,17 @@ G4bool MRCPPSDoseDeposit::ProcessHits(G4Step* aStep, G4TouchableHistory*)
     G4double eDep = aStep->GetTotalEnergyDeposit();
     if(0.==eDep) return false;
 
+    G4double particleWeight = aStep->GetPreStepPoint()->GetWeight();
+
+    // --- Averaged subModelDose --- //
     G4int subModelID = GetIndex(aStep);
     G4double mass = fMRCPModel->GetSubModelMass(subModelID);
+
     G4double dose = eDep / mass;
-    dose *= aStep->GetPreStepPoint()->GetWeight();
+    dose *= particleWeight;
     fEvtMap->add(subModelID, dose);
 
+    // --- DRF based bone dose --- //
     if(!fDRFFlag) return true; // DRF file has not been imported.
     if(subModelRBMDRF_Map.find(subModelID) == subModelRBMDRF_Map.end())
         return true; // this submodel is not a kind of bone.
@@ -34,9 +39,13 @@ G4bool MRCPPSDoseDeposit::ProcessHits(G4Step* aStep, G4TouchableHistory*)
     G4double kineticEnergy = aStep->GetPreStepPoint()->GetKineticEnergy(); // KE before interaction should be used (prestep).
     G4double rbmDRF = LogInterp(kineticEnergy, energyBin_DRF, subModelRBMDRF_Map.at(subModelID));
     G4double bsDRF = LogInterp(kineticEnergy, energyBin_DRF, subModelBSDRF_Map.at(subModelID));
+
     G4double rbmDose = cellFluence * rbmDRF;
-    G4double bsDose = cellFluence * bsDRF;
+    rbmDose *= particleWeight;
     fEvtMap->add((-subModelID)-1000, rbmDose); // RBM doses by DRF will be stored at -10xx
+
+    G4double bsDose = cellFluence * bsDRF;
+    bsDose *= particleWeight;
     fEvtMap->add((-subModelID)-2000, bsDose); // BS doses by DRF will be stored at -20xx
 
     return true;

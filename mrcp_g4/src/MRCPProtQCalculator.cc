@@ -3,9 +3,7 @@
 
 MRCPProtQCalculator::MRCPProtQCalculator(const G4String& phantomName)
 {
-    fMRCPModel = dynamic_cast<MRCPModel*>(
-            TETModelStore::GetInstance()->GetTETModel(phantomName)
-            );
+    fMRCPModel = dynamic_cast<MRCPModel*>(TETModelStore::GetInstance()->GetTETModel(phantomName));
     if(!fMRCPModel)
         G4Exception("MRCPProtQCalculator::MRCPProtQCalculator()", "", FatalErrorInArgument,
                 G4String("      invalid MRCPModel '" + phantomName + "'" ).c_str());

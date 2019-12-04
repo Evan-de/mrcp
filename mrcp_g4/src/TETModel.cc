@@ -207,8 +207,6 @@ void TETModel::ImportColourData(const G4String& colourFilePath)
 
 void TETModel::CalculateModelDetails()
 {
-    G4cout << "  Calculating model details... " <<G4endl;
-
     // --- Initialize --- //
     fWholeVolume = 0.;
     for(auto subModelID: subModelID_Set)
