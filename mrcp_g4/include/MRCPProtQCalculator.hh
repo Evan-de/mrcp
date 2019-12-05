@@ -19,10 +19,9 @@ private:
 public:
     using SubModel = SubModel_PRIV;
 
-    G4double GetWholebodyDose(const G4THitsMap<G4double>* subModelDoseMap);
-
     enum class Organ;
     G4double GetOrganDose(Organ organName, const G4THitsMap<G4double>* subModelDoseMap);
+    G4double GetWholebodyDose(const G4THitsMap<G4double>* subModelDoseMap);
     G4double GetEffectiveDose(const G4THitsMap<G4double>* subModelDoseMap);
 
 private:

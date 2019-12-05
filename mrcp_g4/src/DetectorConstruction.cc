@@ -81,7 +81,7 @@ void DetectorConstruction::ConstructSDandField()
     // --- Multi functional detector: MainPhantom --- //
     auto tetMFD = new G4MultiFunctionalDetector("MainPhantom");
     auto ps_MRCPDose = new MRCPPSDoseDeposit("dose", "MainPhantom");
-    ps_MRCPDose->ImportBoneDRFData(fMainPhantom_FilePath.replace_filename("ICRP116.DRF").string());
+    ps_MRCPDose->ImportBoneDRFData(fMainPhantom_FilePath.parent_path().string() + "/ICRP116.DRF");
     tetMFD->RegisterPrimitive(ps_MRCPDose);
     G4SDManager::GetSDMpointer()->AddNewDetector(tetMFD);
     SetSensitiveDetector(fTetLogicalVolume, tetMFD);

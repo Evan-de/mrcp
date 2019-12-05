@@ -25,15 +25,19 @@ void Run::RecordEvent(const G4Event* anEvent)
 
     auto doseMap = static_cast<G4THitsMap<G4double>*>(HCE->GetHC(fPhantomDose_HCID));
 
-    // Whole body dose
-    G4double wholeBodyDose = mainPhantomProtQ->GetWholebodyDose(doseMap);
-    fProtQ["01. WholeBodyDose"].first += wholeBodyDose;
-    fProtQ["01. WholeBodyDose"].second += wholeBodyDose * wholeBodyDose;
+    // Calculate protection quantities of this event
+    std::map<G4String, G4double> protQMap;
+    protQMap["01. WholeBodyDose"] = mainPhantomProtQ->GetWholebodyDose(doseMap);
+    protQMap["02. EffectiveDose"] = mainPhantomProtQ->GetEffectiveDose(doseMap);
+    protQMap["03. RBM"] = mainPhantomProtQ->GetOrganDose(MRCPProtQCalculator::Organ::RedBoneMarrow, doseMap);
+    protQMap["04. Liver"] = mainPhantomProtQ->GetOrganDose(MRCPProtQCalculator::Organ::Liver, doseMap);
 
-    // Effective dose
-    G4double effectiveDose = mainPhantomProtQ->GetEffectiveDose(doseMap);
-    fProtQ["02. EffectiveDose"].first += effectiveDose;
-    fProtQ["02. EffectiveDose"].second += effectiveDose * effectiveDose;
+    // Store the quantities and their squared values
+    for(const auto& protQ: protQMap)
+    {
+        fProtQ[protQ.first].first += protQ.second;
+        fProtQ[protQ.first].second += protQ.second * protQ.second;
+    }
 
     G4Run::RecordEvent(anEvent);
 }

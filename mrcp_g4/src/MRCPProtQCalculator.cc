@@ -13,29 +13,6 @@ MRCPProtQCalculator::MRCPProtQCalculator(const G4String& phantomName)
     Preset_OrganDose();
 }
 
-G4double MRCPProtQCalculator::GetWholebodyDose(const G4THitsMap<G4double>* subModelDoseMap)
-{
-
-    G4double wholeBodyDose{0.};
-    for(const auto& datum: *(subModelDoseMap->GetMap()))
-    {
-        // If the subModel is not a part of whole body, skip it.
-        G4int subModelID = datum.first;
-        if(protQ_subModelWeights_Map[Organ::WholeBody].find(subModelID) ==
-                protQ_subModelWeights_Map[Organ::WholeBody].end())
-            continue;
-
-        // Calculate
-        G4double subModelDose = *datum.second;
-        G4double subModelWeightFactor =
-                protQ_subModelWeights_Map.at(Organ::WholeBody).at(subModelID);
-
-        wholeBodyDose += subModelDose * subModelWeightFactor;
-    }
-
-    return wholeBodyDose;
-}
-
 G4double MRCPProtQCalculator::GetOrganDose(Organ organName, const G4THitsMap<G4double>* subModelDoseMap)
 {
     G4double organDose{0.};
@@ -56,6 +33,11 @@ G4double MRCPProtQCalculator::GetOrganDose(Organ organName, const G4THitsMap<G4d
     }
 
     return organDose;
+}
+
+G4double MRCPProtQCalculator::GetWholebodyDose(const G4THitsMap<G4double>* subModelDoseMap)
+{
+    return GetOrganDose(Organ::WholeBody, subModelDoseMap);
 }
 
 G4double MRCPProtQCalculator::GetEffectiveDose(const G4THitsMap<G4double>* subModelDoseMap)
