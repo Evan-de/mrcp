@@ -39,8 +39,6 @@ private:
 
     void SetNuclide(const G4String& nuclideName);
 
-    G4ThreeVector SampleISODirection();
-
     G4ParticleGun* fPrimary;
     G4GenericMessenger* fMessenger;
     G4double fWeight;
@@ -54,6 +52,10 @@ private:
     G4double fAngleBiasingPVBoxMag2;
 };
 
+G4ThreeVector RandomDirectionFromTo(const G4ThreeVector& referencePoint,
+                                    const G4String& physicalVolumeName,
+                                    G4double& particleWeight,
+                                    G4double margin = 0.);
 // --- Nuclide source --- //
 // There should be a file "./nuclides/{nuclideName}".
 // The file should include data "{ParticleName} {KineticEnergy in MeV} {YieldPerDecay}" in a row.

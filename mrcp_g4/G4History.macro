@@ -1,11 +1,11 @@
 /run/verbose 2
 /run/initialize /control/execute vis.ma/tracking/storeTrajectory 2
 /gun/angleBiasing PhantomBox
-/gun/nuclide Co60_p
-/gun/position -50 0 0 cm
-/gun/position -100 0 0 cm
-/gun/position -300 0 0 cm
-bose errors
+/gun/position 0 0 -50
+/gun/position 100 0 0 cm
+/gun/position 200 0 300 cm
+/gun/position -200 150 300 cm
+rors
 /vis/drawVolume worlds
 /vis/scene/create
 /vis/scene/add/volume worlds -1 -1 none m 0 0 0 0 0 0
@@ -44,16 +44,16 @@ bose errors
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
-/control/execute source.mac
 /gun/angleBiasing PhantomBox
-/gun/nuclide Co60_p
-/gun/position -50 0 0 cm
-/run/beamOn 300
-/gun/position -100 0 0 cm
-/run/beamOn 300
-/vis/viewer/zoomTo 0.5
+/gun/position 0 0 -50
+/vis/viewer/zoomTo 0.6
 /vis/viewer/refresh
-/vis/viewer/zoomTo 0.3
+/run/beamOn 100
+/gun/position 100 0 0 cm
+/run/beamOn 100
+/gun/position 200 0 300 cm
+/run/beamOn 100
+/vis/viewer/zoomTo 0.4
 /vis/viewer/refresh
-/gun/position -300 0 0 cm
-/run/beamOn 300
+/gun/position -200 150 300 cm
+/run/beamOn 100

@@ -19,7 +19,7 @@ Primary_ParticleGun::~Primary_ParticleGun()
 void Primary_ParticleGun::GeneratePrimaries(G4Event* anEvent)
 {
     // Weight initialization
-    fWeight = 1.;
+    G4double particleWeight{1.};
 
     // Check if the source is defined as a nuclide
     if(fNuclideSource)
@@ -27,14 +27,19 @@ void Primary_ParticleGun::GeneratePrimaries(G4Event* anEvent)
         auto decayProduct = fNuclideSource->SampleDecayProduct();
         fPrimary->SetParticleDefinition(G4ParticleTable::GetParticleTable()->FindParticle(std::get<0>(decayProduct)));
         fPrimary->SetParticleEnergy(std::get<1>(decayProduct));
-        fWeight *= std::get<2>(decayProduct);
+        particleWeight *= std::get<2>(decayProduct);
     }
 
-    fPrimary->SetParticleMomentumDirection(SampleISODirection());
+    auto dirVec = RandomDirectionFromTo(
+                fPrimary->GetParticlePosition(),
+                fAngleBiasingPVName,
+                particleWeight
+                );
+    fPrimary->SetParticleMomentumDirection(dirVec);
     fPrimary->GeneratePrimaryVertex(anEvent);
 
     // Weight setting
-    anEvent->GetPrimaryVertex()->SetWeight(fWeight);
+    anEvent->GetPrimaryVertex()->SetWeight(particleWeight);
 }
 
 void Primary_ParticleGun::DefineCommands()
@@ -55,61 +60,6 @@ void Primary_ParticleGun::SetNuclide(const G4String& nuclideName)
 {
     if(fNuclideSource) delete fNuclideSource;
     fNuclideSource = new NuclideSource(fNuclideName = nuclideName);
-}
-
-G4ThreeVector Primary_ParticleGun::SampleISODirection()
-{
-    if(!fAngleBiasingPVName.size()) return G4RandomDirection();
-
-    auto thePhysicalVolume = G4PhysicalVolumeStore::GetInstance()->GetVolume(fAngleBiasingPVName);
-    if(!thePhysicalVolume)
-    {
-        G4Exception("Primary_ParticleGun::SampleISODirection()", "", JustWarning,
-                    G4String("      invalid physical volume '" + fAngleBiasingPVName + "'" ).c_str());
-        return G4RandomDirection();
-    }
-
-    fAngleBiasingPVPosition = thePhysicalVolume->GetObjectTranslation();
-
-    auto theBox = static_cast<const G4Box*>(thePhysicalVolume->GetLogicalVolume()->GetSolid());
-    fAngleBiasingPVBoxVerticies =
-    {
-        G4ThreeVector(-theBox->GetXHalfLength(), -theBox->GetYHalfLength(), -theBox->GetZHalfLength()),
-        G4ThreeVector(-theBox->GetXHalfLength(), -theBox->GetYHalfLength(),  theBox->GetZHalfLength()),
-        G4ThreeVector(-theBox->GetXHalfLength(),  theBox->GetYHalfLength(), -theBox->GetZHalfLength()),
-        G4ThreeVector(-theBox->GetXHalfLength(),  theBox->GetYHalfLength(),  theBox->GetZHalfLength()),
-        G4ThreeVector( theBox->GetXHalfLength(), -theBox->GetYHalfLength(), -theBox->GetZHalfLength()),
-        G4ThreeVector( theBox->GetXHalfLength(), -theBox->GetYHalfLength(),  theBox->GetZHalfLength()),
-        G4ThreeVector( theBox->GetXHalfLength(),  theBox->GetYHalfLength(), -theBox->GetZHalfLength()),
-        G4ThreeVector( theBox->GetXHalfLength(),  theBox->GetYHalfLength(),  theBox->GetZHalfLength())
-    };
-    fAngleBiasingPVBoxMag2 = fAngleBiasingPVBoxVerticies[0].mag2();
-
-    G4ThreeVector targetVector = fAngleBiasingPVPosition - fPrimary->GetParticlePosition();
-    // Source position is closer than the size of the box.
-    if(targetVector.mag2() <= fAngleBiasingPVBoxMag2) return G4RandomDirection();
-
-    // Calculate cone apex half-angle
-    G4double maxTheta = 0.;
-    for(const auto& vertex: fAngleBiasingPVBoxVerticies)
-    {
-        G4double theAngle = targetVector.angle(vertex + targetVector);
-        maxTheta = (theAngle>maxTheta) ? theAngle : maxTheta;
-    }
-
-    // Sample direction
-    G4double solidAngle = CLHEP::twopi * (1 - std::cos(maxTheta));
-    fWeight *= solidAngle / (4 * CLHEP::pi);
-    G4double rndPhi = G4UniformRand() * CLHEP::twopi;
-    G4double rndTheta = std::acos( G4UniformRand()*(1 - std::cos(maxTheta)) + std::cos(maxTheta) );
-    G4ThreeVector srcDir;
-    srcDir.setRThetaPhi(1., rndTheta, rndPhi);
-    if(!(targetVector.isParallel(G4ThreeVector(0., 0., 1.))))
-        srcDir.rotate(-targetVector.cross(G4ThreeVector(0., 0., 1.)), targetVector.angle(G4ThreeVector(0., 0., 1.)));
-    else
-        srcDir *= targetVector.unit().dot(G4ThreeVector(0., 0., 1));
-
-    return srcDir;
 }
 
 NuclideSource::NuclideSource(G4String nuclideName)
@@ -172,4 +122,64 @@ void NuclideSource::Normalize()
         fCumulativeProbability_Vector.push_back(currentProbability += std::get<2>(yieldData) / fTotalYield);
 
     fNormalized = true;
+}
+
+G4ThreeVector RandomDirectionFromTo(const G4ThreeVector& referencePoint,
+                                    const G4String& physicalVolumeName,
+                                    G4double& particleWeight,
+                                    G4double margin)
+{
+    auto physicalVolume = G4PhysicalVolumeStore::GetInstance()->GetVolume(physicalVolumeName);
+    if(!physicalVolume)
+    {
+        G4Exception("Primary_ParticleGun::SampleISODirection()", "", JustWarning,
+                    G4String("      invalid physical volume '" + physicalVolumeName + "'" ).c_str());
+        return G4RandomDirection();
+    }
+
+    G4ThreeVector pvPosition, pvMin, pvMax;
+    pvPosition = physicalVolume->GetObjectTranslation();
+    physicalVolume->GetLogicalVolume()->GetSolid()->BoundingLimits(pvMin, pvMax);
+    if(margin>0.)
+    {
+        pvMin = pvMin - G4ThreeVector(margin, margin, margin);
+        pvMax = pvMax + G4ThreeVector(margin, margin, margin);
+    }
+
+    G4ThreeVector targetVector = pvPosition - referencePoint;
+    G4ThreeVectorList pvBoxVerticies =
+    {
+        G4ThreeVector(pvMin.x(), pvMin.y(), pvMin.z()) + targetVector,
+        G4ThreeVector(pvMin.x(), pvMin.y(), pvMax.z()) + targetVector,
+        G4ThreeVector(pvMin.x(), pvMax.y(), pvMin.z()) + targetVector,
+        G4ThreeVector(pvMin.x(), pvMax.y(), pvMax.z()) + targetVector,
+        G4ThreeVector(pvMax.x(), pvMin.y(), pvMin.z()) + targetVector,
+        G4ThreeVector(pvMax.x(), pvMin.y(), pvMax.z()) + targetVector,
+        G4ThreeVector(pvMax.x(), pvMax.y(), pvMin.z()) + targetVector,
+        G4ThreeVector(pvMax.x(), pvMax.y(), pvMax.z()) + targetVector
+    };
+
+    G4double maxTheta = 0.;
+    for(const auto& vertex: pvBoxVerticies)
+    {
+        G4double target2VertexAngle = targetVector.angle(vertex);
+        maxTheta = (target2VertexAngle>maxTheta) ? target2VertexAngle : maxTheta;
+    }
+    // If the ref point is in the bounding box of the physical volume, return 4pi dir.
+    G4double cosTheta = std::cos(maxTheta);
+    if(cosTheta<=0.) return G4RandomDirection();
+
+    // Multiply particle weight as its solid angle reduction
+    G4double solidAngle = CLHEP::twopi * (1 - cosTheta);
+    particleWeight *= solidAngle / (4 * CLHEP::pi);
+
+    // Sample direction and rotate to targetVector
+    G4ThreeVector dirVec = G4RandomDirection(cosTheta);
+    G4ThreeVector zUnit = G4ThreeVector(0., 0., 1);
+    if(!(targetVector.isParallel(zUnit)))
+        dirVec.rotate(zUnit.cross(targetVector), zUnit.angle(targetVector));
+    else
+        dirVec *= targetVector.unit().dot(zUnit);
+
+    return dirVec;
 }

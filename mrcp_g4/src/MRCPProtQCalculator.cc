@@ -18,7 +18,7 @@ G4double MRCPProtQCalculator::GetOrganDose(Organ organName, const G4THitsMap<G4d
     G4double organDose{0.};
     for(const auto& datum: *(subModelDoseMap->GetMap()))
     {
-        // If the subModel is not a part of whole body, skip it.
+        // If the subModel is not a part of the organ, skip it.
         G4int subModelID = datum.first;
         if(protQ_subModelWeights_Map[organName].find(subModelID) ==
                 protQ_subModelWeights_Map[organName].end())
