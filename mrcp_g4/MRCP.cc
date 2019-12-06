@@ -121,11 +121,17 @@ int main(int argc, char** argv)
 
     // Macro name is given but output file name is not,
     // output file name will be {macro name w/o extension}.out
-    if(!macro_FileName.empty() && ::OUTPUT_FILENAME.empty())
+    if(::OUTPUT_FILENAME.empty())
     {
-        ::OUTPUT_FILENAME = macro_FileName;
-        ::OUTPUT_FILENAME.replace_extension(".out");
+        if(!macro_FileName.empty())
+        {
+            ::OUTPUT_FILENAME = macro_FileName;
+            ::OUTPUT_FILENAME.replace_extension(".out");
+        }
+        else
+            ::OUTPUT_FILENAME = "example.out";
     }
+
 
     // --- Choose the Random engine --- //
     G4Random::setTheEngine(new CLHEP::RanecuEngine);
