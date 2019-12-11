@@ -27,7 +27,7 @@
 // * Geant4 code for the simulation of MRCP.                          *
 // *                                                                  *
 // * Author: Evan Kim (evandde@gmail.com)                             *
-// * This code was tested with Geant4 10.05.                          *
+// * This code was tested with Geant4 10.6.                           *
 // * Nov. 25, 2019.                                                   *
 // ********************************************************************
 //
@@ -47,17 +47,13 @@
 // UI and visualization classes
 #include "G4UImanager.hh"
 #include "G4UIterminal.hh"
-#ifdef G4UI_USE
 #include "G4UIExecutive.hh"
-#endif
-#ifdef G4VIS_USE
 #include "G4VisExecutive.hh"
-#endif
 
 // Randomize class to set seed number
 #include "Randomize.hh"
 
-// C++ STL
+// C++ std lib
 #include <experimental/filesystem>
 
 // --- main() Arguments usage explanation --- //
@@ -153,6 +149,9 @@ int main(int argc, char** argv)
 
     // --- Batch mode or Interactive mode setting --- //
     auto uiManager = G4UImanager::GetUIpointer();
+    G4VisManager* visManager = new G4VisExecutive;
+    visManager->Initialize();
+
     if(!macro_FileName.empty()) // macro was provided
     {
         G4String command = "/control/execute ";
@@ -160,34 +159,14 @@ int main(int argc, char** argv)
     }
     else // interactive mode
     {
-#ifdef G4UI_USE
         auto ui = new G4UIExecutive(argc, argv, session);
-#else
-        G4cerr << "ERROR: Interactive mode is not available. Please provide macro file." << G4endl;
-        return 1;
-#endif
-
-#ifdef G4VIS_USE
-        G4VisManager* visManager = new G4VisExecutive;
-        visManager->Initialize();
-
         uiManager->ApplyCommand("/control/execute init_vis.mac");
-#endif
-
-#ifdef G4UI_USE
         ui->SessionStart();
-#endif
-
-#ifdef G4VIS_USE
-        delete visManager;
-#endif
-
-#ifdef G4UI_USE
         delete ui;
-#endif
     }
 
     // --- Job termination --- //
+    delete visManager;
     delete runManager;
 
     return 0;

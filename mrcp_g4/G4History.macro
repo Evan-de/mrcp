@@ -1,13 +1,13 @@
 /run/verbose 2
-/run/initialize /control/execute vis.ma/tracking/storeTrajectory 2
-/gun/angleBiasing PhantomBox
-/gun/position 200 0 0
-/gun/position 200 0 0 cm
-/tracking/verbose 1
-/gun/radioNuclide Co60p
-/gun/radioNuclide Cs137p
-/gun/radioNuclide Ir192p
-e/create
+/run/initialize /control/execute vis.mac
+/vis/open OGL 800x800-0+0
+/vis/sceneHandler/create OGL
+/vis/viewer/create ! ! 800x800-0+0
+/vis/viewer/refresh
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+/vis/drawVolume worlds
+/vis/scene/create
 /vis/scene/add/volume worlds -1 -1 none m 0 0 0 0 0 0
 /vis/sceneHandler/attach
 /vis/viewer/set/auxiliaryEdge true
@@ -43,17 +43,3 @@ e/create
 /vis/viewer/set/targetPoint 0 0 80 cm
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
-/vis/verbose warnings
-/gun/angleBiasing PhantomBox
-/vis/viewer/zoomTo 0.3
-/vis/viewer/refresh
-/gun/position 200 0 0
-/gun/position 200 0 0 cm
-/run/beamOn 100
-/tracking/verbose 1
-/gun/radioNuclide Co60p
-/run/beamOn 10
-/gun/radioNuclide Cs137p
-/run/beamOn 10
-/gun/radioNuclide Ir192p
-/run/beamOn 10

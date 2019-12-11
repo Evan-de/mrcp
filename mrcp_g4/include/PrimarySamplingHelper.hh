@@ -9,11 +9,13 @@
 
 #include <list>
 
+// Direction sampling
 G4ThreeVector SampleDirectionFromTo(const G4ThreeVector& referencePoint,
                                     const G4String& physicalVolumeName,
                                     G4double& particleWeight,
                                     G4double margin = 0.);
 
+// Particle & energy sampling
 class RadioNuclide
 {
 /************************************************************
