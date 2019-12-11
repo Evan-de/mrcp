@@ -1,0 +1,2 @@
+RunID	InitT(s)	RunT(s)	NThreads	NEvents	Source	01. WholeBodyDose(Gy|Sv)	01. WholeBodyDoseError	02. EffectiveDose(Gy|Sv)	02. EffectiveDoseError	03. RBM(Gy|Sv)	03. RBMError	04. Liver(Gy|Sv)	04. LiverError	
+0	150.670	103.040	10	10000000	Co-60@(-50,0,0)cm	5.826258e-17	2.633605e-03	1.724068e-17	5.340522e-02	1.813818e-17	1.888705e-02	1.800942e-17	2.405128e-02	

@@ -43,3 +43,4 @@
 /vis/viewer/set/targetPoint 0 0 80 cm
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
+/vis/verbose warnings

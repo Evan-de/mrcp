@@ -63,15 +63,25 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     new G4PVPlacement(nullptr, phantomPos, lv_PhantomBox, "PhantomBox", lv_World, false, 0);
 
     // Create tetrahedral phantom (visualization is in the TETParameterisation::ComputeMaterial())
-    auto sol_Tet = new G4Tet("Tet",
-        G4ThreeVector(),
-        G4ThreeVector(1.*cm, 0, 0),
-        G4ThreeVector(0, 1.*cm, 0),
-        G4ThreeVector(0, 0, 1.*cm));
-    fTetLogicalVolume = new G4LogicalVolume(sol_Tet, mat_Air, "Tet");
-    new G4PVParameterised("mainPhantomTets", fTetLogicalVolume, lv_PhantomBox,
-        kUndefined, static_cast<G4int>(mainPhantomData->GetNumTets()),
-        new TETParameterisation("MainPhantom"));
+//    auto sol_Tet = new G4Tet("Tet",
+//        G4ThreeVector(),
+//        G4ThreeVector(1.*cm, 0, 0),
+//        G4ThreeVector(0, 1.*cm, 0),
+//        G4ThreeVector(0, 0, 1.*cm));
+//    fTetLogicalVolume = new G4LogicalVolume(sol_Tet, mat_Air, "Tet");
+//    new G4PVParameterised("mainPhantomTets", fTetLogicalVolume, lv_PhantomBox,
+//        kUndefined, static_cast<G4int>(mainPhantomData->GetNumTets()),
+//        new TETParameterisation("MainPhantom"));
+    for(size_t i = 0; i<mainPhantomData->GetNumTets(); ++i)
+    {
+        auto sol_Tet = mainPhantomData->GetTetrahedron(static_cast<G4int>(i));
+        G4int subModelID = mainPhantomData->GetSubModelID(static_cast<G4int>(i));
+        auto mat_Tet = mainPhantomData->GetSubModelMaterial(subModelID);
+        auto lv_Tet = new G4LogicalVolume(sol_Tet, mat_Tet, "Tet");
+        auto va_Tet = new G4VisAttributes(mainPhantomData->GetSubModelColour(subModelID));
+        lv_Tet->SetVisAttributes(va_Tet);
+        new G4PVPlacement(nullptr, G4ThreeVector(), lv_Tet, "Tet", lv_PhantomBox, false, static_cast<G4int>(i));
+    }
 
     return pv_World;
 }
@@ -84,5 +94,6 @@ void DetectorConstruction::ConstructSDandField()
     ps_MRCPDose->ImportBoneDRFData(fMainPhantom_FilePath.parent_path().string() + "/ICRP116.DRF");
     tetMFD->RegisterPrimitive(ps_MRCPDose);
     G4SDManager::GetSDMpointer()->AddNewDetector(tetMFD);
-    SetSensitiveDetector(fTetLogicalVolume, tetMFD);
+//    SetSensitiveDetector(fTetLogicalVolume, tetMFD);
+    SetSensitiveDetector("Tet", tetMFD, true);
 }
