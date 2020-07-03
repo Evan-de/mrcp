@@ -160,7 +160,7 @@ void MRCPModel::Print() const
     G4cout << "--------------------------------------------------------------------------------" << G4endl;
 
     G4cout << std::setiosflags(std::ios::fixed);
-    G4cout.precision(3);
+    G4cout.precision(5);
 
     for(auto subModelID: GetSubModelIDSet())
     {

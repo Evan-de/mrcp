@@ -72,8 +72,8 @@
 #/vis/scene/add/scale   # Simple scale line
 #/vis/scene/add/axes   50 0 -60 20 cm # Simple axes: x=red, y=green, z=blue.
 /vis/scene/add/axes   0 0 0 20 cm # Simple axes: x=red, y=green, z=blue.
-/vis/scene/add/eventID # Drawn at end of event
-/vis/scene/add/date    # Date stamp
+#/vis/scene/add/eventID # Drawn at end of event
+#/vis/scene/add/date    # Date stamp
 #
 # Frame
 /vis/set/colour red
@@ -96,7 +96,7 @@
 /vis/viewer/set/lightsVector -1 0 0
 /vis/viewer/zoomTo 0.8
 #/vis/viewer/set/viewpointVector -0.5 -1 0.3
-/vis/viewer/set/viewpointVector 0 -1 0
+/vis/viewer/set/viewpointVector 1 0 0
 /vis/viewer/set/targetPoint 0 0 80 cm
 #
 # Re-establish auto refreshing and verbosity:

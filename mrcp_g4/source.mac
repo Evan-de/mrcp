@@ -1,4 +1,4 @@
 /gun/angleBiasing PhantomBox
 
-/gun/nuclide Co60_p
-/gun/position -50 0 0 cm
+/gun/nuclide Ir192p
+/gun/position 7.7756 -10.4112 83.8349 cm

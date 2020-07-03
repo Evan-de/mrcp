@@ -29,8 +29,8 @@ void Run::RecordEvent(const G4Event* anEvent)
     std::map<G4String, G4double> protQMap;
     protQMap["01. WholeBodyDose"] = mainPhantomProtQ->GetWholebodyDose(doseMap);
     protQMap["02. EffectiveDose"] = mainPhantomProtQ->GetEffectiveDose(doseMap);
-    protQMap["03. RBM"] = mainPhantomProtQ->GetOrganDose(MRCPProtQCalculator::Organ::RedBoneMarrow, doseMap);
-    protQMap["04. Liver"] = mainPhantomProtQ->GetOrganDose(MRCPProtQCalculator::Organ::Liver, doseMap);
+    protQMap["03. Lungs"] = mainPhantomProtQ->GetOrganDose(MRCPProtQCalculator::Organ::Lungs, doseMap);
+    protQMap["04. Thyroid"] = mainPhantomProtQ->GetOrganDose(MRCPProtQCalculator::Organ::Thyroid, doseMap);
 
     // Store the quantities and their squared values
     for(const auto& protQ: protQMap)

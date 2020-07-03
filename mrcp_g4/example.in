@@ -12,14 +12,11 @@
 
 # Source setting
 /gun/angleBiasing PhantomBox
-/gun/nuclide Co60_p
+/gun/radioNuclide Ir192p
 
-/gun/position -50 0 0 cm
-/run/beamOn 1000000
+#/gun/position 0 -111.1461 128.1348 cm
+#/run/beamOn 20000000
 
-/gun/position 0 0 0 cm
-/run/beamOn 1000000
-
-/gun/position 50 0 0 cm
-/run/beamOn 1000000
+/gun/position 0 -38.1522 119.0265 cm
+/run/beamOn 15000000
 

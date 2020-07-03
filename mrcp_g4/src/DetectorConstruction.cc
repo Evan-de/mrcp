@@ -60,7 +60,9 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     lv_PhantomBox->SetOptimisation(true);
     lv_PhantomBox->SetSmartless(0.5); // for optimization (default=2)
     G4ThreeVector phantomPos(0., 0., mainPhantomData->GetBoundingBoxSize().z()/2);
-    new G4PVPlacement(nullptr, phantomPos, lv_PhantomBox, "PhantomBox", lv_World, false, 0);
+    auto phantomRot = new G4RotationMatrix();
+    phantomRot->rotateZ(180.*deg);
+    new G4PVPlacement(phantomRot, phantomPos, lv_PhantomBox, "PhantomBox", lv_World, false, 0);
 
     // Create tetrahedral phantom (visualization is in the TETParameterisation::ComputeMaterial())
     auto sol_Tet = new G4Tet("Tet",

@@ -1,6 +1,7 @@
 #include "MRCPPSDoseDeposit.hh"
 #include "TETModelStore.hh"
 #include "MRCPModel.hh"
+#include "G4Gamma.hh"
 
 MRCPPSDoseDeposit::MRCPPSDoseDeposit(G4String name, G4String phantomName)
 : G4VPrimitiveScorer(name), fHCID(-1), fEvtMap(nullptr), fDRFFlag(false)
@@ -16,8 +17,6 @@ MRCPPSDoseDeposit::MRCPPSDoseDeposit(G4String name, G4String phantomName)
 G4bool MRCPPSDoseDeposit::ProcessHits(G4Step* aStep, G4TouchableHistory*)
 {
     G4double eDep = aStep->GetTotalEnergyDeposit();
-    if(0.==eDep) return false;
-
     G4double particleWeight = aStep->GetPreStepPoint()->GetWeight();
 
     // --- Averaged subModelDose --- //
@@ -32,9 +31,13 @@ G4bool MRCPPSDoseDeposit::ProcessHits(G4Step* aStep, G4TouchableHistory*)
     if(!fDRFFlag) return true; // DRF file has not been imported.
     if(subModelRBMDRF_Map.find(subModelID) == subModelRBMDRF_Map.end())
         return true; // this submodel is not a kind of bone.
+    if(aStep->GetTrack()->GetParticleDefinition() != G4Gamma::Gamma())
+        return true; // only for gamma
+    G4double stepLength = aStep->GetStepLength();
+    if(stepLength == 0.)
+        return true;
 
     G4double volume = fMRCPModel->GetSubModelVolume(subModelID);
-    G4double stepLength = aStep->GetStepLength();
     G4double cellFluence = stepLength / volume;
     G4double kineticEnergy = aStep->GetPreStepPoint()->GetKineticEnergy(); // KE before interaction should be used (prestep).
     G4double rbmDRF = LogInterp(kineticEnergy, energyBin_DRF, subModelRBMDRF_Map.at(subModelID));
