@@ -146,9 +146,16 @@ void RadioNuclide::SetRadiationEnergyThreshold(Radiation radiation, G4double ene
     if(fDecayDataInteresting.find(radiation)==fDecayDataInteresting.end())
         return;
 
-    for(const auto& energyYieldData: fDecayDataInteresting.at(radiation))
-        if(energyYieldData.first<energy)
-            fDecayDataInteresting[radiation].erase(energyYieldData.first);
+    // for(const auto& energyYieldData: fDecayDataInteresting.at(radiation))
+    //     if(energyYieldData.first<energy)
+    //         fDecayDataInteresting[radiation].erase(energyYieldData.first);
+    for(auto itr = fDecayDataInteresting.at(radiation).begin(); itr!=fDecayDataInteresting.at(radiation).end(); )
+    {
+        if(itr->first<energy)
+            fDecayDataInteresting[radiation].erase(itr++);
+        else
+            ++itr;
+    }
 }
 
 void RadioNuclide::SetRadiationYieldThreshold(Radiation radiation, G4double yield)
@@ -158,9 +165,16 @@ void RadioNuclide::SetRadiationYieldThreshold(Radiation radiation, G4double yiel
     if(fDecayDataInteresting.find(radiation)==fDecayDataInteresting.end())
         return;
 
-    for(const auto& energyYieldData: fDecayDataInteresting.at(radiation))
-        if(energyYieldData.second<yield)
-            fDecayDataInteresting[radiation].erase(energyYieldData.first);
+    // for(const auto& energyYieldData: fDecayDataInteresting.at(radiation))
+    //     if(energyYieldData.second<yield)
+    //         fDecayDataInteresting[radiation].erase(energyYieldData.first);
+    for(auto itr = fDecayDataInteresting.at(radiation).begin(); itr!=fDecayDataInteresting.at(radiation).end(); )
+    {
+        if(itr->second<yield)
+            fDecayDataInteresting[radiation].erase(itr++);
+        else
+            ++itr;
+    }
 }
 
 void RadioNuclide::Normalize()
