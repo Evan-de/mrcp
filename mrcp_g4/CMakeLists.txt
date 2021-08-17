@@ -6,28 +6,18 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELWITHDEBINFO "${CMAKE_BINARY_DIR}")
 
 #----------------------------------------------------------------------------
 # Setup the project
-cmake_minimum_required(VERSION 2.6 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.8 FATAL_ERROR)
 project(MRCP)
-
-#---------------------------------------------------------------------------
-# C++1z
-link_libraries(stdc++fs)
 
 #----------------------------------------------------------------------------
 # Find Geant4 package, activating all available UI and Vis drivers by default
 # You can set WITH_GEANT4_UIVIS to OFF via the command line or ccmake/cmake-gui
 # to build a batch mode only executable
 #
-option(WITH_GEANT4_UIVIS "Build example with Geant4 UI and Vis drivers" ON)
-if(WITH_GEANT4_UIVIS)
-  find_package(Geant4 REQUIRED ui_all vis_all)
-else()
-  find_package(Geant4 REQUIRED)
-endif()
+find_package(Geant4 REQUIRED ui_all vis_all)
 
 #----------------------------------------------------------------------------
-# Setup Geant4 include directories and compile definitions
-# Setup include directory for this project
+# Find Geant4 package, activating all available UI and Vis drivers by default
 #
 include(${Geant4_USE_FILE})
 include_directories(${PROJECT_SOURCE_DIR}/include)
@@ -52,23 +42,16 @@ target_link_libraries(MRCP ${Geant4_LIBRARIES})
 # because it relies on these scripts being in the current working directory.
 #
 
-foreach(_script ${INITSET_SCRIPTS})
+set(SCRIPTS
+  init_vis.mac
+  vis.mac
+  example.in
+  )
+
+foreach(_script ${SCRIPTS})
   configure_file(
     ${PROJECT_SOURCE_DIR}/${_script}
     ${PROJECT_BINARY_DIR}/${_script}
     COPYONLY
     )
 endforeach()
-
-#----------------------------------------------------------------------------
-# For internal Geant4 use - but has no effect if you build this
-# example standalone
-#
-#add_custom_target(MRCP DEPENDS MRCP)
-
-#----------------------------------------------------------------------------
-# Install the executable to 'bin' directory under CMAKE_INSTALL_PREFIX
-#
-install(TARGETS MRCP DESTINATION bin)
-
-

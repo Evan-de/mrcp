@@ -54,7 +54,7 @@
 #include "Randomize.hh"
 
 // C++ std lib
-#include <experimental/filesystem>
+#include <filesystem>
 
 // --- main() Arguments usage explanation --- //
 namespace
@@ -67,7 +67,7 @@ void PrintUsage()
         << "\n\t[-m] <Set macrofile> default: ""init_vis.mac"", inputtype: string"
         << "\n\t[-o] <Set outfile> default: ""[MACRO].out"", inputtype: string"
         << "\n\t[-p] <Set tetra model file & path> "
-        << "\n\t\tdefault: ""$PHANTOM or ../phantoms/ICRP-AM"", inputtype: string"
+        << "\n\t\tdefault: ""$PHANTOM or ../../phantoms/AM_MRCP_skin"", inputtype: string"
 #ifdef G4MULTITHREADED
         << "\n\t[-t] <Set nThreads> default: 1, inputtype: int, Max: "
         << G4Threading::G4GetNumberOfCores()
@@ -78,13 +78,13 @@ void PrintUsage()
 }
 
 // --- Global variables for main() arguments --- //
-std::experimental::filesystem::v1::path OUTPUT_FILENAME; // Passed to RunAction class.
+std::filesystem::path OUTPUT_FILENAME; // Passed to RunAction class.
 
 int main(int argc, char** argv)
 {
     // --- Default setting for main() arguments ---//
-    std::experimental::filesystem::v1::path macro_FileName;
-    std::experimental::filesystem::v1::path mainPhantom_FilePath{"../phantoms/ICRP-AM"};
+    std::filesystem::path macro_FileName;
+    std::filesystem::path mainPhantom_FilePath{"../../phantoms/AM_MRCP_skin"};
     const char* envVar_PHANTOM = ::getenv("PHANTOM") ;
     if(envVar_PHANTOM != nullptr) // Use if $PHANTOM environment variable exist
         mainPhantom_FilePath = envVar_PHANTOM;

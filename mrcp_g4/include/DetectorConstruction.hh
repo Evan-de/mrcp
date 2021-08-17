@@ -3,7 +3,7 @@
 
 #include "G4VUserDetectorConstruction.hh"
 
-#include <experimental/filesystem>
+#include <filesystem>
 
 class G4LogicalVolume;
 class G4VPhysicalVolume;
@@ -18,7 +18,7 @@ public:
     virtual void ConstructSDandField();
 
 private:
-    std::experimental::filesystem::v1::path fMainPhantom_FilePath;
+    std::filesystem::path fMainPhantom_FilePath;
     G4LogicalVolume* fTetLogicalVolume;
 };
 

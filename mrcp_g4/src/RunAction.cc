@@ -2,7 +2,7 @@
 #include "Run.hh"
 #include "Primary_ParticleGun.hh"
 
-extern std::experimental::filesystem::v1::path OUTPUT_FILENAME; // From main() argument (-o)
+extern std::filesystem::path OUTPUT_FILENAME; // From main() argument (-o)
 
 G4String RunAction::fPrimaryInfo;
 
