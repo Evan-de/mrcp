@@ -1,4 +1,10 @@
 #----------------------------------------------------------------------------
+# Set build output directory to be ./build 
+# rather than ./build/Release or ./build/RelWithDebInfo
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE "${CMAKE_BINARY_DIR}")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELWITHDEBINFO "${CMAKE_BINARY_DIR}")
+
+#----------------------------------------------------------------------------
 # Setup the project
 cmake_minimum_required(VERSION 2.6 FATAL_ERROR)
 project(MRCP)
